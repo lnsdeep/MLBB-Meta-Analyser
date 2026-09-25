@@ -1,0 +1,89 @@
+{
+  "updated_at": "2026-09-25T19:34:00.829004+00:00",
+  "total_heroes": 134,
+  "timeframes": {
+    "1d": {
+      "id": "2756567",
+      "name": "Past 1 day",
+      "days": 1
+    },
+    "3d": {
+      "id": "2756568",
+      "name": "Past 3 days",
+      "days": 3
+    },
+    "7d": {
+      "id": "2756569",
+      "name": "Past 7 days",
+      "days": 7
+    },
+    "15d": {
+      "id": "2756565",
+      "name": "Past 15 days",
+      "days": 15
+    },
+    "30d": {
+      "id": "2756570",
+      "name": "Past 30 days",
+      "days": 30
+    }
+  },
+  "ranks": {
+    "all": {
+      "code": "101",
+      "name": "ALL"
+    },
+    "epic": {
+      "code": "5",
+      "name": "Epic"
+    },
+    "legend": {
+      "code": "6",
+      "name": "Legend"
+    },
+    "mythic": {
+      "code": "7",
+      "name": "Mythic"
+    },
+    "mythical_honor": {
+      "code": "8",
+      "name": "Mythical Honor"
+    },
+    "mythical_glory": {
+      "code": "9",
+      "name": "Mythical Glory+"
+    }
+  },
+  "slices_available": [
+    "all_1d",
+    "epic_1d",
+    "legend_1d",
+    "mythic_1d",
+    "mythical_honor_1d",
+    "mythical_glory_1d",
+    "all_3d",
+    "epic_3d",
+    "legend_3d",
+    "mythic_3d",
+    "mythical_honor_3d",
+    "mythical_glory_3d",
+    "all_7d",
+    "epic_7d",
+    "legend_7d",
+    "mythic_7d",
+    "mythical_honor_7d",
+    "mythical_glory_7d",
+    "all_15d",
+    "epic_15d",
+    "legend_15d",
+    "mythic_15d",
+    "mythical_honor_15d",
+    "mythical_glory_15d",
+    "all_30d",
+    "epic_30d",
+    "legend_30d",
+    "mythic_30d",
+    "mythical_honor_30d",
+    "mythical_glory_30d"
+  ]
+}

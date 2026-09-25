@@ -1,0 +1,4923 @@
+{
+  "14": [
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.039869,
+      "increase_win_rate_pct": 3.99
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.037966,
+      "increase_win_rate_pct": 3.8
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.030574,
+      "increase_win_rate_pct": 3.06
+    },
+    {
+      "heroid": 41,
+      "name": "Gatotkaca",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_96f9dbbc096e0f0a28f9b9e587d06a9c.png",
+      "increase_win_rate": 0.02424,
+      "increase_win_rate_pct": 2.42
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.023639,
+      "increase_win_rate_pct": 2.36
+    }
+  ],
+  "132": [
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.043056,
+      "increase_win_rate_pct": 4.31
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.033986,
+      "increase_win_rate_pct": 3.4
+    },
+    {
+      "heroid": 111,
+      "name": "Edith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_daab57918de01a6d5bb2ed6f45808a7e.png",
+      "increase_win_rate": 0.028705,
+      "increase_win_rate_pct": 2.87
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.028641,
+      "increase_win_rate_pct": 2.86
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.027246,
+      "increase_win_rate_pct": 2.72
+    }
+  ],
+  "88": [
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.026972,
+      "increase_win_rate_pct": 2.7
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.020494,
+      "increase_win_rate_pct": 2.05
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.020191,
+      "increase_win_rate_pct": 2.02
+    },
+    {
+      "heroid": 122,
+      "name": "Nolan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png",
+      "increase_win_rate": 0.016963,
+      "increase_win_rate_pct": 1.7
+    },
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.014319,
+      "increase_win_rate_pct": 1.43
+    }
+  ],
+  "108": [
+    {
+      "heroid": 131,
+      "name": "Sora",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_40/100_8143d7bbd4318d7c699908e808de885e.png",
+      "increase_win_rate": 0.029371,
+      "increase_win_rate_pct": 2.94
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.027872,
+      "increase_win_rate_pct": 2.79
+    },
+    {
+      "heroid": 22,
+      "name": "Freya",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_b9c34c88762ca8e66ccd4d84071bf0bc.png",
+      "increase_win_rate": 0.026751,
+      "increase_win_rate_pct": 2.68
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.02656,
+      "increase_win_rate_pct": 2.66
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.025343,
+      "increase_win_rate_pct": 2.53
+    }
+  ],
+  "45": [
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.026513,
+      "increase_win_rate_pct": 2.65
+    },
+    {
+      "heroid": 2,
+      "name": "Balmond",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_df9a6990b1946d045e4d3a46c90725cf.png",
+      "increase_win_rate": 0.019635,
+      "increase_win_rate_pct": 1.96
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.019526,
+      "increase_win_rate_pct": 1.95
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.019497,
+      "increase_win_rate_pct": 1.95
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.016216,
+      "increase_win_rate_pct": 1.62
+    }
+  ],
+  "19": [
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.027727,
+      "increase_win_rate_pct": 2.77
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.020856,
+      "increase_win_rate_pct": 2.09
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.01924,
+      "increase_win_rate_pct": 1.92
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.019197,
+      "increase_win_rate_pct": 1.92
+    },
+    {
+      "heroid": 26,
+      "name": "Chou",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_158209b180032c4564b8f3bde8c48888.png",
+      "increase_win_rate": 0.018544,
+      "increase_win_rate_pct": 1.85
+    }
+  ],
+  "78": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.075381,
+      "increase_win_rate_pct": 7.54
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.038582,
+      "increase_win_rate_pct": 3.86
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.036217,
+      "increase_win_rate_pct": 3.62
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.021477,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 17,
+      "name": "Fanny",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3391df36d6dcc54dd1c417098e15ec59.png",
+      "increase_win_rate": 0.021312,
+      "increase_win_rate_pct": 2.13
+    }
+  ],
+  "112": [
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.06906,
+      "increase_win_rate_pct": 6.91
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.069034,
+      "increase_win_rate_pct": 6.9
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.066403,
+      "increase_win_rate_pct": 6.64
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.053724,
+      "increase_win_rate_pct": 5.37
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.042642,
+      "increase_win_rate_pct": 4.26
+    }
+  ],
+  "133": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.041577,
+      "increase_win_rate_pct": 4.16
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.020726,
+      "increase_win_rate_pct": 2.07
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.009717,
+      "increase_win_rate_pct": 0.97
+    },
+    {
+      "heroid": 99,
+      "name": "Barats",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6495be044c2d28106e200f6918391d54.png",
+      "increase_win_rate": 0.009696,
+      "increase_win_rate_pct": 0.97
+    },
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.00939,
+      "increase_win_rate_pct": 0.94
+    }
+  ],
+  "104": [
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.028198,
+      "increase_win_rate_pct": 2.82
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.026427,
+      "increase_win_rate_pct": 2.64
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.026323,
+      "increase_win_rate_pct": 2.63
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.026232,
+      "increase_win_rate_pct": 2.62
+    },
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.020333,
+      "increase_win_rate_pct": 2.03
+    }
+  ],
+  "20": [
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.092559,
+      "increase_win_rate_pct": 9.26
+    },
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.075381,
+      "increase_win_rate_pct": 7.54
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.033403,
+      "increase_win_rate_pct": 3.34
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.031792,
+      "increase_win_rate_pct": 3.18
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.028684,
+      "increase_win_rate_pct": 2.87
+    }
+  ],
+  "127": [
+    {
+      "heroid": 106,
+      "name": "Phoveus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_06/100_af21c0dd8b5308c27974bff900803a9a.png",
+      "increase_win_rate": 0.020232,
+      "increase_win_rate_pct": 2.02
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.019811,
+      "increase_win_rate_pct": 1.98
+    },
+    {
+      "heroid": 22,
+      "name": "Freya",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_b9c34c88762ca8e66ccd4d84071bf0bc.png",
+      "increase_win_rate": 0.01916,
+      "increase_win_rate_pct": 1.92
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.014853,
+      "increase_win_rate_pct": 1.49
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.014625,
+      "increase_win_rate_pct": 1.46
+    }
+  ],
+  "48": [
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.142582,
+      "increase_win_rate_pct": 14.26
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.078391,
+      "increase_win_rate_pct": 7.84
+    },
+    {
+      "heroid": 105,
+      "name": "Beatrix",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4687eca874feec9017b448a0b9110d65.png",
+      "increase_win_rate": 0.047097,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 107,
+      "name": "Natan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+      "increase_win_rate": 0.046746,
+      "increase_win_rate_pct": 4.67
+    },
+    {
+      "heroid": 117,
+      "name": "Fredrinn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+      "increase_win_rate": 0.039766,
+      "increase_win_rate_pct": 3.98
+    }
+  ],
+  "12": [
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.017531,
+      "increase_win_rate_pct": 1.75
+    },
+    {
+      "heroid": 17,
+      "name": "Fanny",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3391df36d6dcc54dd1c417098e15ec59.png",
+      "increase_win_rate": 0.013825,
+      "increase_win_rate_pct": 1.38
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.012916,
+      "increase_win_rate_pct": 1.29
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.0106,
+      "increase_win_rate_pct": 1.06
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.009816,
+      "increase_win_rate_pct": 0.98
+    }
+  ],
+  "92": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.053724,
+      "increase_win_rate_pct": 5.37
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.039869,
+      "increase_win_rate_pct": 3.99
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.039284,
+      "increase_win_rate_pct": 3.93
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.037043,
+      "increase_win_rate_pct": 3.7
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.036656,
+      "increase_win_rate_pct": 3.67
+    }
+  ],
+  "130": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.032557,
+      "increase_win_rate_pct": 3.26
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.009602,
+      "increase_win_rate_pct": 0.96
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.008215,
+      "increase_win_rate_pct": 0.82
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.007951,
+      "increase_win_rate_pct": 0.8
+    },
+    {
+      "heroid": 52,
+      "name": "Pharsa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+      "increase_win_rate": 0.007573,
+      "increase_win_rate_pct": 0.76
+    }
+  ],
+  "84": [
+    {
+      "heroid": 67,
+      "name": "Leomord",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_554cdf13a7587fe08c5deed60132c61c.png",
+      "increase_win_rate": 0.023652,
+      "increase_win_rate_pct": 2.37
+    },
+    {
+      "heroid": 85,
+      "name": "Dyrroth",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_8ec13b59871b2862d773beac2d69fa3e.png",
+      "increase_win_rate": 0.014436,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.013545,
+      "increase_win_rate_pct": 1.35
+    },
+    {
+      "heroid": 46,
+      "name": "Odette",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+      "increase_win_rate": 0.011693,
+      "increase_win_rate_pct": 1.17
+    },
+    {
+      "heroid": 52,
+      "name": "Pharsa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+      "increase_win_rate": 0.009964,
+      "increase_win_rate_pct": 1.0
+    }
+  ],
+  "94": [
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.035906,
+      "increase_win_rate_pct": 3.59
+    },
+    {
+      "heroid": 18,
+      "name": "Layla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b2b38e9406ea0de0b866db7674feea0f.png",
+      "increase_win_rate": 0.035879,
+      "increase_win_rate_pct": 3.59
+    },
+    {
+      "heroid": 100,
+      "name": "Brody",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f18e45a9a4cb45897e1f614593ff4497.png",
+      "increase_win_rate": 0.029268,
+      "increase_win_rate_pct": 2.93
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.028151,
+      "increase_win_rate_pct": 2.82
+    },
+    {
+      "heroid": 13,
+      "name": "Clint",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a8345c69a4c9c611fdfce91089fe74a.png",
+      "increase_win_rate": 0.027054,
+      "increase_win_rate_pct": 2.71
+    }
+  ],
+  "34": [
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.051492,
+      "increase_win_rate_pct": 5.15
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.042094,
+      "increase_win_rate_pct": 4.21
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.032067,
+      "increase_win_rate_pct": 3.21
+    },
+    {
+      "heroid": 71,
+      "name": "Kimmy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_61295dfefd369004e5e4a7f4fc86647b.png",
+      "increase_win_rate": 0.030733,
+      "increase_win_rate_pct": 3.07
+    },
+    {
+      "heroid": 74,
+      "name": "Minsitthar",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+      "increase_win_rate": 0.029586,
+      "increase_win_rate_pct": 2.96
+    }
+  ],
+  "97": [
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.024111,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.022258,
+      "increase_win_rate_pct": 2.23
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.021772,
+      "increase_win_rate_pct": 2.18
+    },
+    {
+      "heroid": 116,
+      "name": "Julian",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5511ddc0ad2789b525f32ef572b017eb.png",
+      "increase_win_rate": 0.0174,
+      "increase_win_rate_pct": 1.74
+    },
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.017178,
+      "increase_win_rate_pct": 1.72
+    }
+  ],
+  "111": [
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.028705,
+      "increase_win_rate_pct": 2.87
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.028439,
+      "increase_win_rate_pct": 2.84
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.025901,
+      "increase_win_rate_pct": 2.59
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.023,
+      "increase_win_rate_pct": 2.3
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.018722,
+      "increase_win_rate_pct": 1.87
+    }
+  ],
+  "23": [
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.015836,
+      "increase_win_rate_pct": 1.58
+    },
+    {
+      "heroid": 33,
+      "name": "Cyclops",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+      "increase_win_rate": 0.015737,
+      "increase_win_rate_pct": 1.57
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.014192,
+      "increase_win_rate_pct": 1.42
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.012718,
+      "increase_win_rate_pct": 1.27
+    },
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.011415,
+      "increase_win_rate_pct": 1.14
+    }
+  ],
+  "57": [
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.03444,
+      "increase_win_rate_pct": 3.44
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.013968,
+      "increase_win_rate_pct": 1.4
+    },
+    {
+      "heroid": 69,
+      "name": "Hanzo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d2d28d2fcb060726fa27553920ca1a33.png",
+      "increase_win_rate": 0.013269,
+      "increase_win_rate_pct": 1.33
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.012366,
+      "increase_win_rate_pct": 1.24
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.011007,
+      "increase_win_rate_pct": 1.1
+    }
+  ],
+  "70": [
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.027707,
+      "increase_win_rate_pct": 2.77
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.025984,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.025127,
+      "increase_win_rate_pct": 2.51
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.020272,
+      "increase_win_rate_pct": 2.03
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.018206,
+      "increase_win_rate_pct": 1.82
+    }
+  ],
+  "101": [
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.047136,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 57,
+      "name": "Valir",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bf16690876761b80822df90eb3320d69.png",
+      "increase_win_rate": 0.03444,
+      "increase_win_rate_pct": 3.44
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.02375,
+      "increase_win_rate_pct": 2.38
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.021114,
+      "increase_win_rate_pct": 2.11
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.020846,
+      "increase_win_rate_pct": 2.08
+    }
+  ],
+  "25": [
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.092972,
+      "increase_win_rate_pct": 9.3
+    },
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.031664,
+      "increase_win_rate_pct": 3.17
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.016224,
+      "increase_win_rate_pct": 1.62
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.015489,
+      "increase_win_rate_pct": 1.55
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.012078,
+      "increase_win_rate_pct": 1.21
+    }
+  ],
+  "43": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.02537,
+      "increase_win_rate_pct": 2.54
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.023285,
+      "increase_win_rate_pct": 2.33
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.012994,
+      "increase_win_rate_pct": 1.3
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.012544,
+      "increase_win_rate_pct": 1.25
+    },
+    {
+      "heroid": 58,
+      "name": "Martis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cc8124b0eb6ca22d950b000744d69fbf.png",
+      "increase_win_rate": 0.011314,
+      "increase_win_rate_pct": 1.13
+    }
+  ],
+  "27": [
+    {
+      "heroid": 2,
+      "name": "Balmond",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_df9a6990b1946d045e4d3a46c90725cf.png",
+      "increase_win_rate": 0.022896,
+      "increase_win_rate_pct": 2.29
+    },
+    {
+      "heroid": 54,
+      "name": "Jawhead",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+      "increase_win_rate": 0.022215,
+      "increase_win_rate_pct": 2.22
+    },
+    {
+      "heroid": 82,
+      "name": "Terizla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c4bb270c28c7be663f57e993b0d6d3d8.png",
+      "increase_win_rate": 0.021801,
+      "increase_win_rate_pct": 2.18
+    },
+    {
+      "heroid": 85,
+      "name": "Dyrroth",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_8ec13b59871b2862d773beac2d69fa3e.png",
+      "increase_win_rate": 0.021411,
+      "increase_win_rate_pct": 2.14
+    },
+    {
+      "heroid": 10,
+      "name": "Franco",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2928027062e3c2a97bc3fd4a84897012.png",
+      "increase_win_rate": 0.01954,
+      "increase_win_rate_pct": 1.95
+    }
+  ],
+  "93": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.066403,
+      "increase_win_rate_pct": 6.64
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.058012,
+      "increase_win_rate_pct": 5.8
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.051492,
+      "increase_win_rate_pct": 5.15
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.043919,
+      "increase_win_rate_pct": 4.39
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.037966,
+      "increase_win_rate_pct": 3.8
+    }
+  ],
+  "76": [
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.035987,
+      "increase_win_rate_pct": 3.6
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.033125,
+      "increase_win_rate_pct": 3.31
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.029109,
+      "increase_win_rate_pct": 2.91
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.028684,
+      "increase_win_rate_pct": 2.87
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.026808,
+      "increase_win_rate_pct": 2.68
+    }
+  ],
+  "50": [
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.025684,
+      "increase_win_rate_pct": 2.57
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.024129,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.01435,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.013493,
+      "increase_win_rate_pct": 1.35
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.01346,
+      "increase_win_rate_pct": 1.35
+    }
+  ],
+  "105": [
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.047619,
+      "increase_win_rate_pct": 4.76
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.047097,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.037876,
+      "increase_win_rate_pct": 3.79
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.02349,
+      "increase_win_rate_pct": 2.35
+    },
+    {
+      "heroid": 117,
+      "name": "Fredrinn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+      "increase_win_rate": 0.016948,
+      "increase_win_rate_pct": 1.69
+    }
+  ],
+  "99": [
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.01711,
+      "increase_win_rate_pct": 1.71
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.016667,
+      "increase_win_rate_pct": 1.67
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.016008,
+      "increase_win_rate_pct": 1.6
+    },
+    {
+      "heroid": 56,
+      "name": "Gusion",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c6cd232de60da5372a7101a203e56554.png",
+      "increase_win_rate": 0.015012,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.014701,
+      "increase_win_rate_pct": 1.47
+    }
+  ],
+  "60": [
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.023085,
+      "increase_win_rate_pct": 2.31
+    },
+    {
+      "heroid": 2,
+      "name": "Balmond",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_df9a6990b1946d045e4d3a46c90725cf.png",
+      "increase_win_rate": 0.019572,
+      "increase_win_rate_pct": 1.96
+    },
+    {
+      "heroid": 10,
+      "name": "Franco",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2928027062e3c2a97bc3fd4a84897012.png",
+      "increase_win_rate": 0.01948,
+      "increase_win_rate_pct": 1.95
+    },
+    {
+      "heroid": 54,
+      "name": "Jawhead",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+      "increase_win_rate": 0.015598,
+      "increase_win_rate_pct": 1.56
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.015246,
+      "increase_win_rate_pct": 1.52
+    }
+  ],
+  "13": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.055474,
+      "increase_win_rate_pct": 5.55
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.027054,
+      "increase_win_rate_pct": 2.71
+    },
+    {
+      "heroid": 39,
+      "name": "Roger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+      "increase_win_rate": 0.017354,
+      "increase_win_rate_pct": 1.74
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.012045,
+      "increase_win_rate_pct": 1.2
+    },
+    {
+      "heroid": 71,
+      "name": "Kimmy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_61295dfefd369004e5e4a7f4fc86647b.png",
+      "increase_win_rate": 0.012041,
+      "increase_win_rate_pct": 1.2
+    }
+  ],
+  "80": [
+    {
+      "heroid": 37,
+      "name": "Lapu-Lapu",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28036c4584c914c5aad4d2feeafb2452.png",
+      "increase_win_rate": 0.025519,
+      "increase_win_rate_pct": 2.55
+    },
+    {
+      "heroid": 106,
+      "name": "Phoveus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_06/100_af21c0dd8b5308c27974bff900803a9a.png",
+      "increase_win_rate": 0.022685,
+      "increase_win_rate_pct": 2.27
+    },
+    {
+      "heroid": 83,
+      "name": "X.Borg",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efe9c7ed8d8f84f1bb0f88a3e08de5fc.png",
+      "increase_win_rate": 0.019843,
+      "increase_win_rate_pct": 1.98
+    },
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.018092,
+      "increase_win_rate_pct": 1.81
+    },
+    {
+      "heroid": 2,
+      "name": "Balmond",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_df9a6990b1946d045e4d3a46c90725cf.png",
+      "increase_win_rate": 0.016687,
+      "increase_win_rate_pct": 1.67
+    }
+  ],
+  "75": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.021326,
+      "increase_win_rate_pct": 2.13
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.020047,
+      "increase_win_rate_pct": 2.0
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.016259,
+      "increase_win_rate_pct": 1.63
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.011357,
+      "increase_win_rate_pct": 1.14
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.010908,
+      "increase_win_rate_pct": 1.09
+    }
+  ],
+  "117": [
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.039766,
+      "increase_win_rate_pct": 3.98
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.028981,
+      "increase_win_rate_pct": 2.9
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.023119,
+      "increase_win_rate_pct": 2.31
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.022349,
+      "increase_win_rate_pct": 2.23
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.022104,
+      "increase_win_rate_pct": 2.21
+    }
+  ],
+  "98": [
+    {
+      "heroid": 96,
+      "name": "Luo Yi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_103541726507f5ce102689f04fe215e8.png",
+      "increase_win_rate": 0.024397,
+      "increase_win_rate_pct": 2.44
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.020108,
+      "increase_win_rate_pct": 2.01
+    },
+    {
+      "heroid": 72,
+      "name": "Thamuz",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_b5ad55e408b68acf6a86e7ff76f5f569.png",
+      "increase_win_rate": 0.018954,
+      "increase_win_rate_pct": 1.9
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.018307,
+      "increase_win_rate_pct": 1.83
+    },
+    {
+      "heroid": 80,
+      "name": "Guinevere",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+      "increase_win_rate": 0.018092,
+      "increase_win_rate_pct": 1.81
+    }
+  ],
+  "107": [
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.046746,
+      "increase_win_rate_pct": 4.67
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.046468,
+      "increase_win_rate_pct": 4.65
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.027852,
+      "increase_win_rate_pct": 2.79
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.020371,
+      "increase_win_rate_pct": 2.04
+    },
+    {
+      "heroid": 117,
+      "name": "Fredrinn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+      "increase_win_rate": 0.0201,
+      "increase_win_rate_pct": 2.01
+    }
+  ],
+  "15": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.016351,
+      "increase_win_rate_pct": 1.64
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.014912,
+      "increase_win_rate_pct": 1.49
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.013241,
+      "increase_win_rate_pct": 1.32
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.012594,
+      "increase_win_rate_pct": 1.26
+    },
+    {
+      "heroid": 33,
+      "name": "Cyclops",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+      "increase_win_rate": 0.012228,
+      "increase_win_rate_pct": 1.22
+    }
+  ],
+  "11": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.031792,
+      "increase_win_rate_pct": 3.18
+    },
+    {
+      "heroid": 95,
+      "name": "Yu Zhong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_9823ce4fe5eb89c0082b24f6d5ea67f6.png",
+      "increase_win_rate": 0.025989,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 97,
+      "name": "Benedetta",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+      "increase_win_rate": 0.024111,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.023456,
+      "increase_win_rate_pct": 2.35
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.020551,
+      "increase_win_rate_pct": 2.06
+    }
+  ],
+  "129": [
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.019331,
+      "increase_win_rate_pct": 1.93
+    },
+    {
+      "heroid": 33,
+      "name": "Cyclops",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+      "increase_win_rate": 0.016224,
+      "increase_win_rate_pct": 1.62
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.01353,
+      "increase_win_rate_pct": 1.35
+    },
+    {
+      "heroid": 8,
+      "name": "Karina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f49394186dc0e55d545da8377be83280.png",
+      "increase_win_rate": 0.009512,
+      "increase_win_rate_pct": 0.95
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.009117,
+      "increase_win_rate_pct": 0.91
+    }
+  ],
+  "64": [
+    {
+      "heroid": 83,
+      "name": "X.Borg",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efe9c7ed8d8f84f1bb0f88a3e08de5fc.png",
+      "increase_win_rate": 0.024366,
+      "increase_win_rate_pct": 2.44
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.022972,
+      "increase_win_rate_pct": 2.3
+    },
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.021753,
+      "increase_win_rate_pct": 2.18
+    },
+    {
+      "heroid": 104,
+      "name": "Gloo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_c472fe0233e5ef84a3ac9ba4a229d09f.png",
+      "increase_win_rate": 0.020333,
+      "increase_win_rate_pct": 2.03
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.018388,
+      "increase_win_rate_pct": 1.84
+    }
+  ],
+  "74": [
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.03187,
+      "increase_win_rate_pct": 3.19
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.029586,
+      "increase_win_rate_pct": 2.96
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.026296,
+      "increase_win_rate_pct": 2.63
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.021458,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 49,
+      "name": "Hylos",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_195ad9af866afaab415ae23a6be13b45.png",
+      "increase_win_rate": 0.017789,
+      "increase_win_rate_pct": 1.78
+    }
+  ],
+  "33": [
+    {
+      "heroid": 9,
+      "name": "Akai",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+      "increase_win_rate": 0.022405,
+      "increase_win_rate_pct": 2.24
+    },
+    {
+      "heroid": 129,
+      "name": "Zetian",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_90/100_8d965f05f84621a51f799aeb8fb5f4c4.png",
+      "increase_win_rate": 0.016224,
+      "increase_win_rate_pct": 1.62
+    },
+    {
+      "heroid": 23,
+      "name": "Gord",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_9513f5e10ec33f76747732eaf2082259.png",
+      "increase_win_rate": 0.015737,
+      "increase_win_rate_pct": 1.57
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.014098,
+      "increase_win_rate_pct": 1.41
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.013685,
+      "increase_win_rate_pct": 1.37
+    }
+  ],
+  "24": [
+    {
+      "heroid": 9,
+      "name": "Akai",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+      "increase_win_rate": 0.044348,
+      "increase_win_rate_pct": 4.43
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.03995,
+      "increase_win_rate_pct": 4.0
+    },
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.038582,
+      "increase_win_rate_pct": 3.86
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.036416,
+      "increase_win_rate_pct": 3.64
+    },
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.033986,
+      "increase_win_rate_pct": 3.4
+    }
+  ],
+  "31": [
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.019322,
+      "increase_win_rate_pct": 1.93
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.016815,
+      "increase_win_rate_pct": 1.68
+    },
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.0158,
+      "increase_win_rate_pct": 1.58
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.014017,
+      "increase_win_rate_pct": 1.4
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.012892,
+      "increase_win_rate_pct": 1.29
+    }
+  ],
+  "91": [
+    {
+      "heroid": 89,
+      "name": "Wanwan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_44bfa1dc44deb8d7620605faaa9ffae7.png",
+      "increase_win_rate": 0.014977,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.014837,
+      "increase_win_rate_pct": 1.48
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.014373,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.011936,
+      "increase_win_rate_pct": 1.19
+    },
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.011643,
+      "increase_win_rate_pct": 1.16
+    }
+  ],
+  "103": [
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.012522,
+      "increase_win_rate_pct": 1.25
+    },
+    {
+      "heroid": 72,
+      "name": "Thamuz",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_b5ad55e408b68acf6a86e7ff76f5f569.png",
+      "increase_win_rate": 0.007905,
+      "increase_win_rate_pct": 0.79
+    },
+    {
+      "heroid": 71,
+      "name": "Kimmy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_61295dfefd369004e5e4a7f4fc86647b.png",
+      "increase_win_rate": 0.007843,
+      "increase_win_rate_pct": 0.78
+    },
+    {
+      "heroid": 107,
+      "name": "Natan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+      "increase_win_rate": 0.007474,
+      "increase_win_rate_pct": 0.75
+    },
+    {
+      "heroid": 22,
+      "name": "Freya",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_b9c34c88762ca8e66ccd4d84071bf0bc.png",
+      "increase_win_rate": 0.006206,
+      "increase_win_rate_pct": 0.62
+    }
+  ],
+  "67": [
+    {
+      "heroid": 84,
+      "name": "Ling",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_017bade52b9fc94bbc12615de6d75c08.png",
+      "increase_win_rate": 0.023652,
+      "increase_win_rate_pct": 2.37
+    },
+    {
+      "heroid": 58,
+      "name": "Martis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cc8124b0eb6ca22d950b000744d69fbf.png",
+      "increase_win_rate": 0.019144,
+      "increase_win_rate_pct": 1.91
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.014424,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 113,
+      "name": "Yin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_ee1c12c84f49514a30e405fb5c617796.png",
+      "increase_win_rate": 0.011631,
+      "increase_win_rate_pct": 1.16
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.01045,
+      "increase_win_rate_pct": 1.04
+    }
+  ],
+  "30": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.014045,
+      "increase_win_rate_pct": 1.4
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.011981,
+      "increase_win_rate_pct": 1.2
+    },
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.011711,
+      "increase_win_rate_pct": 1.17
+    },
+    {
+      "heroid": 22,
+      "name": "Freya",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_b9c34c88762ca8e66ccd4d84071bf0bc.png",
+      "increase_win_rate": 0.011705,
+      "increase_win_rate_pct": 1.17
+    },
+    {
+      "heroid": 113,
+      "name": "Yin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_ee1c12c84f49514a30e405fb5c617796.png",
+      "increase_win_rate": 0.010905,
+      "increase_win_rate_pct": 1.09
+    }
+  ],
+  "82": [
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.021801,
+      "increase_win_rate_pct": 2.18
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.021475,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.02013,
+      "increase_win_rate_pct": 2.01
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.01921,
+      "increase_win_rate_pct": 1.92
+    },
+    {
+      "heroid": 96,
+      "name": "Luo Yi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_103541726507f5ce102689f04fe215e8.png",
+      "increase_win_rate": 0.018883,
+      "increase_win_rate_pct": 1.89
+    }
+  ],
+  "100": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.029374,
+      "increase_win_rate_pct": 2.94
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.029268,
+      "increase_win_rate_pct": 2.93
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.016693,
+      "increase_win_rate_pct": 1.67
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.010379,
+      "increase_win_rate_pct": 1.04
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.01031,
+      "increase_win_rate_pct": 1.03
+    }
+  ],
+  "4": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.026697,
+      "increase_win_rate_pct": 2.67
+    },
+    {
+      "heroid": 45,
+      "name": "Argus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0bd96658e5b8ec578226ea1622bd7231.png",
+      "increase_win_rate": 0.026513,
+      "increase_win_rate_pct": 2.65
+    },
+    {
+      "heroid": 123,
+      "name": "Cici",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_60e3e11da30f404c77fff9e22d3bdc72.png",
+      "increase_win_rate": 0.026165,
+      "increase_win_rate_pct": 2.62
+    },
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.021753,
+      "increase_win_rate_pct": 2.18
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.019503,
+      "increase_win_rate_pct": 1.95
+    }
+  ],
+  "62": [
+    {
+      "heroid": 36,
+      "name": "Aurora",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f9b2be0150361018bb98f941b9667c42.png",
+      "increase_win_rate": 0.039892,
+      "increase_win_rate_pct": 3.99
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.037043,
+      "increase_win_rate_pct": 3.7
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.034717,
+      "increase_win_rate_pct": 3.47
+    },
+    {
+      "heroid": 46,
+      "name": "Odette",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+      "increase_win_rate": 0.030615,
+      "increase_win_rate_pct": 3.06
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.030574,
+      "increase_win_rate_pct": 3.06
+    }
+  ],
+  "90": [
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.02953,
+      "increase_win_rate_pct": 2.95
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.026636,
+      "increase_win_rate_pct": 2.66
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.023788,
+      "increase_win_rate_pct": 2.38
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.023046,
+      "increase_win_rate_pct": 2.3
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.022428,
+      "increase_win_rate_pct": 2.24
+    }
+  ],
+  "77": [
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.018285,
+      "increase_win_rate_pct": 1.83
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.015787,
+      "increase_win_rate_pct": 1.58
+    },
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.013942,
+      "increase_win_rate_pct": 1.39
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.013591,
+      "increase_win_rate_pct": 1.36
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.013455,
+      "increase_win_rate_pct": 1.35
+    }
+  ],
+  "125": [
+    {
+      "heroid": 46,
+      "name": "Odette",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+      "increase_win_rate": 0.109692,
+      "increase_win_rate_pct": 10.97
+    },
+    {
+      "heroid": 96,
+      "name": "Luo Yi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_103541726507f5ce102689f04fe215e8.png",
+      "increase_win_rate": 0.099848,
+      "increase_win_rate_pct": 9.98
+    },
+    {
+      "heroid": 25,
+      "name": "Kagura",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da424b020b8ac8235d64a1b8a09aa749.png",
+      "increase_win_rate": 0.092972,
+      "increase_win_rate_pct": 9.3
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.072452,
+      "increase_win_rate_pct": 7.25
+    },
+    {
+      "heroid": 115,
+      "name": "Xavier",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_df0a8dfc494f85ed9bbc4512cc1e5d3c.png",
+      "increase_win_rate": 0.05136,
+      "increase_win_rate_pct": 5.14
+    }
+  ],
+  "119": [
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.011243,
+      "increase_win_rate_pct": 1.12
+    },
+    {
+      "heroid": 33,
+      "name": "Cyclops",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+      "increase_win_rate": 0.010936,
+      "increase_win_rate_pct": 1.09
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.00845,
+      "increase_win_rate_pct": 0.84
+    },
+    {
+      "heroid": 111,
+      "name": "Edith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_daab57918de01a6d5bb2ed6f45808a7e.png",
+      "increase_win_rate": 0.00829,
+      "increase_win_rate_pct": 0.83
+    },
+    {
+      "heroid": 10,
+      "name": "Franco",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2928027062e3c2a97bc3fd4a84897012.png",
+      "increase_win_rate": 0.007931,
+      "increase_win_rate_pct": 0.79
+    }
+  ],
+  "115": [
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.05136,
+      "increase_win_rate_pct": 5.14
+    },
+    {
+      "heroid": 89,
+      "name": "Wanwan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_44bfa1dc44deb8d7620605faaa9ffae7.png",
+      "increase_win_rate": 0.02407,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.020321,
+      "increase_win_rate_pct": 2.03
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.018128,
+      "increase_win_rate_pct": 1.81
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.015874,
+      "increase_win_rate_pct": 1.59
+    }
+  ],
+  "116": [
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.021065,
+      "increase_win_rate_pct": 2.11
+    },
+    {
+      "heroid": 81,
+      "name": "Esmeralda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4661a64a2c6b724e7b67032fcbface27.png",
+      "increase_win_rate": 0.019313,
+      "increase_win_rate_pct": 1.93
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.018004,
+      "increase_win_rate_pct": 1.8
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.01798,
+      "increase_win_rate_pct": 1.8
+    },
+    {
+      "heroid": 97,
+      "name": "Benedetta",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+      "increase_win_rate": 0.0174,
+      "increase_win_rate_pct": 1.74
+    }
+  ],
+  "69": [
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.018855,
+      "increase_win_rate_pct": 1.89
+    },
+    {
+      "heroid": 85,
+      "name": "Dyrroth",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_8ec13b59871b2862d773beac2d69fa3e.png",
+      "increase_win_rate": 0.015283,
+      "increase_win_rate_pct": 1.53
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.014762,
+      "increase_win_rate_pct": 1.48
+    },
+    {
+      "heroid": 40,
+      "name": "Karrie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_294576f2bd0dcbcc9041031969d0eb09.png",
+      "increase_win_rate": 0.014725,
+      "increase_win_rate_pct": 1.47
+    },
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.014326,
+      "increase_win_rate_pct": 1.43
+    }
+  ],
+  "126": [
+    {
+      "heroid": 81,
+      "name": "Esmeralda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4661a64a2c6b724e7b67032fcbface27.png",
+      "increase_win_rate": 0.010523,
+      "increase_win_rate_pct": 1.05
+    },
+    {
+      "heroid": 99,
+      "name": "Barats",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6495be044c2d28106e200f6918391d54.png",
+      "increase_win_rate": 0.008343,
+      "increase_win_rate_pct": 0.83
+    },
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.008254,
+      "increase_win_rate_pct": 0.83
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.008118,
+      "increase_win_rate_pct": 0.81
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.007989,
+      "increase_win_rate_pct": 0.8
+    }
+  ],
+  "35": [
+    {
+      "heroid": 74,
+      "name": "Minsitthar",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+      "increase_win_rate": 0.03187,
+      "increase_win_rate_pct": 3.19
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.02953,
+      "increase_win_rate_pct": 2.95
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.023456,
+      "increase_win_rate_pct": 2.35
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.022527,
+      "increase_win_rate_pct": 2.25
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.02079,
+      "increase_win_rate_pct": 2.08
+    }
+  ],
+  "9": [
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.044348,
+      "increase_win_rate_pct": 4.43
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.039647,
+      "increase_win_rate_pct": 3.96
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.03629,
+      "increase_win_rate_pct": 3.63
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.022792,
+      "increase_win_rate_pct": 2.28
+    },
+    {
+      "heroid": 33,
+      "name": "Cyclops",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+      "increase_win_rate": 0.022405,
+      "increase_win_rate_pct": 2.24
+    }
+  ],
+  "59": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.034528,
+      "increase_win_rate_pct": 3.45
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.019357,
+      "increase_win_rate_pct": 1.94
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.015445,
+      "increase_win_rate_pct": 1.54
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.011037,
+      "increase_win_rate_pct": 1.1
+    },
+    {
+      "heroid": 96,
+      "name": "Luo Yi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_103541726507f5ce102689f04fe215e8.png",
+      "increase_win_rate": 0.010979,
+      "increase_win_rate_pct": 1.1
+    }
+  ],
+  "63": [
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.027014,
+      "increase_win_rate_pct": 2.7
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.020761,
+      "increase_win_rate_pct": 2.08
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.013213,
+      "increase_win_rate_pct": 1.32
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.012529,
+      "increase_win_rate_pct": 1.25
+    },
+    {
+      "heroid": 122,
+      "name": "Nolan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png",
+      "increase_win_rate": 0.010681,
+      "increase_win_rate_pct": 1.07
+    }
+  ],
+  "95": [
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.025989,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 72,
+      "name": "Thamuz",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_b5ad55e408b68acf6a86e7ff76f5f569.png",
+      "increase_win_rate": 0.020648,
+      "increase_win_rate_pct": 2.06
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.017077,
+      "increase_win_rate_pct": 1.71
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.016546,
+      "increase_win_rate_pct": 1.65
+    },
+    {
+      "heroid": 116,
+      "name": "Julian",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5511ddc0ad2789b525f32ef572b017eb.png",
+      "increase_win_rate": 0.013295,
+      "increase_win_rate_pct": 1.33
+    }
+  ],
+  "109": [
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.017907,
+      "increase_win_rate_pct": 1.79
+    },
+    {
+      "heroid": 89,
+      "name": "Wanwan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_44bfa1dc44deb8d7620605faaa9ffae7.png",
+      "increase_win_rate": 0.014918,
+      "increase_win_rate_pct": 1.49
+    },
+    {
+      "heroid": 54,
+      "name": "Jawhead",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+      "increase_win_rate": 0.013899,
+      "increase_win_rate_pct": 1.39
+    },
+    {
+      "heroid": 49,
+      "name": "Hylos",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_195ad9af866afaab415ae23a6be13b45.png",
+      "increase_win_rate": 0.01384,
+      "increase_win_rate_pct": 1.38
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.013366,
+      "increase_win_rate_pct": 1.34
+    }
+  ],
+  "86": [
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.023356,
+      "increase_win_rate_pct": 2.34
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.020795,
+      "increase_win_rate_pct": 2.08
+    },
+    {
+      "heroid": 69,
+      "name": "Hanzo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d2d28d2fcb060726fa27553920ca1a33.png",
+      "increase_win_rate": 0.012992,
+      "increase_win_rate_pct": 1.3
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.011596,
+      "increase_win_rate_pct": 1.16
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.010933,
+      "increase_win_rate_pct": 1.09
+    }
+  ],
+  "131": [
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.029371,
+      "increase_win_rate_pct": 2.94
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.026273,
+      "increase_win_rate_pct": 2.63
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.020357,
+      "increase_win_rate_pct": 2.04
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.019813,
+      "increase_win_rate_pct": 1.98
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.017323,
+      "increase_win_rate_pct": 1.73
+    }
+  ],
+  "121": [
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.078391,
+      "increase_win_rate_pct": 7.84
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.05872,
+      "increase_win_rate_pct": 5.87
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.053094,
+      "increase_win_rate_pct": 5.31
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.0237,
+      "increase_win_rate_pct": 2.37
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.023284,
+      "increase_win_rate_pct": 2.33
+    }
+  ],
+  "83": [
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.024366,
+      "increase_win_rate_pct": 2.44
+    },
+    {
+      "heroid": 40,
+      "name": "Karrie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_294576f2bd0dcbcc9041031969d0eb09.png",
+      "increase_win_rate": 0.023853,
+      "increase_win_rate_pct": 2.39
+    },
+    {
+      "heroid": 80,
+      "name": "Guinevere",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+      "increase_win_rate": 0.019843,
+      "increase_win_rate_pct": 1.98
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.019548,
+      "increase_win_rate_pct": 1.95
+    },
+    {
+      "heroid": 106,
+      "name": "Phoveus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_06/100_af21c0dd8b5308c27974bff900803a9a.png",
+      "increase_win_rate": 0.018235,
+      "increase_win_rate_pct": 1.82
+    }
+  ],
+  "29": [
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.022411,
+      "increase_win_rate_pct": 2.24
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.021585,
+      "increase_win_rate_pct": 2.16
+    },
+    {
+      "heroid": 72,
+      "name": "Thamuz",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_b5ad55e408b68acf6a86e7ff76f5f569.png",
+      "increase_win_rate": 0.021108,
+      "increase_win_rate_pct": 2.11
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.017399,
+      "increase_win_rate_pct": 1.74
+    },
+    {
+      "heroid": 46,
+      "name": "Odette",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+      "increase_win_rate": 0.013541,
+      "increase_win_rate_pct": 1.35
+    }
+  ],
+  "68": [
+    {
+      "heroid": 52,
+      "name": "Pharsa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+      "increase_win_rate": 0.04708,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.03909,
+      "increase_win_rate_pct": 3.91
+    },
+    {
+      "heroid": 25,
+      "name": "Kagura",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da424b020b8ac8235d64a1b8a09aa749.png",
+      "increase_win_rate": 0.031664,
+      "increase_win_rate_pct": 3.17
+    },
+    {
+      "heroid": 86,
+      "name": "Lylia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_706573f138055c3df3df94948b4f26bd.png",
+      "increase_win_rate": 0.023356,
+      "increase_win_rate_pct": 2.34
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.019945,
+      "increase_win_rate_pct": 1.99
+    }
+  ],
+  "123": [
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.026165,
+      "increase_win_rate_pct": 2.62
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.024031,
+      "increase_win_rate_pct": 2.4
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.020044,
+      "increase_win_rate_pct": 2.0
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.019088,
+      "increase_win_rate_pct": 1.91
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.017212,
+      "increase_win_rate_pct": 1.72
+    }
+  ],
+  "46": [
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.109692,
+      "increase_win_rate_pct": 10.97
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.052865,
+      "increase_win_rate_pct": 5.29
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.030615,
+      "increase_win_rate_pct": 3.06
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.018363,
+      "increase_win_rate_pct": 1.84
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.017838,
+      "increase_win_rate_pct": 1.78
+    }
+  ],
+  "66": [
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.020488,
+      "increase_win_rate_pct": 2.05
+    },
+    {
+      "heroid": 54,
+      "name": "Jawhead",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+      "increase_win_rate": 0.016031,
+      "increase_win_rate_pct": 1.6
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.015669,
+      "increase_win_rate_pct": 1.57
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.015105,
+      "increase_win_rate_pct": 1.51
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.014542,
+      "increase_win_rate_pct": 1.45
+    }
+  ],
+  "39": [
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.024376,
+      "increase_win_rate_pct": 2.44
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.022686,
+      "increase_win_rate_pct": 2.27
+    },
+    {
+      "heroid": 18,
+      "name": "Layla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b2b38e9406ea0de0b866db7674feea0f.png",
+      "increase_win_rate": 0.019383,
+      "increase_win_rate_pct": 1.94
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.017424,
+      "increase_win_rate_pct": 1.74
+    },
+    {
+      "heroid": 13,
+      "name": "Clint",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a8345c69a4c9c611fdfce91089fe74a.png",
+      "increase_win_rate": 0.017354,
+      "increase_win_rate_pct": 1.74
+    }
+  ],
+  "55": [
+    {
+      "heroid": 41,
+      "name": "Gatotkaca",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_96f9dbbc096e0f0a28f9b9e587d06a9c.png",
+      "increase_win_rate": 0.045077,
+      "increase_win_rate_pct": 4.51
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.043919,
+      "increase_win_rate_pct": 4.39
+    },
+    {
+      "heroid": 133,
+      "name": "Hero #133",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/test/homepage_2_2_16_1232_1/100_71224844b111f09367df00e4f9b97753.png",
+      "increase_win_rate": 0.041577,
+      "increase_win_rate_pct": 4.16
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.036656,
+      "increase_win_rate_pct": 3.67
+    },
+    {
+      "heroid": 9,
+      "name": "Akai",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+      "increase_win_rate": 0.03629,
+      "increase_win_rate_pct": 3.63
+    }
+  ],
+  "65": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.02644,
+      "increase_win_rate_pct": 2.64
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.017048,
+      "increase_win_rate_pct": 1.7
+    },
+    {
+      "heroid": 109,
+      "name": "Aamon",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.01247,
+      "increase_win_rate_pct": 1.25
+    },
+    {
+      "heroid": 8,
+      "name": "Karina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f49394186dc0e55d545da8377be83280.png",
+      "increase_win_rate": 0.011461,
+      "increase_win_rate_pct": 1.15
+    },
+    {
+      "heroid": 85,
+      "name": "Dyrroth",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_8ec13b59871b2862d773beac2d69fa3e.png",
+      "increase_win_rate": 0.009936,
+      "increase_win_rate_pct": 0.99
+    }
+  ],
+  "122": [
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.020865,
+      "increase_win_rate_pct": 2.09
+    },
+    {
+      "heroid": 88,
+      "name": "Masha",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c97a314dc260dfad1311512ddc03f936.png",
+      "increase_win_rate": 0.016963,
+      "increase_win_rate_pct": 1.7
+    },
+    {
+      "heroid": 81,
+      "name": "Esmeralda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4661a64a2c6b724e7b67032fcbface27.png",
+      "increase_win_rate": 0.012754,
+      "increase_win_rate_pct": 1.28
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.011042,
+      "increase_win_rate_pct": 1.1
+    },
+    {
+      "heroid": 63,
+      "name": "Selena",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c3f967121519ae40509c5b2fdf52b19d.png",
+      "increase_win_rate": 0.010681,
+      "increase_win_rate_pct": 1.07
+    }
+  ],
+  "37": [
+    {
+      "heroid": 80,
+      "name": "Guinevere",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+      "increase_win_rate": 0.025519,
+      "increase_win_rate_pct": 2.55
+    },
+    {
+      "heroid": 72,
+      "name": "Thamuz",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_b5ad55e408b68acf6a86e7ff76f5f569.png",
+      "increase_win_rate": 0.024959,
+      "increase_win_rate_pct": 2.5
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.020175,
+      "increase_win_rate_pct": 2.02
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.017286,
+      "increase_win_rate_pct": 1.73
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.016258,
+      "increase_win_rate_pct": 1.63
+    }
+  ],
+  "118": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.033403,
+      "increase_win_rate_pct": 3.34
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.033125,
+      "increase_win_rate_pct": 3.31
+    },
+    {
+      "heroid": 117,
+      "name": "Fredrinn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+      "increase_win_rate": 0.022104,
+      "increase_win_rate_pct": 2.21
+    },
+    {
+      "heroid": 74,
+      "name": "Minsitthar",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+      "increase_win_rate": 0.021458,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 52,
+      "name": "Pharsa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+      "increase_win_rate": 0.020287,
+      "increase_win_rate_pct": 2.03
+    }
+  ],
+  "1": [
+    {
+      "heroid": 104,
+      "name": "Gloo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_c472fe0233e5ef84a3ac9ba4a229d09f.png",
+      "increase_win_rate": 0.018629,
+      "increase_win_rate_pct": 1.86
+    },
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.016196,
+      "increase_win_rate_pct": 1.62
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.013084,
+      "increase_win_rate_pct": 1.31
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.010597,
+      "increase_win_rate_pct": 1.06
+    },
+    {
+      "heroid": 10,
+      "name": "Franco",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2928027062e3c2a97bc3fd4a84897012.png",
+      "increase_win_rate": 0.010545,
+      "increase_win_rate_pct": 1.05
+    }
+  ],
+  "38": [
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.01503,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.013613,
+      "increase_win_rate_pct": 1.36
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.012539,
+      "increase_win_rate_pct": 1.25
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.012166,
+      "increase_win_rate_pct": 1.22
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.010612,
+      "increase_win_rate_pct": 1.06
+    }
+  ],
+  "114": [
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.015941,
+      "increase_win_rate_pct": 1.59
+    },
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.015595,
+      "increase_win_rate_pct": 1.56
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.01153,
+      "increase_win_rate_pct": 1.15
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.010722,
+      "increase_win_rate_pct": 1.07
+    },
+    {
+      "heroid": 25,
+      "name": "Kagura",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da424b020b8ac8235d64a1b8a09aa749.png",
+      "increase_win_rate": 0.010673,
+      "increase_win_rate_pct": 1.07
+    }
+  ],
+  "89": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.024773,
+      "increase_win_rate_pct": 2.48
+    },
+    {
+      "heroid": 115,
+      "name": "Xavier",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_df0a8dfc494f85ed9bbc4512cc1e5d3c.png",
+      "increase_win_rate": 0.02407,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.023549,
+      "increase_win_rate_pct": 2.35
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.019976,
+      "increase_win_rate_pct": 2.0
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.01971,
+      "increase_win_rate_pct": 1.97
+    }
+  ],
+  "71": [
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.034875,
+      "increase_win_rate_pct": 3.49
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.030733,
+      "increase_win_rate_pct": 3.07
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.016504,
+      "increase_win_rate_pct": 1.65
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.014235,
+      "increase_win_rate_pct": 1.42
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.012963,
+      "increase_win_rate_pct": 1.3
+    }
+  ],
+  "3": [
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.043056,
+      "increase_win_rate_pct": 4.31
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.032067,
+      "increase_win_rate_pct": 3.21
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.027912,
+      "increase_win_rate_pct": 2.79
+    },
+    {
+      "heroid": 19,
+      "name": "Minotaur",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3ecd2c0843df7ec85044dafff6bf4553.png",
+      "increase_win_rate": 0.027727,
+      "increase_win_rate_pct": 2.77
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.026888,
+      "increase_win_rate_pct": 2.69
+    }
+  ],
+  "21": [
+    {
+      "heroid": 81,
+      "name": "Esmeralda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4661a64a2c6b724e7b67032fcbface27.png",
+      "increase_win_rate": 0.014488,
+      "increase_win_rate_pct": 1.45
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.014436,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 111,
+      "name": "Edith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_daab57918de01a6d5bb2ed6f45808a7e.png",
+      "increase_win_rate": 0.013453,
+      "increase_win_rate_pct": 1.35
+    },
+    {
+      "heroid": 9,
+      "name": "Akai",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+      "increase_win_rate": 0.01031,
+      "increase_win_rate_pct": 1.03
+    },
+    {
+      "heroid": 107,
+      "name": "Natan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+      "increase_win_rate": 0.010012,
+      "increase_win_rate_pct": 1.0
+    }
+  ],
+  "40": [
+    {
+      "heroid": 83,
+      "name": "X.Borg",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efe9c7ed8d8f84f1bb0f88a3e08de5fc.png",
+      "increase_win_rate": 0.023853,
+      "increase_win_rate_pct": 2.39
+    },
+    {
+      "heroid": 4,
+      "name": "Alice",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_18300163a5a912a84adb52b8d59b4618.png",
+      "increase_win_rate": 0.016496,
+      "increase_win_rate_pct": 1.65
+    },
+    {
+      "heroid": 52,
+      "name": "Pharsa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+      "increase_win_rate": 0.014985,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.014883,
+      "increase_win_rate_pct": 1.49
+    },
+    {
+      "heroid": 69,
+      "name": "Hanzo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d2d28d2fcb060726fa27553920ca1a33.png",
+      "increase_win_rate": 0.014725,
+      "increase_win_rate_pct": 1.47
+    }
+  ],
+  "56": [
+    {
+      "heroid": 99,
+      "name": "Barats",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6495be044c2d28106e200f6918391d54.png",
+      "increase_win_rate": 0.015012,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.014401,
+      "increase_win_rate_pct": 1.44
+    },
+    {
+      "heroid": 9,
+      "name": "Akai",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+      "increase_win_rate": 0.012981,
+      "increase_win_rate_pct": 1.3
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.012556,
+      "increase_win_rate_pct": 1.26
+    },
+    {
+      "heroid": 105,
+      "name": "Beatrix",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4687eca874feec9017b448a0b9110d65.png",
+      "increase_win_rate": 0.011606,
+      "increase_win_rate_pct": 1.16
+    }
+  ],
+  "49": [
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.027489,
+      "increase_win_rate_pct": 2.75
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.025995,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 51,
+      "name": "Helcurt",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+      "increase_win_rate": 0.025379,
+      "increase_win_rate_pct": 2.54
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.023862,
+      "increase_win_rate_pct": 2.39
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.021931,
+      "increase_win_rate_pct": 2.19
+    }
+  ],
+  "7": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.026011,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.023412,
+      "increase_win_rate_pct": 2.34
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.023218,
+      "increase_win_rate_pct": 2.32
+    },
+    {
+      "heroid": 97,
+      "name": "Benedetta",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+      "increase_win_rate": 0.022258,
+      "increase_win_rate_pct": 2.23
+    },
+    {
+      "heroid": 37,
+      "name": "Lapu-Lapu",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28036c4584c914c5aad4d2feeafb2452.png",
+      "increase_win_rate": 0.020175,
+      "increase_win_rate_pct": 2.02
+    }
+  ],
+  "53": [
+    {
+      "heroid": 73,
+      "name": "Harith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+      "increase_win_rate": 0.038731,
+      "increase_win_rate_pct": 3.87
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.035906,
+      "increase_win_rate_pct": 3.59
+    },
+    {
+      "heroid": 39,
+      "name": "Roger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+      "increase_win_rate": 0.017424,
+      "increase_win_rate_pct": 1.74
+    },
+    {
+      "heroid": 71,
+      "name": "Kimmy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_61295dfefd369004e5e4a7f4fc86647b.png",
+      "increase_win_rate": 0.014235,
+      "increase_win_rate_pct": 1.42
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.013369,
+      "increase_win_rate_pct": 1.34
+    }
+  ],
+  "18": [
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.035879,
+      "increase_win_rate_pct": 3.59
+    },
+    {
+      "heroid": 39,
+      "name": "Roger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+      "increase_win_rate": 0.019383,
+      "increase_win_rate_pct": 1.94
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.017803,
+      "increase_win_rate_pct": 1.78
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.017277,
+      "increase_win_rate_pct": 1.73
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.015873,
+      "increase_win_rate_pct": 1.59
+    }
+  ],
+  "120": [
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.063908,
+      "increase_win_rate_pct": 6.39
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.025343,
+      "increase_win_rate_pct": 2.53
+    },
+    {
+      "heroid": 117,
+      "name": "Fredrinn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+      "increase_win_rate": 0.023119,
+      "increase_win_rate_pct": 2.31
+    },
+    {
+      "heroid": 19,
+      "name": "Minotaur",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3ecd2c0843df7ec85044dafff6bf4553.png",
+      "increase_win_rate": 0.01924,
+      "increase_win_rate_pct": 1.92
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.016702,
+      "increase_win_rate_pct": 1.67
+    }
+  ],
+  "36": [
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.039892,
+      "increase_win_rate_pct": 3.99
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.011793,
+      "increase_win_rate_pct": 1.18
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.009399,
+      "increase_win_rate_pct": 0.94
+    },
+    {
+      "heroid": 123,
+      "name": "Cici",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_60e3e11da30f404c77fff9e22d3bdc72.png",
+      "increase_win_rate": 0.009128,
+      "increase_win_rate_pct": 0.91
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.008739,
+      "increase_win_rate_pct": 0.87
+    }
+  ],
+  "113": [
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.020122,
+      "increase_win_rate_pct": 2.01
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.019115,
+      "increase_win_rate_pct": 1.91
+    },
+    {
+      "heroid": 7,
+      "name": "Alucard",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+      "increase_win_rate": 0.017294,
+      "increase_win_rate_pct": 1.73
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.015757,
+      "increase_win_rate_pct": 1.58
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.015462,
+      "increase_win_rate_pct": 1.55
+    }
+  ],
+  "72": [
+    {
+      "heroid": 37,
+      "name": "Lapu-Lapu",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28036c4584c914c5aad4d2feeafb2452.png",
+      "increase_win_rate": 0.024959,
+      "increase_win_rate_pct": 2.5
+    },
+    {
+      "heroid": 29,
+      "name": "Ruby",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4b96c75b136290576d849309722d4d20.png",
+      "increase_win_rate": 0.021108,
+      "increase_win_rate_pct": 2.11
+    },
+    {
+      "heroid": 95,
+      "name": "Yu Zhong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_9823ce4fe5eb89c0082b24f6d5ea67f6.png",
+      "increase_win_rate": 0.020648,
+      "increase_win_rate_pct": 2.06
+    },
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.018954,
+      "increase_win_rate_pct": 1.9
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.017798,
+      "increase_win_rate_pct": 1.78
+    }
+  ],
+  "96": [
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.099848,
+      "increase_win_rate_pct": 9.98
+    },
+    {
+      "heroid": 98,
+      "name": "Khaleed",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+      "increase_win_rate": 0.024397,
+      "increase_win_rate_pct": 2.44
+    },
+    {
+      "heroid": 82,
+      "name": "Terizla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c4bb270c28c7be663f57e993b0d6d3d8.png",
+      "increase_win_rate": 0.018883,
+      "increase_win_rate_pct": 1.89
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.015261,
+      "increase_win_rate_pct": 1.53
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.01497,
+      "increase_win_rate_pct": 1.5
+    }
+  ],
+  "61": [
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.024577,
+      "increase_win_rate_pct": 2.46
+    },
+    {
+      "heroid": 42,
+      "name": "Harley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+      "increase_win_rate": 0.019001,
+      "increase_win_rate_pct": 1.9
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.018512,
+      "increase_win_rate_pct": 1.85
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.016302,
+      "increase_win_rate_pct": 1.63
+    },
+    {
+      "heroid": 54,
+      "name": "Jawhead",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+      "increase_win_rate": 0.015979,
+      "increase_win_rate_pct": 1.6
+    }
+  ],
+  "81": [
+    {
+      "heroid": 116,
+      "name": "Julian",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5511ddc0ad2789b525f32ef572b017eb.png",
+      "increase_win_rate": 0.019313,
+      "increase_win_rate_pct": 1.93
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.018889,
+      "increase_win_rate_pct": 1.89
+    },
+    {
+      "heroid": 21,
+      "name": "Hayabusa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9cc074562291a02644a0ddae28eeaa42.png",
+      "increase_win_rate": 0.014488,
+      "increase_win_rate_pct": 1.45
+    },
+    {
+      "heroid": 122,
+      "name": "Nolan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png",
+      "increase_win_rate": 0.012754,
+      "increase_win_rate_pct": 1.28
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.011262,
+      "increase_win_rate_pct": 1.13
+    }
+  ],
+  "106": [
+    {
+      "heroid": 80,
+      "name": "Guinevere",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+      "increase_win_rate": 0.022685,
+      "increase_win_rate_pct": 2.27
+    },
+    {
+      "heroid": 127,
+      "name": "Lukas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_63040edd0cf15b815fcbbb8b2d08d7f7.png",
+      "increase_win_rate": 0.020232,
+      "increase_win_rate_pct": 2.02
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.019423,
+      "increase_win_rate_pct": 1.94
+    },
+    {
+      "heroid": 83,
+      "name": "X.Borg",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efe9c7ed8d8f84f1bb0f88a3e08de5fc.png",
+      "increase_win_rate": 0.018235,
+      "increase_win_rate_pct": 1.82
+    },
+    {
+      "heroid": 116,
+      "name": "Julian",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5511ddc0ad2789b525f32ef572b017eb.png",
+      "increase_win_rate": 0.0163,
+      "increase_win_rate_pct": 1.63
+    }
+  ],
+  "8": [
+    {
+      "heroid": 74,
+      "name": "Minsitthar",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+      "increase_win_rate": 0.015874,
+      "increase_win_rate_pct": 1.59
+    },
+    {
+      "heroid": 97,
+      "name": "Benedetta",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+      "increase_win_rate": 0.015718,
+      "increase_win_rate_pct": 1.57
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.015329,
+      "increase_win_rate_pct": 1.53
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.013735,
+      "increase_win_rate_pct": 1.37
+    },
+    {
+      "heroid": 89,
+      "name": "Wanwan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_44bfa1dc44deb8d7620605faaa9ffae7.png",
+      "increase_win_rate": 0.012487,
+      "increase_win_rate_pct": 1.25
+    }
+  ],
+  "32": [
+    {
+      "heroid": 50,
+      "name": "Zhask",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d8f170087cb2d5b71bb22a0a4664a927.png",
+      "increase_win_rate": 0.025684,
+      "increase_win_rate_pct": 2.57
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.025676,
+      "increase_win_rate_pct": 2.57
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.022428,
+      "increase_win_rate_pct": 2.24
+    },
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.022391,
+      "increase_win_rate_pct": 2.24
+    },
+    {
+      "heroid": 113,
+      "name": "Yin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_ee1c12c84f49514a30e405fb5c617796.png",
+      "increase_win_rate": 0.020122,
+      "increase_win_rate_pct": 2.01
+    }
+  ],
+  "42": [
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.047136,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 50,
+      "name": "Zhask",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d8f170087cb2d5b71bb22a0a4664a927.png",
+      "increase_win_rate": 0.024129,
+      "increase_win_rate_pct": 2.41
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.022999,
+      "increase_win_rate_pct": 2.3
+    },
+    {
+      "heroid": 86,
+      "name": "Lylia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_706573f138055c3df3df94948b4f26bd.png",
+      "increase_win_rate": 0.020795,
+      "increase_win_rate_pct": 2.08
+    },
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.019945,
+      "increase_win_rate_pct": 1.99
+    }
+  ],
+  "44": [
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.035987,
+      "increase_win_rate_pct": 3.6
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.031995,
+      "increase_win_rate_pct": 3.2
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.025843,
+      "increase_win_rate_pct": 2.58
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.023788,
+      "increase_win_rate_pct": 2.38
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.021516,
+      "increase_win_rate_pct": 2.15
+    }
+  ],
+  "87": [
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.142582,
+      "increase_win_rate_pct": 14.26
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.093585,
+      "increase_win_rate_pct": 9.36
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.069034,
+      "increase_win_rate_pct": 6.9
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.05872,
+      "increase_win_rate_pct": 5.87
+    },
+    {
+      "heroid": 105,
+      "name": "Beatrix",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4687eca874feec9017b448a0b9110d65.png",
+      "increase_win_rate": 0.047619,
+      "increase_win_rate_pct": 4.76
+    }
+  ],
+  "22": [
+    {
+      "heroid": 124,
+      "name": "Chip",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+      "increase_win_rate": 0.040153,
+      "increase_win_rate_pct": 4.02
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.026751,
+      "increase_win_rate_pct": 2.68
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.026185,
+      "increase_win_rate_pct": 2.62
+    },
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.021483,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.020554,
+      "increase_win_rate_pct": 2.06
+    }
+  ],
+  "124": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.06906,
+      "increase_win_rate_pct": 6.91
+    },
+    {
+      "heroid": 120,
+      "name": "Arlott",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+      "increase_win_rate": 0.063908,
+      "increase_win_rate_pct": 6.39
+    },
+    {
+      "heroid": 46,
+      "name": "Odette",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+      "increase_win_rate": 0.052865,
+      "increase_win_rate_pct": 5.29
+    },
+    {
+      "heroid": 107,
+      "name": "Natan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+      "increase_win_rate": 0.046468,
+      "increase_win_rate_pct": 4.65
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.042094,
+      "increase_win_rate_pct": 4.21
+    }
+  ],
+  "52": [
+    {
+      "heroid": 68,
+      "name": "Lunox",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+      "increase_win_rate": 0.04708,
+      "increase_win_rate_pct": 4.71
+    },
+    {
+      "heroid": 132,
+      "name": "Marcel",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+      "increase_win_rate": 0.021528,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 118,
+      "name": "Joy",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+      "increase_win_rate": 0.020287,
+      "increase_win_rate_pct": 2.03
+    },
+    {
+      "heroid": 40,
+      "name": "Karrie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_294576f2bd0dcbcc9041031969d0eb09.png",
+      "increase_win_rate": 0.014985,
+      "increase_win_rate_pct": 1.5
+    },
+    {
+      "heroid": 39,
+      "name": "Roger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+      "increase_win_rate": 0.014192,
+      "increase_win_rate_pct": 1.42
+    }
+  ],
+  "73": [
+    {
+      "heroid": 13,
+      "name": "Clint",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a8345c69a4c9c611fdfce91089fe74a.png",
+      "increase_win_rate": 0.055474,
+      "increase_win_rate_pct": 5.55
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.053094,
+      "increase_win_rate_pct": 5.31
+    },
+    {
+      "heroid": 53,
+      "name": "Lesley",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+      "increase_win_rate": 0.038731,
+      "increase_win_rate_pct": 3.87
+    },
+    {
+      "heroid": 105,
+      "name": "Beatrix",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4687eca874feec9017b448a0b9110d65.png",
+      "increase_win_rate": 0.037876,
+      "increase_win_rate_pct": 3.79
+    },
+    {
+      "heroid": 130,
+      "name": "Obsidia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18/100_9c3daef5625bfade5c4cb8a219845dd3.png",
+      "increase_win_rate": 0.032557,
+      "increase_win_rate_pct": 3.26
+    }
+  ],
+  "28": [
+    {
+      "heroid": 64,
+      "name": "Aldous",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+      "increase_win_rate": 0.0173,
+      "increase_win_rate_pct": 1.73
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.017116,
+      "increase_win_rate_pct": 1.71
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.015594,
+      "increase_win_rate_pct": 1.56
+    },
+    {
+      "heroid": 41,
+      "name": "Gatotkaca",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_96f9dbbc096e0f0a28f9b9e587d06a9c.png",
+      "increase_win_rate": 0.015204,
+      "increase_win_rate_pct": 1.52
+    },
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.014443,
+      "increase_win_rate_pct": 1.44
+    }
+  ],
+  "85": [
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.021411,
+      "increase_win_rate_pct": 2.14
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.016544,
+      "increase_win_rate_pct": 1.65
+    },
+    {
+      "heroid": 70,
+      "name": "Belerick",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png",
+      "increase_win_rate": 0.015667,
+      "increase_win_rate_pct": 1.57
+    },
+    {
+      "heroid": 69,
+      "name": "Hanzo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d2d28d2fcb060726fa27553920ca1a33.png",
+      "increase_win_rate": 0.015283,
+      "increase_win_rate_pct": 1.53
+    },
+    {
+      "heroid": 84,
+      "name": "Ling",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_017bade52b9fc94bbc12615de6d75c08.png",
+      "increase_win_rate": 0.014436,
+      "increase_win_rate_pct": 1.44
+    }
+  ],
+  "51": [
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.036217,
+      "increase_win_rate_pct": 3.62
+    },
+    {
+      "heroid": 104,
+      "name": "Gloo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_c472fe0233e5ef84a3ac9ba4a229d09f.png",
+      "increase_win_rate": 0.026427,
+      "increase_win_rate_pct": 2.64
+    },
+    {
+      "heroid": 49,
+      "name": "Hylos",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_195ad9af866afaab415ae23a6be13b45.png",
+      "increase_win_rate": 0.025379,
+      "increase_win_rate_pct": 2.54
+    },
+    {
+      "heroid": 70,
+      "name": "Belerick",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png",
+      "increase_win_rate": 0.025127,
+      "increase_win_rate_pct": 2.51
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.019058,
+      "increase_win_rate_pct": 1.91
+    }
+  ],
+  "54": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.027523,
+      "increase_win_rate_pct": 2.75
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.024045,
+      "increase_win_rate_pct": 2.4
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.022215,
+      "increase_win_rate_pct": 2.22
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.019382,
+      "increase_win_rate_pct": 1.94
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.016695,
+      "increase_win_rate_pct": 1.67
+    }
+  ],
+  "58": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.02252,
+      "increase_win_rate_pct": 2.25
+    },
+    {
+      "heroid": 67,
+      "name": "Leomord",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_554cdf13a7587fe08c5deed60132c61c.png",
+      "increase_win_rate": 0.019144,
+      "increase_win_rate_pct": 1.91
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.016567,
+      "increase_win_rate_pct": 1.66
+    },
+    {
+      "heroid": 60,
+      "name": "Hanabi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8a9c1966feb34e85d7bdcc1ed01ffb5d.png",
+      "increase_win_rate": 0.014921,
+      "increase_win_rate_pct": 1.49
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.014544,
+      "increase_win_rate_pct": 1.45
+    }
+  ],
+  "5": [
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.016068,
+      "increase_win_rate_pct": 1.61
+    },
+    {
+      "heroid": 32,
+      "name": "Johnson",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+      "increase_win_rate": 0.015953,
+      "increase_win_rate_pct": 1.6
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.014718,
+      "increase_win_rate_pct": 1.47
+    },
+    {
+      "heroid": 35,
+      "name": "Hilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+      "increase_win_rate": 0.014194,
+      "increase_win_rate_pct": 1.42
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.013883,
+      "increase_win_rate_pct": 1.39
+    }
+  ],
+  "102": [
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.058012,
+      "increase_win_rate_pct": 5.8
+    },
+    {
+      "heroid": 128,
+      "name": "Kalea",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+      "increase_win_rate": 0.032601,
+      "increase_win_rate_pct": 3.26
+    },
+    {
+      "heroid": 92,
+      "name": "Carmilla",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+      "increase_win_rate": 0.031919,
+      "increase_win_rate_pct": 3.19
+    },
+    {
+      "heroid": 41,
+      "name": "Gatotkaca",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_96f9dbbc096e0f0a28f9b9e587d06a9c.png",
+      "increase_win_rate": 0.028723,
+      "increase_win_rate_pct": 2.87
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.019861,
+      "increase_win_rate_pct": 1.99
+    }
+  ],
+  "110": [
+    {
+      "heroid": 125,
+      "name": "Zhuxin",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+      "increase_win_rate": 0.072452,
+      "increase_win_rate_pct": 7.25
+    },
+    {
+      "heroid": 108,
+      "name": "Aulus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+      "increase_win_rate": 0.027872,
+      "increase_win_rate_pct": 2.79
+    },
+    {
+      "heroid": 79,
+      "name": "Granger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+      "increase_win_rate": 0.026043,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 121,
+      "name": "Ixia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+      "increase_win_rate": 0.021272,
+      "increase_win_rate_pct": 2.13
+    },
+    {
+      "heroid": 122,
+      "name": "Nolan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png",
+      "increase_win_rate": 0.020865,
+      "increase_win_rate_pct": 2.09
+    }
+  ],
+  "128": [
+    {
+      "heroid": 20,
+      "name": "Lolita",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+      "increase_win_rate": 0.092559,
+      "increase_win_rate_pct": 9.26
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.039289,
+      "increase_win_rate_pct": 3.93
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.037923,
+      "increase_win_rate_pct": 3.79
+    },
+    {
+      "heroid": 62,
+      "name": "Kaja",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+      "increase_win_rate": 0.034717,
+      "increase_win_rate_pct": 3.47
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.032601,
+      "increase_win_rate_pct": 3.26
+    }
+  ],
+  "2": [
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.022896,
+      "increase_win_rate_pct": 2.29
+    },
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.019694,
+      "increase_win_rate_pct": 1.97
+    },
+    {
+      "heroid": 45,
+      "name": "Argus",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0bd96658e5b8ec578226ea1622bd7231.png",
+      "increase_win_rate": 0.019635,
+      "increase_win_rate_pct": 1.96
+    },
+    {
+      "heroid": 60,
+      "name": "Hanabi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8a9c1966feb34e85d7bdcc1ed01ffb5d.png",
+      "increase_win_rate": 0.019572,
+      "increase_win_rate_pct": 1.96
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.018548,
+      "increase_win_rate_pct": 1.85
+    }
+  ],
+  "26": [
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.020741,
+      "increase_win_rate_pct": 2.07
+    },
+    {
+      "heroid": 11,
+      "name": "Bane",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+      "increase_win_rate": 0.019941,
+      "increase_win_rate_pct": 1.99
+    },
+    {
+      "heroid": 19,
+      "name": "Minotaur",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3ecd2c0843df7ec85044dafff6bf4553.png",
+      "increase_win_rate": 0.018544,
+      "increase_win_rate_pct": 1.85
+    },
+    {
+      "heroid": 70,
+      "name": "Belerick",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png",
+      "increase_win_rate": 0.017544,
+      "increase_win_rate_pct": 1.75
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.015356,
+      "increase_win_rate_pct": 1.54
+    }
+  ],
+  "16": [
+    {
+      "heroid": 70,
+      "name": "Belerick",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png",
+      "increase_win_rate": 0.027707,
+      "increase_win_rate_pct": 2.77
+    },
+    {
+      "heroid": 104,
+      "name": "Gloo",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_c472fe0233e5ef84a3ac9ba4a229d09f.png",
+      "increase_win_rate": 0.026323,
+      "increase_win_rate_pct": 2.63
+    },
+    {
+      "heroid": 6,
+      "name": "Tigreal",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+      "increase_win_rate": 0.024718,
+      "increase_win_rate_pct": 2.47
+    },
+    {
+      "heroid": 44,
+      "name": "Grock",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_902/100_f8b8c8964d3202b7b762947ac96f1ed3.png",
+      "increase_win_rate": 0.021516,
+      "increase_win_rate_pct": 2.15
+    },
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.021052,
+      "increase_win_rate_pct": 2.11
+    }
+  ],
+  "41": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.045077,
+      "increase_win_rate_pct": 4.51
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.039549,
+      "increase_win_rate_pct": 3.95
+    },
+    {
+      "heroid": 102,
+      "name": "Mathilda",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+      "increase_win_rate": 0.028723,
+      "increase_win_rate_pct": 2.87
+    },
+    {
+      "heroid": 14,
+      "name": "Rafaela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+      "increase_win_rate": 0.02424,
+      "increase_win_rate_pct": 2.42
+    },
+    {
+      "heroid": 48,
+      "name": "Diggie",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+      "increase_win_rate": 0.020616,
+      "increase_win_rate_pct": 2.06
+    }
+  ],
+  "6": [
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.037322,
+      "increase_win_rate_pct": 3.73
+    },
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.029386,
+      "increase_win_rate_pct": 2.94
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.026888,
+      "increase_win_rate_pct": 2.69
+    },
+    {
+      "heroid": 34,
+      "name": "Estes",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+      "increase_win_rate": 0.026008,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 16,
+      "name": "Zilong",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+      "increase_win_rate": 0.024718,
+      "increase_win_rate_pct": 2.47
+    }
+  ],
+  "79": [
+    {
+      "heroid": 87,
+      "name": "Baxia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+      "increase_win_rate": 0.093585,
+      "increase_win_rate_pct": 9.36
+    },
+    {
+      "heroid": 112,
+      "name": "Floryn",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+      "increase_win_rate": 0.042642,
+      "increase_win_rate_pct": 4.26
+    },
+    {
+      "heroid": 94,
+      "name": "Popol and Kupa",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+      "increase_win_rate": 0.028151,
+      "increase_win_rate_pct": 2.82
+    },
+    {
+      "heroid": 110,
+      "name": "Valentina",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+      "increase_win_rate": 0.026043,
+      "increase_win_rate_pct": 2.6
+    },
+    {
+      "heroid": 39,
+      "name": "Roger",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+      "increase_win_rate": 0.024376,
+      "increase_win_rate_pct": 2.44
+    }
+  ],
+  "17": [
+    {
+      "heroid": 78,
+      "name": "Khufra",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+      "increase_win_rate": 0.021312,
+      "increase_win_rate_pct": 2.13
+    },
+    {
+      "heroid": 101,
+      "name": "Yve",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+      "increase_win_rate": 0.018426,
+      "increase_win_rate_pct": 1.84
+    },
+    {
+      "heroid": 76,
+      "name": "Faramis",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+      "increase_win_rate": 0.014209,
+      "increase_win_rate_pct": 1.42
+    },
+    {
+      "heroid": 12,
+      "name": "Bruno",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff39deb9c6afec3d977fdbe9d86f78cb.png",
+      "increase_win_rate": 0.013825,
+      "increase_win_rate_pct": 1.38
+    },
+    {
+      "heroid": 111,
+      "name": "Edith",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_daab57918de01a6d5bb2ed6f45808a7e.png",
+      "increase_win_rate": 0.012988,
+      "increase_win_rate_pct": 1.3
+    }
+  ],
+  "47": [
+    {
+      "heroid": 55,
+      "name": "Angela",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+      "increase_win_rate": 0.031385,
+      "increase_win_rate_pct": 3.14
+    },
+    {
+      "heroid": 74,
+      "name": "Minsitthar",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+      "increase_win_rate": 0.010758,
+      "increase_win_rate_pct": 1.08
+    },
+    {
+      "heroid": 107,
+      "name": "Natan",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+      "increase_win_rate": 0.010209,
+      "increase_win_rate_pct": 1.02
+    },
+    {
+      "heroid": 97,
+      "name": "Benedetta",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+      "increase_win_rate": 0.009601,
+      "increase_win_rate_pct": 0.96
+    },
+    {
+      "heroid": 60,
+      "name": "Hanabi",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8a9c1966feb34e85d7bdcc1ed01ffb5d.png",
+      "increase_win_rate": 0.009232,
+      "increase_win_rate_pct": 0.92
+    }
+  ],
+  "10": [
+    {
+      "heroid": 24,
+      "name": "Natalia",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+      "increase_win_rate": 0.02301,
+      "increase_win_rate_pct": 2.3
+    },
+    {
+      "heroid": 3,
+      "name": "Saber",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+      "increase_win_rate": 0.022208,
+      "increase_win_rate_pct": 2.22
+    },
+    {
+      "heroid": 93,
+      "name": "Atlas",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+      "increase_win_rate": 0.021937,
+      "increase_win_rate_pct": 2.19
+    },
+    {
+      "heroid": 90,
+      "name": "Silvanna",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+      "increase_win_rate": 0.020588,
+      "increase_win_rate_pct": 2.06
+    },
+    {
+      "heroid": 27,
+      "name": "Sun",
+      "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+      "increase_win_rate": 0.01954,
+      "increase_win_rate_pct": 1.95
+    }
+  ]
+}
