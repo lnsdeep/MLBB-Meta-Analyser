@@ -1,6 +1,6 @@
 # Mobile Legends: Bang Bang — Official Meta & Rank Analytics Report
 
-**Generated At:** `2026-09-25 19:34:00 UTC`  
+**Generated At:** `2026-09-26 08:02:45 UTC`  
 **Data Source:** Official Moonton MLBB GMS API & Youngjoy CDN  
 **Scope:** 134 Heroes | 5 Timeframes (1, 3, 7, 15, 30 days) | 6 Rank Brackets (All, Epic, Legend, Mythic, Honor, Glory+)  
 
