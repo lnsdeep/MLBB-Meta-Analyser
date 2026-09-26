@@ -19,6 +19,7 @@ from .config import (
     EXPORTS_DIR,
     MATRICES_DATA_DIR,
     PROCESSED_DATA_DIR,
+    PROJECT_ROOT,
     RANKS_DATA_DIR,
     RANK_FILTERS,
     TIMEFRAME_SOURCES,
@@ -125,6 +126,80 @@ def export_markdown_report(all_slices: Dict[str, List[Dict[str, Any]]], catalog:
         f.write("\n".join(lines))
 
     logger.info(f"Markdown report generated at: {filepath}")
+
+
+def export_llms_txt(all_slices: Dict[str, List[Dict[str, Any]]], filepath):
+    """Generate dynamic LLM-friendly plain text summary for AI search engines."""
+    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    glory_1d = all_slices.get("mythical_glory_1d", [])[:10]
+
+    lines = [
+        "# Mobile Legends: Bang Bang (MLBB) Meta Analyser",
+        "",
+        "> Official, daily-updated hero rankings, win rates, ban rates, pick rates, counter matchups, and synergies extracted directly from Moonton's Game Management System (GMS).",
+        "",
+        f"**Last Refreshed:** {now_utc}",
+        "- **Website:** https://lnsdeep.github.io/MLBB-Meta-Analyser/",
+        "- **Data Source:** Official Moonton GMS API (`api.gms.moontontech.com`) & Youngjoy CDN",
+        "- **Total Heroes Tracked:** 134 heroes",
+        "- **Ranks Available:** ALL, Epic, Legend, Mythic, Mythical Honor, Mythical Glory+",
+        "- **Timeframes:** Past 1 day, 3 days, 7 days, 15 days, 30 days",
+        "",
+        "## Current Meta Highlights (Mythical Glory+, 1-Day Sample)",
+    ]
+
+    for h in glory_1d:
+        roles_str = "/".join(h.get("roles", []))
+        lanes_str = "/".join(h.get("lanes", []))
+        lines.append(f"- **{h['name']}** ({roles_str} | {lanes_str}): Win Rate: {h['win_rate_pct']:.2f}%, Pick Rate: {h['pick_rate_pct']:.2f}%, Ban Rate: {h['ban_rate_pct']:.2f}%, Tier: {h['tier']}")
+
+    lines.extend([
+        "",
+        "## Available Gamer Tools",
+        "1. **Tier List Hub**: Visual role and lane tier list (S+, S, A, B, C, D) filterable by EXP, Mid, Gold, Roam, Jungle.",
+        "2. **Lane-Specific Counter Picker**: Instant lookups of top 5 counters with official win rate advantage percentage.",
+        "3. **Synergy Duo Finder**: Top teammate pairings with statistical win rate boosts.",
+        "4. **5v5 Draft Analyzer**: Algorithmic draft evaluation calculating pairwise counter deltas, team balance, and predicted win advantage.",
+        "5. **Ban Priority Radar**: Categorizes heroes into Must-Ban, Situational, and Sleeper Threats using the Ban Urgency Index.",
+        "6. **Patch Meta Movers**: Detects rising stars and falling heroes by comparing 1-day vs 7-day win rate momentum.",
+        "7. **Beginner Hero Matcher**: Recommends forgiving, high-impact heroes (Difficulty <= 35, Win Rate >= 50%) with role explanations for new players.",
+        "",
+        "## Data Endpoints for AI & Data Science",
+        "- Comprehensive CSV Export: `data/exports/mlbb_meta_latest.csv` (3,990 rows)",
+        "- Canonical Hero Catalog: `data/processed/heroes_catalog.json`",
+        "- Global Counters Matrix: `data/processed/matrices/counters_matrix.json`",
+        "- Global Synergies Matrix: `data/processed/matrices/synergies_matrix.json`",
+        "- Meta Summary Metadata: `data/processed/meta_summary.json`",
+        "",
+    ])
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    logger.info(f"Dynamic llms.txt generated at: {filepath}")
+
+
+def export_sitemap_xml(filepath):
+    """Update sitemap.xml with today's date."""
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lnsdeep.github.io/MLBB-Meta-Analyser/</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lnsdeep.github.io/MLBB-Meta-Analyser/llms.txt</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(xml_content.strip() + "\n")
+    logger.info(f"Dynamic sitemap.xml updated at: {filepath}")
 
 
 def run_full_pipeline():
@@ -268,6 +343,10 @@ def run_full_pipeline():
     # 6. Export Markdown report
     report_path = EXPORTS_DIR / "MLBB_META_REPORT.md"
     export_markdown_report(all_slices, parser.heroes_by_id, str(report_path))
+
+    # 7. Update AI Search discovery files (llms.txt and sitemap.xml)
+    export_llms_txt(all_slices, PROJECT_ROOT / "llms.txt")
+    export_sitemap_xml(PROJECT_ROOT / "sitemap.xml")
 
     duration = round(time.time() - start_time, 2)
     logger.info(f"Pipeline completed successfully in {duration} seconds!")

@@ -50,7 +50,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ llms.txt sitemap.xml
           if git diff --staged --quiet; then
             echo "No data changes detected. Skipping git commit."
           else
