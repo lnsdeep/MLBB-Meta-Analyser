@@ -4,17 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mobile Viewport Layout & Overflow Verification</title>
+
+  <!-- Theme Pre-Initialization (Prevents FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('mlbb_theme');
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="../css/base.css" />
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0b0f19;
-      color: #f8fafc;
+      background: var(--bg-primary);
+      color: var(--text-primary);
       padding: 24px;
       margin: 0;
     }
     .result-card {
-      background: #131b2e;
-      border: 1px solid #232d42;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
       border-radius: 8px;
       padding: 14px 18px;
       margin-bottom: 10px;
@@ -22,8 +38,8 @@
       justify-content: space-between;
       align-items: center;
     }
-    .pass { border-left: 4px solid #34d399; }
-    .fail { border-left: 4px solid #f87171; background: rgba(248,113,113,0.1); }
+    .pass { border-left: 4px solid var(--win-green); }
+    .fail { border-left: 4px solid var(--ban-rose); background: var(--ban-rose-bg); }
     iframe {
       position: absolute;
       top: -9999px;
@@ -140,9 +156,9 @@
           <div class="result-card ${r.passed ? 'pass' : 'fail'}">
             <div>
               <strong>${r.device} (${r.width}px) — Tool: [${r.tool.toUpperCase()}]</strong>
-              <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 2px;">${r.details}</div>
+              <div style="font-size: 0.8rem; color: var(--text-dim); margin-top: 2px;">${r.details}</div>
             </div>
-            <span style="font-weight: 700; color: ${r.passed ? '#34d399' : '#f87171'}">${r.passed ? 'PASS ✓' : 'FAIL ✗'}</span>
+            <span style="font-weight: 700; color: ${r.passed ? 'var(--win-green)' : 'var(--ban-rose)'}">${r.passed ? 'PASS ✓' : 'FAIL ✗'}</span>
           </div>
         `;
       }
@@ -150,7 +166,7 @@
 
       const allPassed = failed === 0;
       summaryEl.innerHTML = `
-        <div id="layoutStatus" data-passed="${allPassed}" data-total="${testResults.length}" data-failed="${failed}" style="font-size: 1.2rem; font-weight: 800; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid ${allPassed ? '#34d399' : '#f87171'}; color: ${allPassed ? '#34d399' : '#f87171'}; background: #131b2e;">
+        <div id="layoutStatus" data-passed="${allPassed}" data-total="${testResults.length}" data-failed="${failed}" style="font-size: 1.2rem; font-weight: 800; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid ${allPassed ? 'var(--win-green)' : 'var(--ban-rose)'}; color: ${allPassed ? 'var(--win-green)' : 'var(--ban-rose)'}; background: var(--bg-surface);">
           ${allPassed ? '🎉 ZERO OVERFLOW: ALL MOBILE VIEWPORTS PASSED' : `⚠️ ${failed} LAYOUT OVERFLOWS DETECTED`} (${passed}/${testResults.length} viewport configurations validated)
         </div>
       `;

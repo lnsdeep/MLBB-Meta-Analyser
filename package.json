@@ -1,0 +1,18 @@
+{
+  "name": "mlbb-meta-analyser",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MLBB ranked meta analytics tools (GitHub Pages) — headless test harness",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:unit": "npx playwright test tests/e2e/unit-runner.spec.js",
+    "test:layout": "npx playwright test tests/e2e/layout-overflow.spec.js",
+    "test:visual": "npx playwright test tests/e2e/visual-regression.spec.js",
+    "test:theme": "npx playwright test tests/e2e/theme-tokens.spec.js",
+    "serve": "npx serve . -l 8080 -s"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "serve": "^14.2.1"
+  }
+}

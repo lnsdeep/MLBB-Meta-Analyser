@@ -62,6 +62,36 @@
   --modal-banner-bg: linear-gradient(180deg, rgba(19, 27, 46, 0.4) 0%, rgba(19, 27, 46, 1) 100%),
                      radial-gradient(ellipse at top right, rgba(56, 189, 248, 0.15), transparent 70%);
 
+  /* Overlay & Backdrop */
+  --overlay-bg: rgba(11, 15, 25, 0.75);
+  --drawer-overlay-bg: rgba(11, 15, 25, 0.7);
+  --drawer-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+  --tab-active-glow: 0 0 16px rgba(56, 189, 248, 0.2);
+
+  /* Tactical Badge Colors (always vibrant on dark) */
+  --badge-anti-dash: #f87171;
+  --badge-anti-sustain: #fbbf24;
+  --badge-disrupt: #c084fc;
+  --badge-tank-buster: #fb923c;
+  --badge-burst-color: #38bdf8;
+  --badge-cc-color: #34d399;
+  --badge-poke-color: #818cf8;
+  --badge-hyper-carry: #fbbf24;
+  --badge-wombo-combo: #c084fc;
+  --badge-dive-partner: #38bdf8;
+  --badge-engage-peel: #34d399;
+  --badge-zone-poke: #38bdf8;
+  --badge-sustain-bruiser: #fb7185;
+  --badge-spell-tag: #fbbf24;
+
+  /* Thumbnail Placeholder */
+  --thumb-placeholder-bg: #1e293b;
+
+  /* Tooltip (always-dark in BOTH themes for readability) */
+  --tooltip-bg: #1e293b;
+  --tooltip-border: rgba(255, 255, 255, 0.1);
+  --tooltip-text: #f1f5f9;
+
   /* Layout */
   --max-width: 1320px;
   --header-height: 68px;
@@ -120,6 +150,35 @@
 
   --modal-banner-bg: linear-gradient(180deg, rgba(241, 245, 249, 0.7) 0%, rgba(255, 255, 255, 1) 100%),
                      radial-gradient(ellipse at top right, rgba(2, 132, 199, 0.10), transparent 70%);
+
+  /* Overlay & Backdrop (light-safe) */
+  --overlay-bg: rgba(15, 23, 42, 0.45);
+  --drawer-overlay-bg: rgba(15, 23, 42, 0.4);
+  --drawer-shadow: 0 -10px 30px rgba(0, 0, 0, 0.12);
+  --tab-active-glow: 0 2px 8px rgba(2, 132, 199, 0.25);
+
+  /* Light mode badge colors: darker for AA contrast on white */
+  --badge-anti-dash: #dc2626;
+  --badge-anti-sustain: #b45309;
+  --badge-disrupt: #7e22ce;
+  --badge-tank-buster: #c2410c;
+  --badge-burst-color: #0284c7;
+  --badge-cc-color: #059669;
+  --badge-poke-color: #4338ca;
+  --badge-hyper-carry: #b45309;
+  --badge-wombo-combo: #7e22ce;
+  --badge-dive-partner: #0284c7;
+  --badge-engage-peel: #059669;
+  --badge-zone-poke: #0369a1;
+  --badge-sustain-bruiser: #be123c;
+  --badge-spell-tag: #92400e;
+
+  --thumb-placeholder-bg: #e2e8f0;
+
+  /* Tooltip stays dark even in light mode — AA-compliant white text on slate */
+  --tooltip-bg: #1e293b;
+  --tooltip-border: rgba(255, 255, 255, 0.1);
+  --tooltip-text: #f1f5f9;
 }
 
 /* Base Reset */
