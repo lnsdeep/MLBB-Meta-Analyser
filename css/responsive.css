@@ -1,0 +1,160 @@
+/* ==========================================================================
+   MLBB Meta Analyser - Responsive Layout & Mobile Best Practices
+   Breakpoints: Mobile (<640px), Tablet (641px - 1024px), Desktop (>1024px)
+   ========================================================================== */
+
+/* Tablet & Smaller Screens (< 1024px) */
+@media (max-width: 1024px) {
+  .picker-container {
+    grid-template-columns: 1fr;
+  }
+
+  .picker-sidebar {
+    max-height: 280px;
+  }
+
+  .picker-hero-list {
+    max-height: 180px;
+  }
+
+  .radar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .draft-teams-row {
+    grid-template-columns: 1fr;
+  }
+
+  .movers-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Screens (< 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .header-actions .status-badge span.status-text {
+    display: none; /* Hide long text on small screens, keep dot and simple text */
+  }
+
+  .control-hub {
+    padding: 14px;
+  }
+
+  .control-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-wrapper {
+    max-width: 100%;
+  }
+
+  .tier-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  .hero-card {
+    padding: 10px;
+  }
+
+  .hero-avatar-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-name {
+    font-size: 0.85rem;
+  }
+
+  .modal-stats-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-matchups-columns {
+    grid-template-columns: 1fr;
+  }
+
+  /* Transform Desktop Modal to Mobile Bottom Sheet */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-dialog {
+    max-width: 100%;
+    max-height: 85vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    transform: translateY(100%);
+  }
+
+  .modal-overlay.open .modal-dialog {
+    transform: translateY(0);
+  }
+
+  /* Add drag indicator handle on mobile modal */
+  .modal-hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    background: var(--text-muted);
+    border-radius: 999px;
+    opacity: 0.4;
+  }
+}
+
+/* Extra Small Phones (< 480px) */
+@media (max-width: 480px) {
+  .tier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tool-tab-btn {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .segmented-control {
+    width: 100%;
+  }
+
+  .seg-btn {
+    flex: 1;
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 0.78rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Touch Friendly Targets (>= 44px min height for touch) */
+@media (pointer: coarse) {
+  .tool-tab-btn,
+  .seg-btn,
+  .chip-btn,
+  .picker-hero-item,
+  .draft-slot {
+    min-height: 44px;
+  }
+}

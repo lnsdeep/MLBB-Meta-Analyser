@@ -1,0 +1,34 @@
+# Mobile Legends: Bang Bang (MLBB) Meta Analyser
+
+> Official, daily-updated hero rankings, win rates, ban rates, pick rates, counter matchups, and synergies extracted directly from Moonton's Game Management System (GMS).
+
+## Project Overview
+- **Website**: https://lnsdeep.github.io/MLBB-Meta-Analyser/
+- **Data Source**: Official Moonton GMS API (`api.gms.moontontech.com`) & Youngjoy CDN
+- **Total Heroes Tracked**: 134 heroes
+- **Ranks Available**: ALL, Epic, Legend, Mythic, Mythical Honor, Mythical Glory+
+- **Timeframes**: Past 1 day, 3 days, 7 days, 15 days, 30 days
+- **Update Frequency**: Daily automatic sync via GitHub Actions
+
+## Current Meta Highlights (Mythical Glory+, 1-Day Sample)
+- **Aulus** (Fighter/Jungle): Win Rate: 60.72%, Pick Rate: 1.81%, Ban Rate: 33.43%, Tier: S+
+- **Chip** (Support/Tank/Roam): Win Rate: 58.07%, Pick Rate: 0.17%, Ban Rate: 1.24%, Tier: A
+- **Masha** (Fighter/Tank/EXP): Win Rate: 57.83%, Pick Rate: 1.28%, Ban Rate: 41.72%, Tier: S
+- **Freya** (Fighter/EXP/Jungle): Win Rate: 57.48%, Pick Rate: 0.95%, Ban Rate: 3.47%, Tier: A
+- **Rafaela** (Support/Roam): Win Rate: 57.06%, Pick Rate: 2.03%, Ban Rate: 39.37%, Tier: S
+
+## Available Gamer Tools
+1. **Tier List Hub**: Visual role and lane tier list (S+, S, A, B, C, D) filterable by EXP, Mid, Gold, Roam, Jungle.
+2. **Lane-Specific Counter Picker**: Instant lookups of top 5 counters with official win rate advantage percentage.
+3. **Synergy Duo Finder**: Top teammate pairings with statistical win rate boosts.
+4. **5v5 Draft Analyzer**: Algorithmic draft evaluation calculating pairwise counter deltas, team balance, and predicted win advantage.
+5. **Ban Priority Radar**: Categorizes heroes into Must-Ban, Situational, and Sleeper Threats using the Ban Urgency Index.
+6. **Patch Meta Movers**: Detects rising stars and falling heroes by comparing 1-day vs 7-day win rate momentum.
+7. **Beginner Hero Matcher**: Recommends forgiving, high-impact heroes (Difficulty <= 30, Win Rate >= 51%) with role explanations for new players.
+
+## Data Endpoints for AI & Data Science
+- Comprehensive CSV Export: `data/exports/mlbb_meta_latest.csv` (3,990 rows)
+- Canonical Hero Catalog: `data/processed/heroes_catalog.json`
+- Global Counters Matrix: `data/processed/matrices/counters_matrix.json`
+- Global Synergies Matrix: `data/processed/matrices/synergies_matrix.json`
+- Meta Summary Metadata: `data/processed/meta_summary.json`

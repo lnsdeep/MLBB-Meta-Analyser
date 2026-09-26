@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MLBB Meta Analyser — Official Tier List, Counters & 5v5 Draft Simulator</title>
+  <meta name="description" content="Official Mobile Legends: Bang Bang (MLBB) meta rankings, win rates, ban rates, lane counters, synergies, and 5v5 draft analyzer extracted daily from Moonton GMS." />
+  <meta name="keywords" content="MLBB meta, Mobile Legends tier list, MLBB hero counters, MLBB win rates, ban rates, 5v5 draft analyzer, best MLBB heroes, mythical glory meta" />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MLBB Meta Analyser — Official Tier List, Counters & Draft Helper" />
+  <meta property="og:description" content="100% official Mobile Legends meta analytics, lane counters, and 5v5 draft simulator refreshed daily from Moonton GMS." />
+  <meta property="og:url" content="https://lnsdeep.github.io/MLBB-Meta-Analyser/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/tools.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+
+  <!-- Schema.org Structured Data for Google Search & Gemini -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "MLBB Meta Analyser",
+        "url": "https://lnsdeep.github.io/MLBB-Meta-Analyser/",
+        "description": "Daily automated MLBB meta tier list, lane counters, and 5v5 draft analyzer based on official Moonton GMS data.",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "All"
+      },
+      {
+        "@type": "Dataset",
+        "name": "Mobile Legends: Bang Bang Official Match Statistics",
+        "description": "Daily aggregated hero win rates, pick rates, ban rates, counter matchups, and synergies across 6 rank brackets.",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "temporalCoverage": "2026/..",
+        "creator": {
+          "@type": "Organization",
+          "name": "Moonton Official GMS"
+        },
+        "variableMeasured": [
+          "Win Rate",
+          "Pick Rate",
+          "Ban Rate",
+          "Hero Counter Advantage",
+          "Teammate Synergy Boost"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./" class="logo-group" aria-label="MLBB Meta Analyser Home">
+        <div class="logo-icon">
+          <img src="./favicon.svg" alt="MLBB Shield Icon" width="34" height="34" />
+        </div>
+        <div class="logo-text">
+          <div class="logo-title">
+            <span>MLBB Meta Analyser</span>
+            <span class="logo-tag">Official GMS</span>
+          </div>
+          <span class="logo-subtitle">Daily Ranked Analytics & Draft Helper</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <div class="status-badge" id="statusBadge" data-tooltip="Official Moonton GMS Data • Synced Daily">
+          <span class="status-dot"></span>
+          <span class="status-text" id="statusText">Syncing data...</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Tool Navigation Bar -->
+    <nav class="tool-nav" id="toolNav" aria-label="Gamer Tools">
+      <button class="tool-tab-btn active" data-tool="tier">
+        <span class="tab-icon">🏆</span>
+        <span>Tier List</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="counter">
+        <span class="tab-icon">⚔️</span>
+        <span>Counter Picker</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="draft">
+        <span class="tab-icon">🛡️</span>
+        <span>5v5 Draft Analyzer</span>
+        <span class="tab-badge-new">Smart</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="synergy">
+        <span class="tab-icon">🤝</span>
+        <span>Synergy Finder</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="radar">
+        <span class="tab-icon">🚫</span>
+        <span>Ban Radar</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="movers">
+        <span class="tab-icon">📈</span>
+        <span>Meta Movers</span>
+      </button>
+      <button class="tool-tab-btn" data-tool="guide">
+        <span class="tab-icon">🌟</span>
+        <span>Beginner Guide</span>
+      </button>
+    </nav>
+
+    <!-- General Controls Hub (Filters & Search) -->
+    <section class="control-hub" id="controlHub">
+      <!-- Top Row: Rank & Timeframe -->
+      <div class="control-row">
+        <div class="filter-group">
+          <span class="filter-label">Rank Bracket:</span>
+          <div class="segmented-control" id="rankSelector">
+            <button class="seg-btn" data-rank="all">ALL</button>
+            <button class="seg-btn" data-rank="epic">Epic</button>
+            <button class="seg-btn" data-rank="legend">Legend</button>
+            <button class="seg-btn" data-rank="mythic">Mythic</button>
+            <button class="seg-btn" data-rank="mythical_honor">Honor</button>
+            <button class="seg-btn active" data-rank="mythical_glory">Glory+</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Timeframe:</span>
+          <div class="segmented-control" id="timeframeSelector">
+            <button class="seg-btn active" data-tf="1d" data-tooltip="Today's live patch meta">1D (Today)</button>
+            <button class="seg-btn" data-tf="3d">3D</button>
+            <button class="seg-btn" data-tf="7d" data-tooltip="Weekly meta baseline">7D (Week)</button>
+            <button class="seg-btn" data-tf="15d">15D</button>
+            <button class="seg-btn" data-tf="30d">30D</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Roles, Lanes, Search & View Toggle -->
+      <div class="control-row">
+        <!-- Roles Chips -->
+        <div class="filter-group">
+          <span class="filter-label">Role:</span>
+          <div class="chip-group" id="roleFilters">
+            <button class="chip-btn active" data-role="ALL">All</button>
+            <button class="chip-btn" data-role="Tank" data-tooltip="Tanks: High defense protectors">🛡️ Tank</button>
+            <button class="chip-btn" data-role="Fighter" data-tooltip="Fighters: Balanced brawlers">⚔️ Fighter</button>
+            <button class="chip-btn" data-role="Assassin" data-tooltip="Assassins: High mobility burst">🗡️ Assassin</button>
+            <button class="chip-btn" data-role="Mage" data-tooltip="Mages: Ranged magic damage">🔮 Mage</button>
+            <button class="chip-btn" data-role="Marksman" data-tooltip="Marksmen: Late-game ranged carry">🏹 Marksman</button>
+            <button class="chip-btn" data-role="Support" data-tooltip="Supports: Healers & buffers">💚 Support</button>
+          </div>
+        </div>
+
+        <!-- Lane Chips -->
+        <div class="filter-group">
+          <span class="filter-label">Lane:</span>
+          <div class="chip-group" id="laneFilters">
+            <button class="chip-btn active" data-lane="ALL">All</button>
+            <button class="chip-btn" data-lane="EXP Lane" data-tooltip="EXP Lane: Fast leveling near Turtle">EXP</button>
+            <button class="chip-btn" data-lane="Mid Lane" data-tooltip="Mid Lane: Quick wave-clear & rotations">Mid</button>
+            <button class="chip-btn" data-lane="Gold Lane" data-tooltip="Gold Lane: Extra gold for marksmen">Gold</button>
+            <button class="chip-btn" data-lane="Roam" data-tooltip="Roam: Map vision and team assistance">Roam</button>
+            <button class="chip-btn" data-lane="Jungle" data-tooltip="Jungle: Neutral objectives with Retribution">Jungle</button>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="heroSearchInput" placeholder="Search hero or role..." aria-label="Search hero" />
+          <span class="search-shortcut">/</span>
+          <button class="search-clear-btn hidden" id="searchClearBtn" aria-label="Clear search">✕</button>
+        </div>
+
+        <!-- View Sub-Toggle (Tier Board vs Table) -->
+        <div class="view-mode-toggle" id="viewModeToggle">
+          <button class="view-mode-btn active" data-view="grid" title="Visual Tier Board">🏆 Board</button>
+          <button class="view-mode-btn" data-view="table" title="Data Table View">📋 Table</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Dynamic Content Container with Pre-rendered Semantic HTML Fallback -->
+    <div id="mainContentArea">
+      <!-- Semantic Fallback for Non-JS Search Crawlers (Googlebot, Gemini, cURL) -->
+      <section aria-label="Pre-rendered Meta Overview">
+        <h1 style="font-size: 1.5rem; margin-bottom: 8px;">Mobile Legends: Bang Bang Meta Tier List & Ranked Analytics</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">
+          Official daily hero metrics from Moonton Game Management System (GMS). Below is the current Mythical Glory+ meta sample:
+        </p>
+
+        <div class="table-container">
+          <table class="meta-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Hero</th>
+                <th>Tier</th>
+                <th>Role</th>
+                <th>Lane</th>
+                <th>Win Rate</th>
+                <th>Pick Rate</th>
+                <th>Ban Rate</th>
+                <th>Top Counters</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Aulus</strong></td>
+                <td><span class="tier-badge s-plus">S+</span></td>
+                <td>Fighter</td>
+                <td>Jungle</td>
+                <td style="color: var(--win-green); font-weight: 700;">60.72%</td>
+                <td>1.81%</td>
+                <td style="color: var(--ban-rose);">33.43%</td>
+                <td>Chip, Silvanna, Zhask</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Chip</strong></td>
+                <td><span class="tier-badge a">A</span></td>
+                <td>Support / Tank</td>
+                <td>Roam</td>
+                <td style="color: var(--win-green); font-weight: 700;">58.07%</td>
+                <td>0.17%</td>
+                <td>1.24%</td>
+                <td>Pharsa, Zilong, Lolita</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Masha</strong></td>
+                <td><span class="tier-badge s">S</span></td>
+                <td>Fighter / Tank</td>
+                <td>EXP Lane</td>
+                <td style="color: var(--win-green); font-weight: 700;">57.83%</td>
+                <td>1.28%</td>
+                <td style="color: var(--ban-rose); font-weight: 700;">41.72%</td>
+                <td>Hilda, Khaleed, Lolita</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Freya</strong></td>
+                <td><span class="tier-badge a">A</span></td>
+                <td>Fighter</td>
+                <td>EXP / Jungle</td>
+                <td style="color: var(--win-green); font-weight: 700;">57.48%</td>
+                <td>0.95%</td>
+                <td>3.47%</td>
+                <td>Yve, Gatotkaca, Lolita</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><strong>Rafaela</strong></td>
+                <td><span class="tier-badge s">S</span></td>
+                <td>Support</td>
+                <td>Roam</td>
+                <td style="color: var(--win-green); font-weight: 700;">57.06%</td>
+                <td>2.03%</td>
+                <td style="color: var(--ban-rose); font-weight: 700;">39.37%</td>
+                <td>Bane, Marcel, Lancelot</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Hero Dossier Modal / Mobile Bottom Sheet Drawer -->
+  <div class="modal-overlay" id="heroModal" role="dialog" aria-modal="true" aria-labelledby="modalHeroName">
+    <div class="modal-dialog">
+      <!-- Modal Header -->
+      <div class="modal-hero-banner">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+        <div class="modal-hero-avatar-wrap">
+          <img class="modal-hero-avatar" id="modalHeroAvatar" src="./favicon.svg" alt="Hero Portrait" />
+        </div>
+        <div class="modal-hero-identity">
+          <h2 class="modal-hero-name" id="modalHeroName">Hero Name</h2>
+          <div class="modal-hero-badges">
+            <span class="hero-role-tag" id="modalHeroRoles">Role</span>
+            <span class="hero-lane-pill" id="modalHeroLanes">Lane</span>
+            <span style="font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; background: rgba(52, 211, 153, 0.12); color: var(--win-green);" id="modalDifficultyBadge">Easy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <!-- Live Stats Ribbon -->
+        <div class="modal-stats-ribbon">
+          <div class="ribbon-item">
+            <span class="ribbon-label">Win Rate</span>
+            <span class="ribbon-value" id="modalWinRate" style="color: var(--win-green);">50.0%</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-label">Pick Rate</span>
+            <span class="ribbon-value" id="modalPickRate">1.0%</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-label">Ban Rate</span>
+            <span class="ribbon-value" id="modalBanRate" style="color: var(--ban-rose);">0.0%</span>
+          </div>
+          <div class="ribbon-item">
+            <span class="ribbon-label">Meta Score</span>
+            <span class="ribbon-value" id="modalMetaScore" style="color: var(--brand-primary);">50.0</span>
+          </div>
+        </div>
+
+        <!-- Skills Kit Breakdown -->
+        <div>
+          <h3 class="modal-section-title">⚡ Official Skill Kit & Cooldowns</h3>
+          <div class="skills-list" id="modalSkillsList">
+            <!-- Populated dynamically by heroModal.js -->
+          </div>
+        </div>
+
+        <!-- Counters & Synergies Columns -->
+        <div class="modal-matchups-columns">
+          <!-- Hard Counters -->
+          <div>
+            <h3 class="modal-section-title" style="color: var(--ban-rose);">⚔️ Top 5 Hard Counters</h3>
+            <div class="matchup-mini-list" id="modalCountersList">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+          <!-- Synergies -->
+          <div>
+            <h3 class="modal-section-title" style="color: var(--brand-primary);">🤝 Best Teammates</h3>
+            <div class="matchup-mini-list" id="modalSynergiesList">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>MLBB Meta Analyser</strong> — 100% Official Game Management System (GMS) Data.</p>
+        <p style="font-size: 0.78rem; margin-top: 4px;">Mobile Legends: Bang Bang is a trademark of Moonton Technology. All hero assets are property of their respective owners.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./llms.txt" target="_blank">llms.txt</a>
+        <a href="./sitemap.xml" target="_blank">Sitemap</a>
+        <a href="./data/exports/mlbb_meta_latest.csv" download>Download CSV</a>
+        <a href="https://github.com/lnsdeep/MLBB-Meta-Analyser" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JavaScript Modules -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

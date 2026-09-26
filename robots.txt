@@ -1,0 +1,23 @@
+# robots.txt for MLBB Meta Analyser
+# Permissive policy for search engines and AI web crawlers
+
+User-agent: *
+Allow: /
+
+# Specifically allow major AI search crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://lnsdeep.github.io/MLBB-Meta-Analyser/sitemap.xml

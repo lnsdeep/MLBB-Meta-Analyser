@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <!-- Shield Background -->
+  <path d="M32 4L54 12V28C54 44 44 54 32 60C20 54 10 44 10 28V12L32 4Z" fill="url(#shieldGrad)" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Crossed Swords -->
+  <path d="M22 20L42 40M20 22L40 42" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M42 20L22 40M40 22L20 42" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Center Star/Gem -->
+  <circle cx="32" cy="31" r="5" fill="#38bdf8" />
+  <circle cx="32" cy="31" r="2" fill="#ffffff" />
+</svg>

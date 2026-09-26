@@ -1,0 +1,532 @@
+/* ==========================================================================
+   MLBB Meta Analyser - Specialized Gamer Tools CSS
+   Draft 5v5 Analyzer, Ban Radar, Counter Tool, Meta Movers, Beginner Wizard
+   ========================================================================== */
+
+/* Section Layout */
+.tool-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tool-header-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.tool-title-group h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tool-title-group p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   1. Direct Counter Picker & Synergy Finder
+   ========================================================================== */
+.picker-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.picker-sidebar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.picker-hero-search {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.picker-hero-search:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+}
+
+.picker-hero-list {
+  max-height: 480px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+
+.picker-hero-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+  color: var(--text-secondary);
+  text-align: left;
+  width: 100%;
+}
+
+.picker-hero-item:hover {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+}
+
+.picker-hero-item.selected {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--brand-primary);
+  color: var(--text-primary);
+}
+
+.picker-hero-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  background: #1e293b;
+}
+
+.picker-results-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.target-hero-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+}
+
+.target-hero-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  border: 2px solid var(--border-subtle);
+}
+
+.matchup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.matchup-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: var(--transition);
+}
+
+.matchup-card:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+}
+
+.matchup-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.matchup-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.matchup-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.matchup-advantage {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--win-green);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   2. 5v5 Draft Simulator & Statistical Advantage Model
+   ========================================================================== */
+.draft-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.draft-teams-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.draft-team-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.draft-team-box.ally {
+  border-top: 4px solid var(--brand-primary);
+}
+
+.draft-team-box.enemy {
+  border-top: 4px solid var(--ban-rose);
+}
+
+.draft-team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.draft-slots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.draft-slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg-surface-elevated);
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  min-height: 56px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.draft-slot:hover {
+  border-color: var(--brand-primary);
+  background: var(--bg-surface-hover);
+}
+
+.draft-slot.filled {
+  border-style: solid;
+  border-color: var(--border-subtle);
+}
+
+.draft-slot-empty-text {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.draft-slot-hero-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.draft-slot-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.draft-slot-remove {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+}
+
+.draft-slot-remove:hover {
+  color: var(--ban-rose);
+}
+
+/* Draft Advantage Score Banner */
+.draft-score-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.draft-advantage-meter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 12px 0;
+}
+
+.meter-side-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  width: 90px;
+}
+
+.meter-track {
+  flex: 1;
+  height: 12px;
+  background: var(--ban-rose);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill-ally {
+  height: 100%;
+  background: var(--brand-primary);
+  transition: width 0.4s ease;
+}
+
+.draft-verdict-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.draft-tips-box {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  max-width: 680px;
+  border-left: 3px solid var(--brand-primary);
+  text-align: left;
+}
+
+/* ==========================================================================
+   3. Ban Priority Radar
+   ========================================================================== */
+.radar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.radar-column {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.radar-col-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.radar-col-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.radar-col-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.radar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.radar-item:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.radar-urgency-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.radar-urgency-badge.must { background: rgba(248, 113, 113, 0.15); color: var(--ban-rose); }
+.radar-urgency-badge.over { background: rgba(251, 191, 36, 0.15); color: var(--tier-s-plus); }
+.radar-urgency-badge.sleeper { background: rgba(52, 211, 153, 0.15); color: var(--win-green); }
+
+/* ==========================================================================
+   4. Patch Meta Movers (Trend Delta 1d vs 7d)
+   ========================================================================== */
+.movers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.movers-card-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.delta-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.delta-badge.up { color: var(--win-green); }
+.delta-badge.down { color: var(--ban-rose); }
+
+/* ==========================================================================
+   5. Beginner Hero Matcher Wizard ("Find My Hero")
+   ========================================================================== */
+.beginner-wizard-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.wizard-step-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.wizard-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.wizard-option-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+}
+
+.wizard-option-btn:hover {
+  background: var(--bg-surface-hover);
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.wizard-option-btn.selected {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--brand-primary);
+  color: var(--text-primary);
+}
+
+.wizard-option-icon {
+  font-size: 1.5rem;
+}
+
+.wizard-option-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.wizard-option-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
