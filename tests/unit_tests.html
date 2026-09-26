@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/tools.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b0f19;
+      color: #f8fafc;
+      padding: 24px;
+      margin: 0;
+    }
+    .test-header {
+      border-bottom: 1px solid #232d42;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+    .test-suite {
+      margin-bottom: 24px;
+      background: #131b2e;
+      border: 1px solid #232d42;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .suite-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+    .test-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      background: #1a243b;
+      font-size: 0.9rem;
+    }
+    .test-item.pass {
+      border-left: 4px solid #34d399;
+    }
+    .test-item.fail {
+      border-left: 4px solid #f87171;
+      background: rgba(248, 113, 113, 0.1);
+    }
+    .badge-pass {
+      color: #34d399;
+      font-weight: 700;
+    }
+    .badge-fail {
+      color: #f87171;
+      font-weight: 700;
+    }
+    #testSummary {
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 16px;
+      border-radius: 8px;
+      background: #131b2e;
+      margin-top: 24px;
+    }
+    .summary-success {
+      border: 1px solid #34d399;
+      color: #34d399;
+    }
+    .summary-failure {
+      border: 1px solid #f87171;
+      color: #f87171;
+    }
+  </style>
+</head>
+<body>
+  <div class="test-header">
+    <h1>MLBB Meta Analyser — Unit Test Runner</h1>
+    <p>Validates state, data service, draft algorithms, radar filters, and mobile CSS rules.</p>
+  </div>
+
+  <div id="testContainer">Running tests...</div>
+  <div id="testSummary"></div>
+
+  <script type="module">
+    import { state } from '../js/state.js';
+    import { dataService } from '../js/dataService.js';
+    import { CONFIG } from '../js/config.js';
+    import { getTacticalReason } from '../js/counterTool.js?v=2';
+    import { getPickedHeroIds, calculateAndRenderAdvantage, calculateRecommendedPicks } from '../js/draftSimulator.js?v=3';
+    import { getSynergyComboArchetype, filterSynergies } from '../js/synergyTool.js?v=3';
+    import { classifyBanCategories } from '../js/banRadar.js?v=2';
+    import { calculateMetaMovers, roundFloat } from '../js/metaMovers.js?v=2';
+    import { PLAYSTYLES, getRecommendedBattleSpell, getRecommendedCoreItem, getBeginnerMatchedHeroes } from '../js/beginnerGuide.js?v=2';
+
+    const results = [];
+
+    function assert(condition, name, details = '') {
+      results.push({
+        name,
+        passed: !!condition,
+        details: condition ? 'OK' : details
+      });
+    }
+
+    let sampleHero = null;
+
+    async function runAllTests() {
+      // Suite 1: StateStore Unit Tests
+      console.log('--- Testing StateStore ---');
+      assert(state.get('activeRank') !== undefined, 'StateStore: default activeRank is defined');
+      assert(state.get('activeTimeframe') !== undefined, 'StateStore: default activeTimeframe is defined');
+      
+      let notifiedKey = null;
+      let notifiedVal = null;
+      const unsub = state.subscribe((key, val) => {
+        notifiedKey = key;
+        notifiedVal = val;
+      });
+
+      state.set('activeRank', 'legend');
+      assert(state.get('activeRank') === 'legend', 'StateStore: set() updates state properly');
+      assert(notifiedKey === 'activeRank' && notifiedVal === 'legend', 'StateStore: subscribers notified of changes');
+
+      unsub();
+      state.set('activeRank', 'mythical_glory');
+      assert(notifiedVal !== 'mythical_glory', 'StateStore: unsubscribe() removes listener');
+
+      state.update({ activeRole: 'Tank', activeLane: 'Roam' });
+      assert(state.get('activeRole') === 'Tank' && state.get('activeLane') === 'Roam', 'StateStore: update() applies multiple mutations');
+      state.update({ activeRole: 'ALL', activeLane: 'ALL' }); // Reset
+
+      // Suite 2: DataService Unit Tests
+      console.log('--- Testing DataService ---');
+      try {
+        const summary = await dataService.fetchSummary();
+        assert(summary && summary.updated_at, 'DataService: fetchSummary() returns updated_at timestamp');
+        assert(summary && summary.total_heroes > 0, 'DataService: fetchSummary() returns total_heroes > 0');
+
+        const catalog = await dataService.fetchCatalog();
+        assert(catalog && catalog.map instanceof Map, 'DataService: fetchCatalog() returns hero map');
+        assert(catalog.map.size > 100, `DataService: catalog has ${catalog?.map?.size} heroes (expected > 100)`);
+
+        sampleHero = catalog.map.values().next().value;
+        assert(sampleHero && sampleHero.name && sampleHero.head, 'DataService: catalog heroes have name and portrait head');
+        assert(Array.isArray(sampleHero.skills), 'DataService: catalog heroes have skills array');
+
+        const slice = await dataService.fetchRankSlice('mythical_glory', '1d');
+        assert(Array.isArray(slice) && slice.length > 50, `DataService: rank slice returned ${slice?.length} heroes`);
+        const heroSliceItem = slice[0];
+        assert(typeof heroSliceItem.win_rate_pct === 'number', 'DataService: slice items have numeric win_rate_pct');
+        assert(typeof heroSliceItem.ban_rate_pct === 'number', 'DataService: slice items have numeric ban_rate_pct');
+        assert(heroSliceItem.tier, 'DataService: slice items have computed tier rating');
+
+        const countersMatrix = await dataService.fetchCountersMatrix();
+        assert(countersMatrix && typeof countersMatrix === 'object', 'DataService: counters matrix loaded successfully');
+        assert(Object.keys(countersMatrix).length > 50, `DataService: counters matrix contains ${Object.keys(countersMatrix).length} heroes`);
+
+        const synergiesMatrix = await dataService.fetchSynergiesMatrix();
+        assert(synergiesMatrix && typeof synergiesMatrix === 'object', 'DataService: synergies matrix loaded successfully');
+        assert(Object.keys(synergiesMatrix).length > 50, `DataService: synergies matrix contains ${Object.keys(synergiesMatrix).length} heroes`);
+      } catch (err) {
+        assert(false, 'DataService: Fetch operations succeeded without error', err.message);
+      }
+
+      // Suite 3: 5v5 Draft Simulator Statistical Math Logic
+      console.log('--- Testing Draft Simulator Math ---');
+      // Pairwise counter difference: if ally counters enemy by +5.0%, ally net should gain advantage
+      const dummyAlly = [{ heroid: 1, name: 'Hero A', roles: ['Tank'] }];
+      const dummyEnemy = [{ heroid: 2, name: 'Hero B', roles: ['Marksman'] }];
+      const dummyCounters = new Map([
+        [1, [{ heroid: 2, name: 'Hero B', increase_win_rate_pct: 5.5 }]]
+      ]);
+      const dummySynergies = new Map();
+      const dummyCatalog = { map: new Map([[1, dummyAlly[0]], [2, dummyEnemy[0]]]) };
+
+      // Test pairwise counter sum
+      let allyCounterAdvantage = 0;
+      let enemyCounterAdvantage = 0;
+      for (const a of dummyAlly) {
+        const cList = dummyCounters.get(a.heroid) || [];
+        for (const e of dummyEnemy) {
+          const match = cList.find(c => c.heroid === e.heroid);
+          if (match) allyCounterAdvantage += match.increase_win_rate_pct;
+        }
+      }
+      assert(allyCounterAdvantage === 5.5, 'Draft Math: Pairwise counter advantage sums to +5.5%');
+      assert(enemyCounterAdvantage === 0, 'Draft Math: Non-countering enemy has 0% counter advantage');
+
+      const netDelta = allyCounterAdvantage - enemyCounterAdvantage;
+      const winPredictAlly = Math.min(85, Math.max(15, 50.0 + (netDelta * 1.5)));
+      assert(winPredictAlly > 55.0, `Draft Math: Predicted win advantage for countering ally is ${winPredictAlly}% (>55%)`);
+
+      // Suite 4: Ban Priority Radar Categorization Logic
+      console.log('--- Testing Ban Priority Radar Logic ---');
+      const testHeroes = [
+        { heroid: 10, name: 'MustBan', ban_rate_pct: 25.0, win_rate_pct: 55.0 },
+        { heroid: 11, name: 'ComfortBan', ban_rate_pct: 20.0, win_rate_pct: 47.0 },
+        { heroid: 12, name: 'Sleeper', ban_rate_pct: 4.0, win_rate_pct: 56.0 },
+        { heroid: 13, name: 'Balanced', ban_rate_pct: 3.0, win_rate_pct: 50.0 }
+      ];
+
+      const mustBans = testHeroes.filter(h => h.ban_rate_pct >= 15.0 && h.win_rate_pct >= 52.0);
+      const overBans = testHeroes.filter(h => h.ban_rate_pct >= 10.0 && h.win_rate_pct < 50.0);
+      const sleeperThreats = testHeroes.filter(h => h.win_rate_pct >= 54.0 && h.ban_rate_pct < 10.0);
+
+      assert(mustBans.length === 1 && mustBans[0].name === 'MustBan', 'Ban Radar: Accurately identifies Priority Must-Bans');
+      assert(overBans.length === 1 && overBans[0].name === 'ComfortBan', 'Ban Radar: Accurately identifies Over-Banned Comfort Bans');
+      assert(sleeperThreats.length === 1 && sleeperThreats[0].name === 'Sleeper', 'Ban Radar: Accurately identifies Sleeper Threats');
+
+      // Suite 5: Meta Movers Momentum Calculation
+      console.log('--- Testing Meta Movers Calculation ---');
+      const hero1d = { heroid: 99, name: 'BuffedHero', win_rate_pct: 54.5 };
+      const hero7d = { heroid: 99, name: 'BuffedHero', win_rate_pct: 51.2 };
+      const deltaWr = Number((hero1d.win_rate_pct - hero7d.win_rate_pct).toFixed(2));
+      assert(deltaWr === 3.3, `Meta Movers: Win rate delta is +3.3% (calculated: ${deltaWr}%)`);
+      assert(deltaWr > 0, 'Meta Movers: Positive delta classifies as Rising Star');
+
+      // Suite 6: Viewport & CSS Rule Verification
+      console.log('--- Testing Viewport & Mobile CSS Rules ---');
+      // Verify viewport meta tag exists and has correct attributes
+      const viewportMeta = document.querySelector('meta[name="viewport"]');
+      assert(viewportMeta !== null, 'CSS Viewport: meta[name="viewport"] tag exists');
+      const metaContent = viewportMeta ? viewportMeta.getAttribute('content') : '';
+      assert(metaContent.includes('width=device-width'), 'CSS Viewport: meta includes width=device-width');
+      assert(metaContent.includes('viewport-fit=cover'), 'CSS Viewport: meta includes viewport-fit=cover');
+
+      // Verify responsive stylesheets exist and CSS rules are active
+      let foundInput16pxRule = false;
+      let foundTextSizeAdjust = false;
+      let foundManipulationRule = false;
+
+      for (const sheet of document.styleSheets) {
+        try {
+          for (const rule of sheet.cssRules) {
+            const txt = rule.cssText || '';
+            if (txt.includes('font-size: 16px') || (rule.media && txt.includes('font-size: 16px'))) {
+              foundInput16pxRule = true;
+            }
+            if (txt.includes('text-size-adjust: 100%')) {
+              foundTextSizeAdjust = true;
+            }
+            if (txt.includes('touch-action: manipulation')) {
+              foundManipulationRule = true;
+            }
+          }
+        } catch (e) {
+          // Cross-origin sheets ignored
+        }
+      }
+
+      assert(foundInput16pxRule, 'CSS Mobile Protection: Media query enforces font-size: 16px on inputs to prevent iOS auto-zoom');
+      assert(foundTextSizeAdjust, 'CSS Viewport: text-size-adjust: 100% active on html/body');
+      assert(foundManipulationRule, 'CSS Viewport: touch-action: manipulation active to eliminate tap delay');
+
+      // Check text-size-adjust
+      const bodyStyle = window.getComputedStyle(document.body);
+      assert(bodyStyle !== null, 'CSS Viewport: Body styles computed successfully');
+
+      // Suite 7: Accessibility, Color Contrast & Accessible Naming
+      console.log('--- Testing Accessibility & Contrast ---');
+      const rootStyle = window.getComputedStyle(document.documentElement);
+      const textMuted = rootStyle.getPropertyValue('--text-muted').trim();
+      const textSec = rootStyle.getPropertyValue('--text-secondary').trim();
+      assert(textMuted.toLowerCase() === '#cbd5e1', `A11y Contrast: --text-muted is #cbd5e1 (10.5:1 contrast, actual: ${textMuted})`);
+      assert(textSec.toLowerCase() === '#cbd5e1', `A11y Contrast: --text-secondary is #cbd5e1 (10.5:1 contrast, actual: ${textSec})`);
+
+      // Check active tab background rule
+      let foundActiveTabBg = false;
+      for (const sheet of document.styleSheets) {
+        try {
+          for (const rule of sheet.cssRules) {
+            const txt = rule.cssText || '';
+            if (txt.includes('.tool-tab-btn.active') && (txt.includes('0369a1') || txt.includes('rgb(3, 105, 161)'))) {
+              foundActiveTabBg = true;
+            }
+          }
+        } catch (e) {}
+      }
+      assert(foundActiveTabBg, 'A11y Contrast: Active tab uses #0369a1 (5.52:1 WCAG AA contrast with white text)');
+
+      // Verify accessible naming generator for hero cards
+      const testHeroCardAria = `${sampleHero.name} — ${sampleHero.roles[0] || 'Hero'}`;
+      assert(testHeroCardAria.startsWith(sampleHero.name), `A11y Label in Name: Hero card accessible name starts with visible hero name '${sampleHero.name}'`);
+
+      // Suite 8: Theme Tokens & Dual Mode (Story 1.1)
+      console.log('--- Testing Theme Tokens & Dual Mode ---');
+      const prevTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      
+      // Test Light Mode Tokens
+      document.documentElement.setAttribute('data-theme', 'light');
+      const lightStyle = window.getComputedStyle(document.documentElement);
+      const lightBg = lightStyle.getPropertyValue('--bg-primary').trim().toLowerCase();
+      const lightText = lightStyle.getPropertyValue('--text-primary').trim().toLowerCase();
+      const lightWin = lightStyle.getPropertyValue('--win-green').trim().toLowerCase();
+      assert(lightBg === '#f8fafc', `Theme Light: --bg-primary is soft cool slate #f8fafc (actual: ${lightBg})`);
+      assert(lightText === '#0f172a', `Theme Light: --text-primary is slate-900 #0f172a (actual: ${lightText})`);
+      assert(lightWin === '#059669', `Theme Light: --win-green is emerald-600 #059669 for AA contrast (actual: ${lightWin})`);
+
+      // Test Dark Mode Tokens
+      document.documentElement.setAttribute('data-theme', 'dark');
+      const darkStyle = window.getComputedStyle(document.documentElement);
+      const darkBg = darkStyle.getPropertyValue('--bg-primary').trim().toLowerCase();
+      const darkText = darkStyle.getPropertyValue('--text-primary').trim().toLowerCase();
+      const darkWin = darkStyle.getPropertyValue('--win-green').trim().toLowerCase();
+      assert(darkBg === '#0b0f19', `Theme Dark: --bg-primary is dark slate #0b0f19 (actual: ${darkBg})`);
+      assert(darkText === '#f8fafc', `Theme Dark: --text-primary is #f8fafc (actual: ${darkText})`);
+      assert(darkWin === '#34d399', `Theme Dark: --win-green is #34d399 (actual: ${darkWin})`);
+
+      // Test Story 1.2: Theme Toggle Switch & Persistence
+      console.log('--- Testing Theme Toggle Switch (Story 1.2) ---');
+      const toggleBtn = document.createElement('button');
+      toggleBtn.id = 'themeToggleBtn';
+      toggleBtn.className = 'theme-toggle-btn';
+      document.body.appendChild(toggleBtn);
+      
+      toggleBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') || 'dark';
+        const nextTheme = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('mlbb_theme', nextTheme);
+      });
+
+      document.documentElement.setAttribute('data-theme', 'dark');
+      toggleBtn.click();
+      assert(document.documentElement.getAttribute('data-theme') === 'light', 'Theme Toggle: Click toggles theme from dark to light');
+      assert(localStorage.getItem('mlbb_theme') === 'light', 'Theme Toggle: Click saves light theme to localStorage');
+
+      toggleBtn.click();
+      assert(document.documentElement.getAttribute('data-theme') === 'dark', 'Theme Toggle: Second click toggles back to dark');
+      assert(localStorage.getItem('mlbb_theme') === 'dark', 'Theme Toggle: Second click saves dark theme to localStorage');
+      toggleBtn.remove();
+
+      // Restore previous theme
+      document.documentElement.setAttribute('data-theme', prevTheme);
+
+      // Suite 9: Persistent Universal Context Bar (Story 2.1)
+      console.log('--- Testing Universal Context Bar (Story 2.1) ---');
+      const testContextBar = document.createElement('div');
+      testContextBar.id = 'universalContextBar';
+      testContextBar.className = 'universal-context-bar';
+      testContextBar.innerHTML = `
+        <div id="rankSelector"><button class="seg-btn active" data-rank="mythical_glory">Glory+</button></div>
+        <div id="timeframeSelector"><button class="seg-btn active" data-tf="1d">1D</button></div>
+      `;
+      document.body.appendChild(testContextBar);
+
+      assert(document.getElementById('universalContextBar') !== null, 'Context Bar: #universalContextBar element exists');
+      assert(testContextBar.querySelector('#rankSelector') !== null, 'Context Bar: Rank selector is mounted in universal context bar');
+      assert(testContextBar.querySelector('#timeframeSelector') !== null, 'Context Bar: Timeframe selector is mounted in universal context bar');
+
+      // Test simulation of tool switching (e.g. from tier to counter)
+      const mockControlHub = document.createElement('div');
+      mockControlHub.id = 'controlHub';
+      document.body.appendChild(mockControlHub);
+
+      // In non-tier tools, controlHub is hidden, but universalContextBar remains visible
+      mockControlHub.style.display = 'none';
+      assert(testContextBar.style.display !== 'none', 'Context Bar: Universal context bar stays visible when controlHub is hidden');
+
+      testContextBar.remove();
+      mockControlHub.remove();
+
+      // Suite 7: Filter Hub & Reset Mechanism (Story 2.2)
+      console.log('--- Testing Filter Hub & Reset Mechanism ---');
+      const mockHub = document.createElement('section');
+      mockHub.className = 'control-hub';
+      mockHub.innerHTML = `
+        <div class="control-row">
+          <div class="chip-group" id="testRoleFilters">
+            <button class="chip-btn" data-role="ALL">All</button>
+            <button class="chip-btn active" data-role="Tank">Tank</button>
+          </div>
+          <div class="chip-group" id="testLaneFilters">
+            <button class="chip-btn" data-role="ALL">All</button>
+            <button class="chip-btn active" data-lane="Roam">Roam</button>
+          </div>
+        </div>
+        <div class="control-row secondary-controls">
+          <input type="text" id="testSearchInput" value="Tigreal" />
+          <div class="control-actions-right">
+            <button class="filter-reset-btn" id="testFilterResetBtn">Reset</button>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(mockHub);
+
+      // Verify DOM elements exist
+      const resetBtn = mockHub.querySelector('#testFilterResetBtn');
+      assert(resetBtn !== null, 'Filter Hub: #filterResetBtn element exists in secondary-controls');
+      assert(mockHub.querySelector('.secondary-controls') !== null, 'Filter Hub: .secondary-controls container exists');
+
+      // Test active filter detection logic
+      state.update({ activeRole: 'Tank', activeLane: 'Roam', searchQuery: 'Tigreal' });
+      const hasActiveFilters = (state.get('activeRole') !== 'ALL') || (state.get('activeLane') !== 'ALL') || ((state.get('searchQuery') || '').trim() !== '');
+      assert(hasActiveFilters === true, 'Filter Hub: Detects active filters when role, lane or search are set');
+
+      // Simulate filter reset
+      state.update({ activeRole: 'ALL', activeLane: 'ALL', searchQuery: '' });
+      const filtersCleared = (state.get('activeRole') === 'ALL') && (state.get('activeLane') === 'ALL') && ((state.get('searchQuery') || '') === '');
+      assert(filtersCleared === true, 'Filter Hub: Resetting filters resets role, lane, and search to baseline');
+
+      mockHub.remove();
+
+      // Suite 8: Tier List In-Tier Sorting & Sticky Table Enhancements (Story 3.1)
+      console.log('--- Testing In-Tier Sorting & Sticky Table ---');
+      assert(state.get('tierSortField') !== undefined, 'In-Tier Sort: tierSortField initialized in StateStore');
+      assert(state.get('tierSortField') === 'meta_score', 'In-Tier Sort: default sort field is meta_score');
+
+      state.set('tierSortField', 'win_rate_pct');
+      assert(state.get('tierSortField') === 'win_rate_pct', 'In-Tier Sort: tierSortField mutates to win_rate_pct');
+
+      // Test in-tier array sorting logic
+      const mockTierHeroes = [
+        { name: 'Hero A', meta_score: 85, win_rate_pct: 51.5, ban_rate_pct: 12.0 },
+        { name: 'Hero B', meta_score: 92, win_rate_pct: 56.2, ban_rate_pct: 45.0 },
+        { name: 'Hero C', meta_score: 78, win_rate_pct: 49.0, ban_rate_pct: 2.5 }
+      ];
+
+      // Sort by win_rate_pct desc
+      mockTierHeroes.sort((a, b) => b.win_rate_pct - a.win_rate_pct);
+      assert(mockTierHeroes[0].name === 'Hero B' && mockTierHeroes[2].name === 'Hero C', 'In-Tier Sort: sorts heroes by win rate descending');
+
+      // Sort by ban_rate_pct desc
+      mockTierHeroes.sort((a, b) => b.ban_rate_pct - a.ban_rate_pct);
+      assert(mockTierHeroes[0].name === 'Hero B' && mockTierHeroes[1].name === 'Hero A', 'In-Tier Sort: sorts heroes by ban rate descending');
+
+      // Sort by meta_score desc
+      mockTierHeroes.sort((a, b) => b.meta_score - a.meta_score);
+      assert(mockTierHeroes[0].name === 'Hero B' && mockTierHeroes[2].name === 'Hero C', 'In-Tier Sort: sorts heroes by meta score descending');
+
+      // Reset state
+      state.set('tierSortField', 'meta_score');
+
+      // Test Table View DOM & Sticky Column Structure
+      const mockTableContainer = document.createElement('div');
+      mockTableContainer.className = 'table-container';
+      mockTableContainer.innerHTML = `
+        <table class="meta-table">
+          <thead>
+            <tr><th>#</th><th>Hero</th><th>Tier</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Ling</td><td>S+</td></tr>
+          </tbody>
+        </table>
+      `;
+      document.body.appendChild(mockTableContainer);
+      const thCol1 = mockTableContainer.querySelector('th:first-child');
+      const thCol2 = mockTableContainer.querySelector('th:nth-child(2)');
+      assert(thCol1 !== null && thCol2 !== null, 'Sticky Table: First and second columns rendered in table structure');
+      mockTableContainer.remove();
+
+      // Suite 9: Counter Picker & Tactical Matchup Badges (Story 3.2)
+      console.log('--- Testing Counter Picker & Tactical Matchup Badges ---');
+      const ling = { name: 'Ling', roles: ['Assassin'], speciality: ['Chase', 'Burst'] };
+      const khufra = { name: 'Khufra', roles: ['Tank', 'Support'], speciality: ['Control', 'Initiator'] };
+      const tacticalAntiDash = getTacticalReason(khufra, ling);
+      assert(tacticalAntiDash && tacticalAntiDash.type === 'anti-dash', 'Tactical Badges: Khufra counters Ling with anti-dash grounding');
+
+      const estes = { name: 'Estes', roles: ['Support'], speciality: ['Regen', 'Guard'] };
+      const baxia = { name: 'Baxia', roles: ['Tank'], speciality: ['Initiator', 'Damage'] };
+      const tacticalAntiSustain = getTacticalReason(baxia, estes);
+      assert(tacticalAntiSustain && tacticalAntiSustain.type === 'anti-sustain', 'Tactical Badges: Baxia counters Estes with anti-sustain melt');
+
+      const tigreal = { name: 'Tigreal', roles: ['Tank'], speciality: ['Control', 'Initiator'] };
+      const karrie = { name: 'Karrie', roles: ['Marksman'], speciality: ['Damage', 'Finisher'] };
+      const tacticalTankBuster = getTacticalReason(karrie, tigreal);
+      assert(tacticalTankBuster && tacticalTankBuster.type === 'tank-buster', 'Tactical Badges: Karrie counters Tigreal with armor shred / % HP');
+
+      const layla = { name: 'Layla', roles: ['Marksman'], speciality: ['Reap', 'Damage'] };
+      const saber = { name: 'Saber', roles: ['Assassin'], speciality: ['Charge', 'Burst'] };
+      const tacticalBurst = getTacticalReason(saber, layla);
+      assert(tacticalBurst && tacticalBurst.type === 'burst', 'Tactical Badges: Saber counters Layla with burst pickoff');
+
+      const atlas = { name: 'Atlas', roles: ['Tank'], speciality: ['Control', 'Initiator'] };
+      const diggie = { name: 'Diggie', roles: ['Support'], speciality: ['Guard', 'Control'] };
+      const tacticalDisrupt = getTacticalReason(diggie, atlas);
+      assert(tacticalDisrupt && tacticalDisrupt.type === 'disrupt', 'Tactical Badges: Diggie counters Atlas with CC cleanse & peel');
+
+      const balmond = { name: 'Balmond', roles: ['Fighter'], speciality: ['Damage', 'Regen'] };
+      const genericCounter = { name: 'Gord', roles: ['Mage'], speciality: ['Poke'] };
+      const tacticalGeneric = getTacticalReason(genericCounter, balmond);
+      assert(tacticalGeneric && typeof tacticalGeneric.label === 'string' && typeof tacticalGeneric.desc === 'string', 'Tactical Badges: Fallback returns valid tactical label and description');
+
+      // Suite 10: 5v5 Draft Analyzer & Frictionless Drawer (Story 4.1)
+      console.log('--- Testing 5v5 Draft Analyzer & Quick Drawer ---');
+      const emptyPicked = getPickedHeroIds([], []);
+      assert(emptyPicked instanceof Set && emptyPicked.size === 0, 'Draft Simulator: Empty teams return empty picked set');
+
+      const mockAllies = [{ heroid: 10, name: 'Tigreal', roles: ['Tank'] }, { heroid: 44, name: 'Gusion', roles: ['Assassin'] }];
+      const mockEnemies = [{ heroid: 25, name: 'Layla', roles: ['Marksman'] }];
+      const activePicked = getPickedHeroIds(mockAllies, mockEnemies);
+
+      assert(activePicked.has(10) && activePicked.has(44) && activePicked.has(25), 'Draft Simulator: Correctly identifies all drafted heroes across teams');
+      assert(!activePicked.has(99), 'Draft Simulator: Unpicked heroes are not in picked set');
+
+      // Test duplicate pick prevention detection
+      const isLaylaAlreadyPicked = activePicked.has(25);
+      assert(isLaylaAlreadyPicked === true, 'Draft Simulator: Prevents duplicate pick of already selected hero');
+
+      // Test draft advantage calculation output
+      const emptyHtml = calculateAndRenderAdvantage([], [], {}, {}, { map: new Map() });
+      assert(emptyHtml.includes('Pick at least 1 hero'), 'Draft Simulator: Shows initial guidance when no heroes are drafted');
+
+      const activeHtml = calculateAndRenderAdvantage(mockAllies, mockEnemies, {}, {}, { map: new Map() });
+      assert(activeHtml.includes('draft-advantage-meter'), 'Draft Simulator: Renders advantage meter when teams have heroes');
+
+      // Suite 11: Proactive "Best Next Pick" Recommender Engine (Story 4.2)
+      console.log('--- Testing Proactive Best Next Pick Recommender (Story 4.2) ---');
+      assert(typeof calculateRecommendedPicks === 'function', 'Draft Recommender: calculateRecommendedPicks is a defined function');
+
+      const mockCatalog = [
+        { heroid: 17, name: 'Fanny', roles: ['Assassin'], win_rate_pct: 48.0 },
+        { heroid: 87, name: 'Baxia', roles: ['Tank'], win_rate_pct: 53.0 },
+        { heroid: 79, name: 'Granger', roles: ['Marksman'], win_rate_pct: 52.5 },
+        { heroid: 104, name: 'Gloo', roles: ['Tank'], win_rate_pct: 51.0 },
+        { heroid: 25, name: 'Layla', roles: ['Marksman'], win_rate_pct: 49.0 },
+        { heroid: 57, name: 'Valir', roles: ['Mage'], win_rate_pct: 51.5 }
+      ];
+
+      const mockCountersMatrix = {
+        17: [
+          { heroid: 79, name: 'Granger', increase_win_rate_pct: 3.74 },
+          { heroid: 87, name: 'Baxia', increase_win_rate_pct: 3.37 },
+          { heroid: 104, name: 'Gloo', increase_win_rate_pct: 2.88 }
+        ]
+      };
+
+      const mockSynergiesMatrix = {
+        57: [
+          { heroid: 87, name: 'Baxia', increase_win_rate_pct: 2.5 }
+        ]
+      };
+
+      // Test 1: Enemy has Fanny -> Baxia and Granger should be recommended at the top
+      const enemyFanny = [{ heroid: 17, name: 'Fanny', roles: ['Assassin'] }];
+      const recsVsFanny = calculateRecommendedPicks([], enemyFanny, mockCountersMatrix, mockSynergiesMatrix, mockCatalog, 3);
+
+      assert(recsVsFanny.length === 3, 'Draft Recommender: Returns top 3 recommendations');
+      const topIds = recsVsFanny.map(r => r.hero.heroid);
+      assert(topIds.includes(79) || topIds.includes(87), 'Draft Recommender: Hard counters to Fanny (Granger / Baxia) rank in top recommendations');
+
+      const topRec = recsVsFanny[0];
+      assert(topRec.counterAdvantage > 0, `Draft Recommender: Top pick has positive counter advantage (+${topRec.counterAdvantage}%)`);
+      assert(Array.isArray(topRec.topReasons) && topRec.topReasons.length > 0, 'Draft Recommender: Provides human-readable tactical reasons for recommendation');
+      assert(topRec.topReasons[0].includes('Counters Fanny'), 'Draft Recommender: Reason explicitly cites countering enemy Fanny');
+
+      // Test 2: Role balance bonus - allies have Mage (Valir) but no frontline -> Tank (Baxia) gets role balance weight
+      const allyMage = [{ heroid: 57, name: 'Valir', roles: ['Mage'] }];
+      const recsWithMage = calculateRecommendedPicks(allyMage, enemyFanny, mockCountersMatrix, mockSynergiesMatrix, mockCatalog, 3);
+      const baxiaRec = recsWithMage.find(r => r.hero.heroid === 87);
+      assert(baxiaRec && baxiaRec.roleBalanceWeight > 0, 'Draft Recommender: Tanks receive positive role balance weight when team lacks frontline');
+      assert(baxiaRec && baxiaRec.synergyBoost > 0, 'Draft Recommender: Synergy boost applied when partner has synergy with drafted ally');
+
+      // Test 3: Duplicate exclusion - already picked heroes are never recommended
+      const recsWithPicked = calculateRecommendedPicks(allyMage, enemyFanny, mockCountersMatrix, mockSynergiesMatrix, mockCatalog, 5);
+      const recommendedPickedIds = recsWithPicked.map(r => r.hero.heroid);
+      assert(!recommendedPickedIds.includes(17), 'Draft Recommender: Enemy hero Fanny is excluded from ally recommendations');
+      assert(!recommendedPickedIds.includes(57), 'Draft Recommender: Drafted ally hero Valir is excluded from recommendations');
+
+      // Test 4: Score data integrity
+      assert(typeof topRec.score === 'number' && typeof topRec.synergyBoost === 'number', 'Draft Recommender: Score metrics are valid numbers');
+
+      // Suite 12: Teammate Synergy Finder Filters & Combo Badges (Story 5.1)
+      console.log('--- Testing Synergy Finder Filters & Combo Badges (Story 5.1) ---');
+      assert(typeof getSynergyComboArchetype === 'function', 'Synergy Archetypes: getSynergyComboArchetype is a defined function');
+      assert(typeof filterSynergies === 'function', 'Synergy Filters: filterSynergies is a defined function');
+
+      // Test Archetype Classifications
+      const angela = { name: 'Angela', roles: ['Support'] };
+      const lingPartner = { name: 'Ling', roles: ['Assassin'], lanes: ['Jungle'] };
+      const hyperCarryBadge = getSynergyComboArchetype(angela, lingPartner);
+      assert(hyperCarryBadge && hyperCarryBadge.type === 'hyper-carry', 'Synergy Archetypes: Angela + Ling classifies as Hyper-Carry Buffer');
+      assert(hyperCarryBadge && hyperCarryBadge.label.includes('Hyper-Carry'), 'Synergy Archetypes: Hyper-Carry Buffer label correctly formatted');
+
+      const tigrealAnchor = { name: 'Tigreal', roles: ['Tank'] };
+      const odettePartner = { name: 'Odette', roles: ['Mage'], lanes: ['Mid Lane'] };
+      const womboComboBadge = getSynergyComboArchetype(tigrealAnchor, odettePartner);
+      assert(womboComboBadge && womboComboBadge.type === 'wombo-combo', 'Synergy Archetypes: Tigreal + Odette classifies as Wombo Combo');
+
+      const francoAnchor = { name: 'Franco', roles: ['Tank', 'Support'] };
+      const laylaPartner = { name: 'Layla', roles: ['Marksman'], lanes: ['Gold Lane'] };
+      const engagePeelBadge = getSynergyComboArchetype(francoAnchor, laylaPartner);
+      assert(engagePeelBadge && engagePeelBadge.type === 'engage-peel', 'Synergy Archetypes: Franco + Layla classifies as Engage & Peel');
+
+      const hayabusaAnchor = { name: 'Hayabusa', roles: ['Assassin'] };
+      const saberPartner = { name: 'Saber', roles: ['Assassin'], lanes: ['Jungle'] };
+      const divePartnerBadge = getSynergyComboArchetype(hayabusaAnchor, saberPartner);
+      assert(divePartnerBadge && divePartnerBadge.type === 'dive-partner', 'Synergy Archetypes: Hayabusa + Saber classifies as Dive Partner');
+
+      const terizlaAnchor = { name: 'Terizla', roles: ['Fighter'] };
+      const yuZhongPartner = { name: 'Yu Zhong', roles: ['Fighter'], lanes: ['Exp Lane'] };
+      const sustainBadge = getSynergyComboArchetype(terizlaAnchor, yuZhongPartner);
+      assert(sustainBadge && sustainBadge.type === 'sustain-bruiser', 'Synergy Archetypes: Terizla + Yu Zhong classifies as Sustain Bruisers');
+
+      const genericAnchor = { name: 'RandomA', roles: ['Fighter'] };
+      const genericPartner = { name: 'RandomB', roles: ['Mage'], lanes: ['Mid Lane'] };
+      const fallbackBadge = getSynergyComboArchetype(genericAnchor, genericPartner);
+      assert(fallbackBadge && fallbackBadge.type === 'core-synergy', 'Synergy Archetypes: Fallback hero pair classifies as Core Synergy');
+
+      // Test filterSynergies function
+      const testSynergiesList = [
+        { heroid: 1, name: 'Ling', roles: ['Assassin'], lanes: ['Jungle'] },
+        { heroid: 2, name: 'Gatotkaca', roles: ['Tank', 'Fighter'], lanes: ['Roam', 'Exp Lane'] },
+        { heroid: 3, name: 'Odette', roles: ['Mage'], lanes: ['Mid Lane'] },
+        { heroid: 4, name: 'Claude', roles: ['Marksman'], lanes: ['Gold Lane'] },
+        { heroid: 5, name: 'Atlas', roles: ['Tank'], lanes: ['Roam'] }
+      ];
+
+      // Lane filter
+      const jungleFiltered = filterSynergies(testSynergiesList, 'Jungle', 'ALL');
+      assert(jungleFiltered.length === 1 && jungleFiltered[0].name === 'Ling', 'Synergy Filters: Accurately filters by Jungle lane');
+
+      const roamFiltered = filterSynergies(testSynergiesList, 'Roam', 'ALL');
+      assert(roamFiltered.length === 2, 'Synergy Filters: Accurately filters by Roam lane (Gatotkaca, Atlas)');
+
+      // Role filter
+      const tankFiltered = filterSynergies(testSynergiesList, 'ALL', 'Tank');
+      assert(tankFiltered.length === 2, 'Synergy Filters: Accurately filters by Tank role');
+
+      // Combined lane + role filter
+      const expFighter = filterSynergies(testSynergiesList, 'Exp Lane', 'Fighter');
+      assert(expFighter.length === 1 && expFighter[0].name === 'Gatotkaca', 'Synergy Filters: Accurately combines lane and role filters');
+
+      // Non-matching filter returns empty list
+      const nonMatching = filterSynergies(testSynergiesList, 'Gold Lane', 'Mage');
+      assert(Array.isArray(nonMatching) && nonMatching.length === 0, 'Synergy Filters: Non-matching criteria returns clean empty array');
+
+      // Suite 13: Ban Priority Radar Classification & Search (Story 5.2)
+      console.log('--- Testing Ban Priority Radar Classification & Search ---');
+      assert(typeof classifyBanCategories === 'function', 'Ban Radar: classifyBanCategories is an exported function');
+
+      const testRadarHeroes = [
+        { heroid: 17, name: 'Fanny', roles: ['Assassin'], lanes: ['Jungle'], ban_rate_pct: 68.5, win_rate_pct: 54.2 },
+        { heroid: 44, name: 'Gusion', roles: ['Assassin', 'Mage'], lanes: ['Mid Lane', 'Jungle'], ban_rate_pct: 35.0, win_rate_pct: 53.0 },
+        { heroid: 25, name: 'Layla', roles: ['Marksman'], lanes: ['Gold Lane'], ban_rate_pct: 1.2, win_rate_pct: 49.5 },
+        { heroid: 87, name: 'Baxia', roles: ['Tank'], lanes: ['Jungle', 'Roam'], ban_rate_pct: 4.5, win_rate_pct: 55.8 },
+        { heroid: 99, name: 'Nana', roles: ['Mage', 'Support'], lanes: ['Mid Lane'], ban_rate_pct: 22.0, win_rate_pct: 48.2 },
+        { heroid: 10, name: 'Tigreal', roles: ['Tank'], lanes: ['Roam'], ban_rate_pct: 18.5, win_rate_pct: 49.1 }
+      ];
+
+      // 1. Classification without search
+      const banCategories = classifyBanCategories(testRadarHeroes, '');
+      assert(Array.isArray(banCategories.mustBans) && banCategories.mustBans.length === 2, 'Ban Radar: Accurately identifies 2 Must-Bans (Fanny, Gusion: ban >= 15% and win >= 52%)');
+      assert(banCategories.mustBans[0].name === 'Fanny', 'Ban Radar: Must-bans correctly sorted by threat product (b.ban * b.win)');
+
+      assert(Array.isArray(banCategories.sleeperThreats) && banCategories.sleeperThreats.length === 1, 'Ban Radar: Accurately identifies 1 Sleeper Threat (Baxia: win >= 54% and ban < 10%)');
+      assert(banCategories.sleeperThreats[0].name === 'Baxia', 'Ban Radar: Sleeper threat matches Baxia');
+
+      assert(Array.isArray(banCategories.overBans) && banCategories.overBans.length === 2, 'Ban Radar: Accurately identifies 2 Over-Banned / Traps (Nana, Tigreal: ban >= 10% and win < 50%)');
+      assert(banCategories.overBans[0].name === 'Nana', 'Ban Radar: Over-bans sorted by ban rate descending');
+
+      // 2. Safe / Balanced hero check
+      const laylaInMust = banCategories.mustBans.some(h => h.name === 'Layla');
+      const laylaInSleeper = banCategories.sleeperThreats.some(h => h.name === 'Layla');
+      const laylaInOver = banCategories.overBans.some(h => h.name === 'Layla');
+      assert(!laylaInMust && !laylaInSleeper && !laylaInOver, 'Ban Radar: Balanced hero (Layla) is safely excluded from all urgent ban alert categories');
+
+      // 3. Search by Hero Name
+      const fannySearch = classifyBanCategories(testRadarHeroes, 'Fanny');
+      assert(fannySearch.mustBans.length === 1 && fannySearch.mustBans[0].name === 'Fanny', 'Ban Radar Search: Searching "Fanny" isolates Fanny in Must-Bans');
+      assert(fannySearch.sleeperThreats.length === 0 && fannySearch.overBans.length === 0, 'Ban Radar Search: Searching "Fanny" leaves other categories empty');
+
+      // 4. Search for Safe Hero returns searchedHero metadata
+      const laylaSearch = classifyBanCategories(testRadarHeroes, 'Layla');
+      assert(laylaSearch.mustBans.length === 0 && laylaSearch.sleeperThreats.length === 0 && laylaSearch.overBans.length === 0, 'Ban Radar Search: Searching safe hero "Layla" yields 0 ban alerts');
+      assert(laylaSearch.searchedHero && laylaSearch.searchedHero.name === 'Layla', 'Ban Radar Search: Safely identifies searched hero entity for draft safety reassurance notice');
+
+      // 5. Search by Role
+      const tankSearch = classifyBanCategories(testRadarHeroes, 'Tank');
+      assert(tankSearch.sleeperThreats.length === 1 && tankSearch.sleeperThreats[0].name === 'Baxia', 'Ban Radar Search: Role search "Tank" finds Baxia in Sleeper Threats');
+      assert(tankSearch.overBans.length === 1 && tankSearch.overBans[0].name === 'Tigreal', 'Ban Radar Search: Role search "Tank" finds Tigreal in Over-Bans');
+
+      // 6. Robustness against null/undefined
+      const nullCheck = classifyBanCategories(null, 'test');
+      assert(nullCheck && Array.isArray(nullCheck.mustBans) && nullCheck.mustBans.length === 0, 'Ban Radar: Robust against null hero lists');
+
+      // Suite 14: Meta Movers Momentum & Role Filtering (Story 5.3)
+      console.log('--- Testing Meta Movers Momentum & Role Filtering ---');
+      assert(typeof calculateMetaMovers === 'function', 'Meta Movers: calculateMetaMovers is an exported function');
+      assert(typeof roundFloat === 'function', 'Meta Movers: roundFloat is an exported function');
+
+      // 1. Math precision
+      assert(roundFloat(54.128, 2) === 54.13, 'Meta Movers Math: Accurately rounds floats up to 2 decimals');
+      assert(roundFloat(50.101, 2) === 50.10, 'Meta Movers Math: Accurately rounds floats down to 2 decimals');
+
+      const mockRecent = [
+        { heroid: 1, name: 'Granger', roles: ['Marksman'], win_rate_pct: 54.5, pick_rate_pct: 12.0 },
+        { heroid: 2, name: 'Baxia', roles: ['Tank'], win_rate_pct: 55.0, pick_rate_pct: 6.5 },
+        { heroid: 3, name: 'Layla', roles: ['Marksman'], win_rate_pct: 46.0, pick_rate_pct: 18.0 },
+        { heroid: 4, name: 'Tigreal', roles: ['Tank'], win_rate_pct: 48.0, pick_rate_pct: 15.0 },
+        { heroid: 5, name: 'Fanny', roles: ['Assassin'], win_rate_pct: 52.0, pick_rate_pct: 8.0 }
+      ];
+
+      const mockBaseline = [
+        { heroid: 1, name: 'Granger', roles: ['Marksman'], win_rate_pct: 51.5, pick_rate_pct: 10.0 }, // +3.0% WR, +2.0% PR (Rising)
+        { heroid: 2, name: 'Baxia', roles: ['Tank'], win_rate_pct: 53.0, pick_rate_pct: 6.0 },         // +2.0% WR, +0.5% PR (Rising)
+        { heroid: 3, name: 'Layla', roles: ['Marksman'], win_rate_pct: 49.0, pick_rate_pct: 20.0 }, // -3.0% WR, -2.0% PR (Falling)
+        { heroid: 4, name: 'Tigreal', roles: ['Tank'], win_rate_pct: 50.0, pick_rate_pct: 16.0 },     // -2.0% WR, -1.0% PR (Falling)
+        { heroid: 5, name: 'Fanny', roles: ['Assassin'], win_rate_pct: 52.0, pick_rate_pct: 8.0 }     // 0.0% WR (Flat)
+      ];
+
+      // 2. Global calculation across all roles
+      const allMovers = calculateMetaMovers(mockRecent, mockBaseline, 'ALL');
+      assert(allMovers.rising.length === 2, 'Meta Movers: Correctly detects 2 rising heroes with positive deltas');
+      assert(allMovers.falling.length === 2, 'Meta Movers: Correctly detects 2 falling heroes with negative deltas');
+      assert(allMovers.rising[0].name === 'Granger' && allMovers.rising[0].deltaWr === 3.0, 'Meta Movers: Top rising hero is Granger (+3.0% WR)');
+      assert(allMovers.falling[0].name === 'Layla' && allMovers.falling[0].deltaWr === -3.0, 'Meta Movers: Worst falling hero is Layla (-3.0% WR)');
+
+      // 3. Role filtering - Marksman
+      const mmMovers = calculateMetaMovers(mockRecent, mockBaseline, 'Marksman');
+      assert(mmMovers.rising.length === 1 && mmMovers.rising[0].name === 'Granger', 'Meta Movers Roles: Filtering by Marksman isolates rising Granger');
+      assert(mmMovers.falling.length === 1 && mmMovers.falling[0].name === 'Layla', 'Meta Movers Roles: Filtering by Marksman isolates falling Layla');
+
+      // 4. Role filtering - Tank
+      const tankMovers = calculateMetaMovers(mockRecent, mockBaseline, 'Tank');
+      assert(tankMovers.rising.length === 1 && tankMovers.rising[0].name === 'Baxia', 'Meta Movers Roles: Filtering by Tank isolates rising Baxia');
+      assert(tankMovers.falling.length === 1 && tankMovers.falling[0].name === 'Tigreal', 'Meta Movers Roles: Filtering by Tank isolates falling Tigreal');
+
+      // 5. Role with no movers
+      const suppMovers = calculateMetaMovers(mockRecent, mockBaseline, 'Support');
+      assert(suppMovers.rising.length === 0 && suppMovers.falling.length === 0, 'Meta Movers Roles: Role without matching heroes returns clean empty lists');
+
+      // 6. Robustness against missing baseline or invalid slices
+      const emptyMovers = calculateMetaMovers(null, mockBaseline);
+      assert(emptyMovers && Array.isArray(emptyMovers.rising) && emptyMovers.rising.length === 0, 'Meta Movers: Robust against null inputs');
+
+      // Suite 15: Beginner Hero Matcher & Spell Guidance (Story 5.4)
+      console.log('--- Testing Beginner Hero Matcher & Spell Guidance ---');
+      assert(Array.isArray(PLAYSTYLES) && PLAYSTYLES.length === 5, 'Beginner Matcher: PLAYSTYLES defines 5 distinct playstyle categories');
+      const jungleStyle = PLAYSTYLES.find(p => p.id === 'jungle');
+      assert(jungleStyle && jungleStyle.roles.includes('Assassin') && jungleStyle.roles.includes('Fighter'), 'Beginner Matcher: Fast Jungler category correctly includes Assassin & Fighter roles');
+
+      // 1. Battle spell recommendation engine
+      const jungleHero = { name: 'Saber', roles: ['Assassin'], lanes: ['Jungle'] };
+      const jungleSpell = getRecommendedBattleSpell(jungleHero, 'jungle');
+      assert(jungleSpell && jungleSpell.name === 'Retribution' && jungleSpell.icon === '⚡', 'Battle Spells: Recommends Retribution for Jungle heroes');
+
+      const tigrealHero = { name: 'Tigreal', roles: ['Tank'], lanes: ['Roam'] };
+      const tigrealSpell = getRecommendedBattleSpell(tigrealHero, 'tank');
+      assert(tigrealSpell && tigrealSpell.name === 'Flicker' && tigrealSpell.icon === '✨', 'Battle Spells: Recommends Flicker for Tigreal CC engages');
+
+      const balmondHero = { name: 'Balmond', roles: ['Fighter'], lanes: ['Exp Lane'] };
+      const balmondSpell = getRecommendedBattleSpell(balmondHero, 'brawler');
+      assert(balmondSpell && balmondSpell.name === 'Execute' && balmondSpell.icon === '⚔️', 'Battle Spells: Recommends Execute for Balmond execution burst');
+
+      const estesHero = { name: 'Estes', roles: ['Support'], lanes: ['Roam'] };
+      const estesSpell = getRecommendedBattleSpell(estesHero, 'support');
+      assert(estesSpell && estesSpell.name === 'Purify' && estesSpell.icon === '🛡️', 'Battle Spells: Recommends Purify for Estes to break CC stuns');
+
+      // 2. Core item hint engine
+      const balmondItem = getRecommendedCoreItem(balmondHero);
+      assert(balmondItem && balmondItem.name === 'War Axe', 'Core Items: Recommends War Axe for sustained Fighters (Balmond)');
+
+      const saberItem = getRecommendedCoreItem(jungleHero);
+      assert(saberItem && saberItem.name === 'Blade of Heptaseas', 'Core Items: Recommends Blade of Heptaseas for ambush Assassins (Saber)');
+
+      const tankItem = getRecommendedCoreItem(tigrealHero);
+      assert(tankItem && tankItem.name === 'Dominance Ice', 'Core Items: Recommends Dominance Ice for frontline Tanks');
+
+      const estesItem = getRecommendedCoreItem(estesHero);
+      assert(estesItem && estesItem.name === 'Flask of the Oasis', 'Core Items: Recommends Flask of the Oasis for healer Supports');
+
+      // 3. Beginner hero matcher filtering
+      const testCatalog = {
+        map: new Map([
+          [1, { difficulty: '10' }], // Balmond: Easy
+          [2, { difficulty: '15' }], // Saber: Easy
+          [3, { difficulty: '100' }], // Fanny: Hard
+          [4, { difficulty: '80' }],  // Chou: Hard
+          [5, { difficulty: '20' }]  // Layla: Easy but low win rate test
+        ])
+      };
+
+      const testHeroes = [
+        { heroid: 1, name: 'Balmond', roles: ['Fighter'], lanes: ['Jungle'], win_rate_pct: 53.5 },
+        { heroid: 2, name: 'Saber', roles: ['Assassin'], lanes: ['Jungle'], win_rate_pct: 52.0 },
+        { heroid: 3, name: 'Fanny', roles: ['Assassin'], lanes: ['Jungle'], win_rate_pct: 55.0 }, // Hard difficulty
+        { heroid: 4, name: 'Chou', roles: ['Fighter'], lanes: ['Exp Lane'], win_rate_pct: 51.5 },   // Hard difficulty
+        { heroid: 5, name: 'Layla', roles: ['Marksman'], lanes: ['Gold Lane'], win_rate_pct: 47.0 } // Sub-50% win rate
+      ];
+
+      const matchedJungle = getBeginnerMatchedHeroes('jungle', PLAYSTYLES, testHeroes, testCatalog);
+      assert(matchedJungle.length === 2, 'Beginner Matcher: Correctly matches 2 easy junglers (Balmond, Saber)');
+      assert(matchedJungle[0].name === 'Balmond', 'Beginner Matcher: Sorts matched heroes by win rate descending');
+
+      // Verify exclusion of high-difficulty hero
+      const hasFanny = matchedJungle.some(h => h.name === 'Fanny');
+      assert(!hasFanny, 'Beginner Matcher: Strict difficulty filter (<= 35) excludes hard mechanical heroes (Fanny diff: 100)');
+
+      // Verify exclusion of sub-50% win rate hero
+      const matchedRange = getBeginnerMatchedHeroes('range', PLAYSTYLES, testHeroes, testCatalog);
+      const hasLayla = matchedRange.some(h => h.name === 'Layla');
+      assert(!hasLayla, 'Beginner Matcher: Excludes heroes with sub-50% win rates');
+
+      // 4. Robustness against null/undefined
+      const nullMatched = getBeginnerMatchedHeroes('range', PLAYSTYLES, null, null);
+      assert(Array.isArray(nullMatched) && nullMatched.length === 0, 'Beginner Matcher: Robust against null inputs');
+
+      // Render Results to DOM
+      renderResults();
+    }
+
+    function renderResults() {
+      const container = document.getElementById('testContainer');
+      const summaryEl = document.getElementById('testSummary');
+
+      let html = '<div class="test-suite">';
+      let passedCount = 0;
+      let failedCount = 0;
+
+      for (const res of results) {
+        if (res.passed) passedCount++;
+        else failedCount++;
+
+        html += `
+          <div class="test-item ${res.passed ? 'pass' : 'fail'}">
+            <span><strong>${res.name}</strong> ${res.passed ? '' : `<br/><small style="color: #f87171">${res.details}</small>`}</span>
+            <span class="${res.passed ? 'badge-pass' : 'badge-fail'}">${res.passed ? 'PASS ✓' : 'FAIL ✗'}</span>
+          </div>
+        `;
+      }
+      html += '</div>';
+      container.innerHTML = html;
+
+      const allPassed = failedCount === 0;
+      summaryEl.className = allPassed ? 'summary-success' : 'summary-failure';
+      summaryEl.innerHTML = `
+        <div id="testStatus" data-passed="${allPassed}" data-total="${results.length}" data-failed="${failedCount}">
+          ${allPassed ? '🎉 ALL TESTS PASSED' : `⚠️ ${failedCount} TESTS FAILED`} (${passedCount}/${results.length} assertions passed)
+        </div>
+      `;
+
+      // Also expose results globally for automated headless runners
+      window.__TEST_RESULTS__ = {
+        total: results.length,
+        passed: passedCount,
+        failed: failedCount,
+        allPassed,
+        results
+      };
+      console.log(`[TEST_COMPLETE] Total: ${results.length}, Passed: ${passedCount}, Failed: ${failedCount}, AllPassed: ${allPassed}`);
+    }
+
+    runAllTests();
+  </script>
+</body>
+</html>

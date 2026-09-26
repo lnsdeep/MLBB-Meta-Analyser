@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <title>MLBB Meta Analyser — Official Tier List, Counters & 5v5 Draft Simulator</title>
   <meta name="description" content="Official Mobile Legends: Bang Bang (MLBB) meta rankings, win rates, ban rates, lane counters, synergies, and 5v5 draft analyzer extracted daily from Moonton GMS." />
   <meta name="keywords" content="MLBB meta, Mobile Legends tier list, MLBB hero counters, MLBB win rates, ban rates, 5v5 draft analyzer, best MLBB heroes, mythical glory meta" />
@@ -22,6 +25,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Theme Pre-Initialization (Prevents FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('mlbb_theme');
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/base.css" />
@@ -70,7 +87,7 @@
   <!-- Site Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="./" class="logo-group" aria-label="MLBB Meta Analyser Home">
+      <a href="./" class="logo-group" aria-label="MLBB Meta Analyser">
         <div class="logo-icon">
           <img src="./favicon.svg" alt="MLBB Shield Icon" width="34" height="34" />
         </div>
@@ -84,6 +101,11 @@
       </a>
 
       <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light and dark theme" title="Switch between Light and Dark mode">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+        </button>
+
         <div class="status-badge" id="statusBadge" data-tooltip="Official Moonton GMS Data • Synced Daily">
           <span class="status-dot"></span>
           <span class="status-text" id="statusText">Syncing data...</span>
@@ -127,35 +149,35 @@
       </button>
     </nav>
 
-    <!-- General Controls Hub (Filters & Search) -->
-    <section class="control-hub" id="controlHub">
-      <!-- Top Row: Rank & Timeframe -->
-      <div class="control-row">
-        <div class="filter-group">
-          <span class="filter-label">Rank Bracket:</span>
-          <div class="segmented-control" id="rankSelector">
-            <button class="seg-btn" data-rank="all">ALL</button>
-            <button class="seg-btn" data-rank="epic">Epic</button>
-            <button class="seg-btn" data-rank="legend">Legend</button>
-            <button class="seg-btn" data-rank="mythic">Mythic</button>
-            <button class="seg-btn" data-rank="mythical_honor">Honor</button>
-            <button class="seg-btn active" data-rank="mythical_glory">Glory+</button>
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <span class="filter-label">Timeframe:</span>
-          <div class="segmented-control" id="timeframeSelector">
-            <button class="seg-btn active" data-tf="1d" data-tooltip="Today's live patch meta">1D (Today)</button>
-            <button class="seg-btn" data-tf="3d">3D</button>
-            <button class="seg-btn" data-tf="7d" data-tooltip="Weekly meta baseline">7D (Week)</button>
-            <button class="seg-btn" data-tf="15d">15D</button>
-            <button class="seg-btn" data-tf="30d">30D</button>
-          </div>
+    <!-- Persistent Universal Context Bar (Rank & Timeframe - Visible across all tools) -->
+    <section class="universal-context-bar" id="universalContextBar" aria-label="Dataset Parameters">
+      <div class="filter-group">
+        <span class="filter-label">Rank Bracket:</span>
+        <div class="segmented-control" id="rankSelector">
+          <button class="seg-btn" data-rank="all">ALL</button>
+          <button class="seg-btn" data-rank="epic">Epic</button>
+          <button class="seg-btn" data-rank="legend">Legend</button>
+          <button class="seg-btn" data-rank="mythic">Mythic</button>
+          <button class="seg-btn" data-rank="mythical_honor">Honor</button>
+          <button class="seg-btn active" data-rank="mythical_glory">Glory+</button>
         </div>
       </div>
 
-      <!-- Bottom Row: Roles, Lanes, Search & View Toggle -->
+      <div class="filter-group">
+        <span class="filter-label">Timeframe:</span>
+        <div class="segmented-control" id="timeframeSelector">
+          <button class="seg-btn active" data-tf="1d" data-tooltip="Today's live patch meta">1D (Today)</button>
+          <button class="seg-btn" data-tf="3d">3D</button>
+          <button class="seg-btn" data-tf="7d" data-tooltip="Weekly meta baseline">7D (Week)</button>
+          <button class="seg-btn" data-tf="15d">15D</button>
+          <button class="seg-btn" data-tf="30d">30D</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Controls Hub (Filters & Search) -->
+    <section class="control-hub" id="controlHub" aria-label="Tier List Filters">
+      <!-- Top Row: Role & Lane Filters -->
       <div class="control-row">
         <!-- Roles Chips -->
         <div class="filter-group">
@@ -183,8 +205,10 @@
             <button class="chip-btn" data-lane="Jungle" data-tooltip="Jungle: Neutral objectives with Retribution">Jungle</button>
           </div>
         </div>
+      </div>
 
-        <!-- Search Bar -->
+      <!-- Bottom Row: Search Bar & View Mode Toggle -->
+      <div class="control-row secondary-controls">
         <div class="search-wrapper">
           <span class="search-icon">🔍</span>
           <input type="text" class="search-input" id="heroSearchInput" placeholder="Search hero or role..." aria-label="Search hero" />
@@ -192,10 +216,24 @@
           <button class="search-clear-btn hidden" id="searchClearBtn" aria-label="Clear search">✕</button>
         </div>
 
-        <!-- View Sub-Toggle (Tier Board vs Table) -->
-        <div class="view-mode-toggle" id="viewModeToggle">
-          <button class="view-mode-btn active" data-view="grid" title="Visual Tier Board">🏆 Board</button>
-          <button class="view-mode-btn" data-view="table" title="Data Table View">📋 Table</button>
+        <div class="control-actions-right">
+          <!-- In-Tier Sort Pills (Story 3.1) -->
+          <div class="tier-sort-control" id="tierSortControl" aria-label="In-tier sorting">
+            <span class="sort-label">Sort:</span>
+            <div class="segmented-control mini-segmented" id="tierSortSelector">
+              <button class="seg-btn active" data-tiersort="meta_score" title="Sort heroes within each tier by Meta Score">Score</button>
+              <button class="seg-btn" data-tiersort="win_rate_pct" title="Sort heroes within each tier by Win Rate">Win%</button>
+              <button class="seg-btn" data-tiersort="ban_rate_pct" title="Sort heroes within each tier by Ban Rate">Ban%</button>
+            </div>
+          </div>
+
+          <button class="filter-reset-btn hidden" id="filterResetBtn" aria-label="Reset active filters">
+            <span>✕ Reset Filters</span>
+          </button>
+          <div class="view-mode-toggle" id="viewModeToggle">
+            <button class="view-mode-btn active" data-view="grid" title="Visual Tier Board">🏆 Board</button>
+            <button class="view-mode-btn" data-view="table" title="Data Table View">📋 Table</button>
+          </div>
         </div>
       </div>
     </section>
@@ -375,6 +413,6 @@
   </footer>
 
   <!-- App JavaScript Modules -->
-  <script type="module" src="./js/app.js"></script>
+  <script type="module" src="./js/app.js?v=5"></script>
 </body>
 </html>

@@ -3,25 +3,26 @@
  * Bootstraps data loading, event routing, tool switching, and search.
  */
 
-import { CONFIG, formatRelativeTime, formatExactDate } from './config.js';
-import { dataService } from './dataService.js';
-import { state } from './state.js';
-import { renderTierView } from './tierView.js';
-import { renderTableView } from './tableView.js';
-import { renderCounterTool } from './counterTool.js';
-import { renderSynergyTool } from './synergyTool.js';
-import { renderDraftSimulator } from './draftSimulator.js';
-import { renderBanRadar } from './banRadar.js';
-import { renderMetaMovers } from './metaMovers.js';
-import { renderBeginnerGuide } from './beginnerGuide.js';
-import { initHeroModal } from './heroModal.js';
+import { CONFIG, formatRelativeTime, formatExactDate } from './config.js?v=3';
+import { dataService } from './dataService.js?v=3';
+import { state } from './state.js?v=3';
+import { renderTierView } from './tierView.js?v=3';
+import { renderTableView } from './tableView.js?v=3';
+import { renderCounterTool } from './counterTool.js?v=3';
+import { renderSynergyTool } from './synergyTool.js?v=3';
+import { renderDraftSimulator } from './draftSimulator.js?v=3';
+import { renderBanRadar } from './banRadar.js?v=3';
+import { renderMetaMovers } from './metaMovers.js?v=3';
+import { renderBeginnerGuide } from './beginnerGuide.js?v=3';
+import { initHeroModal } from './heroModal.js?v=3';
 
 let currentHeroesList = [];
 
-// Initialize app when DOM is ready
-document.addEventListener('DOMContentLoaded', async () => {
+// Initialize app when DOM is ready or immediately if already loaded
+async function initApp() {
   initHeroModal();
   setupEventListeners();
+  syncInitialControlsFromState();
 
   try {
     // 1. Fetch metadata summary
@@ -37,7 +38,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.error('Initialization error:', err);
     showErrorNotice('Failed to load live meta data. Please check your network connection.');
   }
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 
 /**
  * Load and render active rank slice
@@ -83,6 +90,12 @@ function renderCurrentTool() {
     controlHub.style.display = 'none';
   }
 
+  // Story 3.1: In-tier sort control only visible when viewing visual tier board
+  const tierSortControl = document.getElementById('tierSortControl');
+  if (tierSortControl) {
+    tierSortControl.style.display = (tool === 'tier' && viewMode === 'grid') ? 'flex' : 'none';
+  }
+
   switch (tool) {
     case 'tier':
       if (viewMode === 'table') {
@@ -122,9 +135,38 @@ function renderCurrentTool() {
 }
 
 /**
+ * Update Filter Reset Button Visibility based on active filters
+ */
+function updateFilterResetVisibility() {
+  const resetBtn = document.getElementById('filterResetBtn');
+  if (!resetBtn) return;
+  const activeRole = state.get('activeRole') || 'ALL';
+  const activeLane = state.get('activeLane') || 'ALL';
+  const searchQuery = (state.get('searchQuery') || '').trim();
+
+  const isFiltered = activeRole !== 'ALL' || activeLane !== 'ALL' || searchQuery !== '';
+  resetBtn.classList.toggle('hidden', !isFiltered);
+}
+
+/**
  * Event Listeners Binding
  */
 function setupEventListeners() {
+  // 0. Theme Toggle Button
+  const themeToggle = document.getElementById('themeToggleBtn');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      const nextTheme = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', nextTheme);
+      try {
+        localStorage.setItem('mlbb_theme', nextTheme);
+      } catch (e) {
+        // ignore storage quota errors
+      }
+    });
+  }
+
   // 1. Tool Navigation Tabs
   const toolNav = document.getElementById('toolNav');
   if (toolNav) {
@@ -171,6 +213,7 @@ function setupEventListeners() {
         roleContainer.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         state.set('activeRole', btn.dataset.role);
+        updateFilterResetVisibility();
         renderCurrentTool();
       });
     });
@@ -184,6 +227,7 @@ function setupEventListeners() {
         laneContainer.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         state.set('activeLane', btn.dataset.lane);
+        updateFilterResetVisibility();
         renderCurrentTool();
       });
     });
@@ -205,11 +249,14 @@ function setupEventListeners() {
   // 7. Instant Search Bar & Clear Button
   const searchInput = document.getElementById('heroSearchInput');
   const searchClear = document.getElementById('searchClearBtn');
+  const filterResetBtn = document.getElementById('filterResetBtn');
+
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
       const val = e.target.value;
       state.set('searchQuery', val);
       if (searchClear) searchClear.classList.toggle('hidden', val.length === 0);
+      updateFilterResetVisibility();
       renderCurrentTool();
     });
 
@@ -219,12 +266,59 @@ function setupEventListeners() {
         state.set('searchQuery', '');
         searchClear.classList.add('hidden');
         searchInput.focus();
+        updateFilterResetVisibility();
         renderCurrentTool();
       });
     }
   }
 
-  // 8. Global Keyboard Shortcut for Search ('/')
+  // 8. Filter Reset Button (Story 2.2)
+  if (filterResetBtn) {
+    filterResetBtn.addEventListener('click', () => {
+      state.update({
+        activeRole: 'ALL',
+        activeLane: 'ALL',
+        searchQuery: ''
+      });
+
+      if (roleContainer) {
+        roleContainer.querySelectorAll('.chip-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.role === 'ALL');
+        });
+      }
+
+      if (laneContainer) {
+        laneContainer.querySelectorAll('.chip-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.lane === 'ALL');
+        });
+      }
+
+      if (searchInput) {
+        searchInput.value = '';
+      }
+      if (searchClear) {
+        searchClear.classList.add('hidden');
+      }
+
+      filterResetBtn.classList.add('hidden');
+      renderCurrentTool();
+    });
+  }
+
+  // 9. In-Tier Sort Selector (Story 3.1)
+  const tierSortContainer = document.getElementById('tierSortSelector');
+  if (tierSortContainer) {
+    tierSortContainer.querySelectorAll('.seg-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        tierSortContainer.querySelectorAll('.seg-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.set('tierSortField', btn.dataset.tiersort);
+        renderCurrentTool();
+      });
+    });
+  }
+
+  // 10. Global Keyboard Shortcut for Search ('/')
   window.addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement !== searchInput && !e.ctrlKey && !e.metaKey) {
       e.preventDefault();
@@ -232,12 +326,50 @@ function setupEventListeners() {
     }
   });
 
-  // 9. Subscribe to state changes
+  // Subscribe to state changes
   state.subscribe((key) => {
-    if (key === 'activeTool' || key === 'viewMode' || key === 'sortField' || key === 'sortOrder') {
+    if (key === 'activeTool') {
+      const toolNav = document.getElementById('toolNav');
+      const tool = state.get('activeTool');
+      if (toolNav && tool) {
+        toolNav.querySelectorAll('.tool-tab-btn').forEach(b => {
+          b.classList.toggle('active', b.dataset.tool === tool);
+        });
+      }
+      renderCurrentTool();
+    } else if (key === 'viewMode' || key === 'sortField' || key === 'sortOrder' || key === 'tierSortField') {
       renderCurrentTool();
     }
   });
+}
+
+/**
+ * Synchronize UI Controls with Initial State
+ */
+function syncInitialControlsFromState() {
+  const tool = state.get('activeTool');
+  const toolNav = document.getElementById('toolNav');
+  if (toolNav && tool) {
+    toolNav.querySelectorAll('.tool-tab-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.tool === tool);
+    });
+  }
+
+  const rank = state.get('activeRank');
+  const rankContainer = document.getElementById('rankSelector');
+  if (rankContainer && rank) {
+    rankContainer.querySelectorAll('.seg-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.rank === rank);
+    });
+  }
+
+  const tf = state.get('activeTimeframe');
+  const tfContainer = document.getElementById('timeframeSelector');
+  if (tfContainer && tf) {
+    tfContainer.querySelectorAll('.seg-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.tf === tf);
+    });
+  }
 }
 
 /**

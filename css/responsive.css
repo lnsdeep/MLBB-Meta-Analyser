@@ -3,26 +3,84 @@
    Breakpoints: Mobile (<640px), Tablet (641px - 1024px), Desktop (>1024px)
    ========================================================================== */
 
-/* Tablet & Smaller Screens (< 1024px) */
+/* --------------------------------------------------------------------------
+   Tablet & Smaller Screens (< 1024px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .picker-container {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .picker-sidebar {
-    max-height: 280px;
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .sidebar-role-chips {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+    padding-bottom: 2px;
   }
 
   .picker-hero-list {
-    max-height: 180px;
+    max-height: 140px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 6px;
+    overflow-y: auto;
+  }
+
+  .picker-hero-item {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  .picker-hero-thumb {
+    width: 26px;
+    height: 26px;
+  }
+
+  .picker-hero-label {
+    font-size: 0.78rem;
+  }
+
+  .target-change-btn {
+    display: inline-flex;
   }
 
   .radar-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
   }
 
+  /* Story 4.2: Tablet Split-Board (768px - 1024px) - Side-by-Side Competitive Drafting */
   .draft-teams-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .draft-team-box {
+    padding: 14px;
+  }
+
+  .draft-slot {
+    padding: 8px 10px;
+    min-height: 50px;
+  }
+
+  .draft-slot-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .draft-slot-hero-name {
+    font-size: 0.88rem;
+  }
+
+  .recommendations-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 
   .movers-container {
@@ -30,37 +88,269 @@
   }
 }
 
-/* Mobile Screens (< 768px) */
+/* --------------------------------------------------------------------------
+   Mobile Screens (< 768px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   :root {
-    --header-height: 60px;
+    --header-height: 56px;
   }
 
+  /* Prevent automatic iOS / WebKit zoom on text input focus */
+  input[type="text"],
+  input[type="search"],
+  select,
+  textarea,
+  .search-input,
+  .picker-hero-search {
+    font-size: 16px !important;
+  }
+
+  /* Compact container padding */
   .container {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Site Header Mobile */
+  .site-header {
+    height: var(--header-height);
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header-inner {
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .logo-group {
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    gap: 8px;
+  }
+
+  .logo-title {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .logo-title span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .logo-tag {
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    flex-shrink: 0;
+  }
+
+  .logo-subtitle {
+    display: none;
+  }
+
+  .header-actions {
+    flex-shrink: 0;
+  }
+
+  .header-actions .status-badge {
+    padding: 4px 8px;
+    font-size: 0.72rem;
   }
 
   .header-actions .status-badge span.status-text {
-    display: none; /* Hide long text on small screens, keep dot and simple text */
+    display: none; /* Keep clean pulse dot on mobile */
   }
 
+  /* Tool Navigation - Smooth Horizontal Scroll Bar */
+  .tool-nav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 6px;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 28px), transparent 100%);
+    mask-image: linear-gradient(to right, black calc(100% - 28px), transparent 100%);
+  }
+
+  .tool-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tool-tab-btn {
+    padding: 9px 15px;
+    font-size: 0.88rem;
+    flex-shrink: 0;
+  }
+
+  /* Control Hub (Filters) */
+  .universal-context-bar,
   .control-hub {
-    padding: 14px;
+    padding: 12px;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+
+  .universal-context-bar {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .control-row {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
   }
 
+  .filter-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .filter-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-right: 0;
+  }
+
+  /* Segmented Controls - Horizontal Scrollable Strips */
+  .segmented-control {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+    padding: 3px;
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  .segmented-control::-webkit-scrollbar {
+    display: none;
+  }
+
+  .seg-btn {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  /* Role & Lane Chip Groups - Horizontal Scrollable Strips */
+  .chip-group {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding-bottom: 2px;
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  .chip-group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chip-btn {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  /* Search & View Toggle Row */
   .search-wrapper {
     max-width: 100%;
+    width: 100%;
+  }
+
+  .search-shortcut {
+    display: none; /* Hide desktop keyboard hint on mobile */
+  }
+
+  .secondary-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .control-actions-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .tier-sort-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .tier-sort-control .mini-segmented {
+    flex: 1;
+    display: flex;
+    width: 100%;
+  }
+
+  .tier-sort-control .mini-segmented .seg-btn {
+    flex: 1;
+    text-align: center;
+    padding: 6px 6px;
+    font-size: 0.78rem;
+  }
+
+  .view-mode-toggle {
+    flex: 1;
+    width: auto;
+    justify-content: center;
+  }
+
+  .filter-reset-btn {
+    flex-shrink: 0;
+    padding: 7px 12px;
+  }
+
+  .view-mode-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  /* Tier Grid Layout */
+  .tier-group {
+    margin-bottom: 20px;
+  }
+
+  .tier-header {
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .tier-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 10px;
+    gap: 8px;
   }
 
   .hero-card {
@@ -68,31 +358,104 @@
   }
 
   .hero-avatar-wrapper {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
   }
 
   .hero-name {
     font-size: 0.85rem;
   }
 
-  .modal-stats-ribbon {
-    grid-template-columns: repeat(2, 1fr);
+  .hero-meta-tags {
+    gap: 3px;
   }
 
-  .modal-matchups-columns {
-    grid-template-columns: 1fr;
+  .hero-role-tag {
+    font-size: 0.8rem;
+    color: var(--text-muted);
   }
 
-  /* Transform Desktop Modal to Mobile Bottom Sheet */
+  .hero-lane-pill {
+    font-size: 0.72rem;
+    padding: 1px 5px;
+  }
+
+  .hero-stats-row {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .stat-item .stat-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .stat-item .stat-val {
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* Table View Sticky Columns on Mobile */
+  .table-container {
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-md);
+  }
+
+  .meta-table th,
+  .meta-table td {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Freeze Rank # and Hero Columns while scrolling horizontally */
+  .meta-table th:first-child,
+  .meta-table td:first-child {
+    position: sticky;
+    left: 0;
+    background: var(--bg-surface-elevated);
+    z-index: 3;
+    width: 44px;
+    min-width: 44px;
+    box-shadow: 1px 0 0 var(--border-subtle);
+  }
+
+  .meta-table td:first-child {
+    background: var(--bg-surface);
+  }
+
+  .meta-table tbody tr:hover td:first-child {
+    background: var(--bg-surface-elevated);
+  }
+
+  .meta-table th:nth-child(2),
+  .meta-table td:nth-child(2) {
+    position: sticky;
+    left: 44px;
+    background: var(--bg-surface-elevated);
+    z-index: 3;
+    min-width: 140px;
+    box-shadow: 3px 0 8px -2px rgba(0, 0, 0, 0.25);
+  }
+
+  .meta-table td:nth-child(2) {
+    background: var(--bg-surface);
+  }
+
+  .meta-table tbody tr:hover td:nth-child(2) {
+    background: var(--bg-surface-elevated);
+  }
+
+  /* Transform Desktop Modal to Mobile Bottom Sheet Drawer */
   .modal-overlay {
     padding: 0;
     align-items: flex-end;
   }
 
   .modal-dialog {
-    max-width: 100%;
-    max-height: 85vh;
+    max-width: 100% !important;
+    max-height: 88vh !important;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-left: none;
@@ -105,56 +468,305 @@
     transform: translateY(0);
   }
 
-  /* Add drag indicator handle on mobile modal */
+  /* Touch pull-handle on mobile bottom sheet */
+  .modal-hero-banner {
+    position: relative;
+    min-height: 90px;
+    padding: 18px 16px 14px;
+    gap: 12px;
+    align-items: center;
+  }
+
   .modal-hero-banner::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 6px;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
+    width: 36px;
     height: 4px;
     background: var(--text-muted);
     border-radius: 999px;
-    opacity: 0.4;
+    opacity: 0.5;
+  }
+
+  .modal-hero-avatar-wrap {
+    width: 52px;
+    height: 52px;
+  }
+
+  .modal-hero-name {
+    font-size: 1.25rem;
+  }
+
+  .modal-close-btn {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .modal-body {
+    padding: 16px;
+    gap: 18px;
+    padding-bottom: calc(24px + var(--safe-bottom));
+  }
+
+  .modal-stats-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .modal-matchups-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 5v5 Draft Analyzer Mobile */
+  .draft-container {
+    gap: 16px;
+  }
+
+  .draft-team-box {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .draft-slot {
+    min-height: 50px;
+    padding: 8px 12px;
+  }
+
+  .draft-advantage-meter {
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 0;
+  }
+
+  .meter-side-label {
+    width: 100%;
+    text-align: center;
+    font-size: 0.82rem;
+  }
+
+  .meter-track {
+    width: 100%;
+    height: 10px;
+  }
+
+  .draft-score-card {
+    padding: 16px;
+  }
+
+  .draft-verdict-title {
+    font-size: 1.1rem;
+  }
+
+  /* Counter Picker & Synergy Finder */
+  .picker-results-panel {
+    padding: 16px;
+  }
+
+  .matchup-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .target-hero-banner {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .target-hero-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .target-hero-name {
+    font-size: 1.15rem;
+  }
+
+  .matchup-card {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .matchup-avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Story 5.2: Ban Radar Mobile Switcher & Responsive Layout */
+  .ban-mobile-tabs {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  .ban-radar-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .ban-search-box {
+    max-width: 100%;
+  }
+
+  .radar-column.mobile-hidden {
+    display: none !important;
+  }
+
+  .movers-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .movers-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .movers-role-chips {
+    width: 100%;
+    mask-image: linear-gradient(to right, black calc(100% - 24px), transparent 100%);
+  }
+
+  /* Ban Radar & Meta Movers */
+  .radar-column,
+  .movers-card-box {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .radar-item {
+    padding: 8px 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .radar-urgency-badge {
+    margin-left: auto;
+    font-size: 0.72rem;
+  }
+
+  .delta-badge {
+    margin-left: auto;
+    font-size: 0.8rem;
+  }
+
+  /* Beginner Wizard */
+  .beginner-wizard-card {
+    padding: 18px 14px;
+    gap: 16px;
+  }
+
+  .wizard-options-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }
 
-/* Extra Small Phones (< 480px) */
+/* --------------------------------------------------------------------------
+   Extra Small Phones (< 480px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 480px) {
   .tier-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .hero-card {
+    padding: 8px;
+  }
+
+  .hero-avatar-wrapper {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-name {
+    font-size: 0.8rem;
+  }
+
+  .hero-stats-row {
+    padding: 5px 6px;
+    font-size: 0.78rem;
+  }
+
+  .stat-item .stat-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  .stat-item .stat-val {
+    font-size: 0.78rem;
+    font-weight: 700;
   }
 
   .tool-tab-btn {
     padding: 8px 14px;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
+    gap: 6px;
   }
 
-  .segmented-control {
-    width: 100%;
+  .tool-header-block {
+    padding: 14px 16px;
   }
 
-  .seg-btn {
-    flex: 1;
-    text-align: center;
-    padding: 6px 8px;
-    font-size: 0.78rem;
+  .tool-title-group h2 {
+    font-size: 1.15rem;
+  }
+
+  /* Story 4.2: Mobile Draft Stack (< 768px) */
+  .draft-teams-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .recommendations-grid {
+    grid-template-columns: 1fr;
   }
 
   .footer-inner {
     flex-direction: column;
     text-align: center;
+    gap: 12px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }
 
-/* Touch Friendly Targets (>= 44px min height for touch) */
+/* --------------------------------------------------------------------------
+   Touch-Friendly Hit Targets (>= 44px for primary interactive elements)
+   -------------------------------------------------------------------------- */
 @media (pointer: coarse) {
   .tool-tab-btn,
   .seg-btn,
   .chip-btn,
   .picker-hero-item,
-  .draft-slot {
+  .draft-slot,
+  .view-mode-btn,
+  .modal-close-btn,
+  .ban-tab-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .search-input,
+  .ban-search-input {
     min-height: 44px;
   }
 }

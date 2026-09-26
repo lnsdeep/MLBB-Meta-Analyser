@@ -17,6 +17,7 @@ class StateStore {
       searchQuery: '',
       sortField: 'win_rate_pct',
       sortOrder: 'desc', // 'asc' or 'desc'
+      tierSortField: params.get('tier_sort') || 'meta_score', // 'meta_score', 'win_rate_pct', 'ban_rate_pct'
       viewMode: 'grid', // 'grid' (tier board) or 'table'
       selectedHeroId: null,
     };
@@ -78,6 +79,7 @@ class StateStore {
     if (this.state.activeTimeframe !== '1d') params.set('tf', this.state.activeTimeframe);
     if (this.state.activeRole !== 'ALL') params.set('role', this.state.activeRole);
     if (this.state.activeLane !== 'ALL') params.set('lane', this.state.activeLane);
+    if (this.state.tierSortField && this.state.tierSortField !== 'meta_score') params.set('tier_sort', this.state.tierSortField);
 
     const newQuery = params.toString();
     const newUrl = newQuery ? `${window.location.pathname}?${newQuery}` : window.location.pathname;

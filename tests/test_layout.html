@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Viewport Layout & Overflow Verification</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0b0f19;
+      color: #f8fafc;
+      padding: 24px;
+      margin: 0;
+    }
+    .result-card {
+      background: #131b2e;
+      border: 1px solid #232d42;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .pass { border-left: 4px solid #34d399; }
+    .fail { border-left: 4px solid #f87171; background: rgba(248,113,113,0.1); }
+    iframe {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      visibility: hidden;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mobile Viewport Horizontal Overflow Verification</h1>
+  <p>Tests all gamer tools across mobile screen widths (320px, 360px, 375px, 390px, 412px, 768px).</p>
+  <div id="resultsContainer">Testing layout...</div>
+  <div id="layoutSummary"></div>
+
+  <script>
+    const VIEWPORTS = [
+      { name: 'iPhone SE (1st gen)', width: 320, height: 568 },
+      { name: 'Android Compact', width: 360, height: 640 },
+      { name: 'iPhone SE / 8', width: 375, height: 667 },
+      { name: 'iPhone 12/13/14/15/16', width: 390, height: 844 },
+      { name: 'Galaxy / Pixel', width: 412, height: 915 },
+      { name: 'iPad / Tablet', width: 768, height: 1024 }
+    ];
+
+    const TOOLS = ['tier', 'counter', 'draft', 'synergy', 'radar', 'movers', 'guide'];
+
+    const testResults = [];
+
+    function checkIframeOverflow(iframe, width, name, tool) {
+      return new Promise((resolve) => {
+        iframe.onload = () => {
+          setTimeout(() => {
+            try {
+              const doc = iframe.contentDocument || iframe.contentWindow.document;
+              const htmlEl = doc.documentElement;
+              const bodyEl = doc.body;
+
+              const htmlScroll = htmlEl.scrollWidth;
+              const htmlClient = htmlEl.clientWidth;
+              const bodyScroll = bodyEl.scrollWidth;
+
+              // Check if any element creates unwanted horizontal scrollbar on the page
+              const hasHorizontalScroll = htmlScroll > (htmlClient + 1); // 1px subpixel tolerance
+              let culpritList = [];
+              if (hasHorizontalScroll) {
+                for (const el of doc.querySelectorAll('*')) {
+                  const r = el.getBoundingClientRect();
+                  if (r.right > htmlClient + 2) {
+                    const tag = el.tagName.toLowerCase();
+                    const cls = el.className && typeof el.className === 'string' ? '.' + el.className.trim().split(/\s+/).join('.') : '';
+                    const id = el.id ? '#' + el.id : '';
+                    culpritList.push(`${tag}${cls}${id} (r=${Math.round(r.right)}px)`);
+                  }
+                }
+              }
+
+              const culpritMsg = culpritList.length > 0 ? ` Culprits: [${culpritList.slice(0, 3).join(', ')}]` : '';
+
+              testResults.push({
+                device: name,
+                tool,
+                width,
+                htmlScroll,
+                htmlClient,
+                bodyScroll,
+                passed: !hasHorizontalScroll,
+                details: hasHorizontalScroll ? `Overflow: scrollWidth=${htmlScroll}px > clientWidth=${htmlClient}px.${culpritMsg}` : 'No horizontal overflow (Fit: 100%)'
+              });
+            } catch (err) {
+              testResults.push({
+                device: name,
+                tool,
+                width,
+                passed: false,
+                details: `Iframe inspection error: ${err.message}`
+              });
+            }
+            iframe.remove();
+            resolve();
+          }, 300);
+        };
+      });
+    }
+
+    async function runAllLayoutTests() {
+      for (const vp of VIEWPORTS) {
+        for (const tool of TOOLS) {
+          const iframe = document.createElement('iframe');
+          iframe.style.width = `${vp.width}px`;
+          iframe.style.height = `${vp.height}px`;
+          iframe.src = `../index.html?tool=${tool}`;
+          document.body.appendChild(iframe);
+          await checkIframeOverflow(iframe, vp.width, vp.name, tool);
+        }
+      }
+
+      renderLayoutResults();
+    }
+
+    function renderLayoutResults() {
+      const container = document.getElementById('resultsContainer');
+      const summaryEl = document.getElementById('layoutSummary');
+
+      let html = '';
+      let passed = 0;
+      let failed = 0;
+
+      for (const r of testResults) {
+        if (r.passed) passed++;
+        else failed++;
+
+        html += `
+          <div class="result-card ${r.passed ? 'pass' : 'fail'}">
+            <div>
+              <strong>${r.device} (${r.width}px) — Tool: [${r.tool.toUpperCase()}]</strong>
+              <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 2px;">${r.details}</div>
+            </div>
+            <span style="font-weight: 700; color: ${r.passed ? '#34d399' : '#f87171'}">${r.passed ? 'PASS ✓' : 'FAIL ✗'}</span>
+          </div>
+        `;
+      }
+      container.innerHTML = html;
+
+      const allPassed = failed === 0;
+      summaryEl.innerHTML = `
+        <div id="layoutStatus" data-passed="${allPassed}" data-total="${testResults.length}" data-failed="${failed}" style="font-size: 1.2rem; font-weight: 800; padding: 16px; border-radius: 8px; margin-top: 20px; border: 1px solid ${allPassed ? '#34d399' : '#f87171'}; color: ${allPassed ? '#34d399' : '#f87171'}; background: #131b2e;">
+          ${allPassed ? '🎉 ZERO OVERFLOW: ALL MOBILE VIEWPORTS PASSED' : `⚠️ ${failed} LAYOUT OVERFLOWS DETECTED`} (${passed}/${testResults.length} viewport configurations validated)
+        </div>
+      `;
+
+      console.log(`[LAYOUT_COMPLETE] Total: ${testResults.length}, Passed: ${passed}, Failed: ${failed}`);
+    }
+
+    runAllLayoutTests();
+  </script>
+</body>
+</html>

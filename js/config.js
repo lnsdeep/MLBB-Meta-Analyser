@@ -4,8 +4,8 @@
  */
 
 export const CONFIG = {
-  // Path-safe data directory resolver (handles subpaths like username.github.io/repo/)
-  DATA_BASE: './data/processed',
+  // Path-safe data directory resolver (handles root, subfolders, tests, and GitHub Pages)
+  DATA_BASE: new URL('../data/processed', import.meta.url).href,
 
   RANKS: [
     { id: 'all', name: 'ALL Ranks', desc: 'All player ranks combined' },

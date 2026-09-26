@@ -55,10 +55,18 @@ export function renderTierView(container, heroesList) {
   ];
 
   let html = '';
+  const tierSort = state.get('tierSortField') || 'meta_score';
 
   for (const tier of TIERS) {
     const tierHeroes = filtered.filter(h => h.tier === tier.key);
     if (tierHeroes.length === 0) continue;
+
+    // In-Tier Sorting (Story 3.1): Sort heroes within their tier bucket
+    tierHeroes.sort((a, b) => {
+      const valA = a[tierSort] !== undefined ? a[tierSort] : 0;
+      const valB = b[tierSort] !== undefined ? b[tierSort] : 0;
+      return valB - valA;
+    });
 
     html += `
       <section class="tier-group" aria-label="Tier ${tier.key}">
@@ -91,7 +99,7 @@ function createHeroCardHtml(hero) {
   const banText = hero.ban_rate_pct >= 1.0 ? `${hero.ban_rate_pct}%` : `${hero.ban_rate_pct.toFixed(2)}%`;
 
   return `
-    <article class="hero-card" data-heroid="${hero.heroid}" tabindex="0" role="button" aria-label="View details for ${hero.name}">
+    <article class="hero-card" data-heroid="${hero.heroid}" tabindex="0" role="button" aria-label="${hero.name} — ${primaryRole}${primaryLane ? ' — ' + primaryLane : ''}">
       <div class="hero-card-top">
         <div class="hero-avatar-wrapper">
           <img class="hero-avatar" src="${hero.head}" alt="${hero.name}" loading="lazy" width="48" height="48" onerror="this.src='./favicon.svg'"/>

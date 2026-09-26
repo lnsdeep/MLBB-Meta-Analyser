@@ -53,8 +53,7 @@
   display: flex;
   align-items: flex-end;
   gap: 20px;
-  background: linear-gradient(180deg, rgba(19, 27, 46, 0.4) 0%, rgba(19, 27, 46, 1) 100%),
-              radial-gradient(ellipse at top right, rgba(56, 189, 248, 0.15), transparent 70%);
+  background: var(--modal-banner-bg);
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -190,7 +189,7 @@
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: #1e293b;
+  background: var(--bg-surface-elevated);
   overflow: hidden;
   flex-shrink: 0;
   border: 1px solid var(--border-subtle);
