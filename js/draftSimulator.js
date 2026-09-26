@@ -599,7 +599,7 @@ export function renderRecommendationsHtml(allies, enemies, countersMatrix, syner
           <h3><span>💡</span> Proactive "Best Next Pick" Recommendations</h3>
           <span class="recommendations-subtitle">Draft composition complete — all 5 Blue Team picks locked in.</span>
         </div>
-        <span class="rec-score-pill" style="background: rgba(52, 211, 153, 0.15); color: #34d399; border-color: #34d399;">5/5 Locked</span>
+        <span class="rec-score-pill" style="background: var(--win-green-bg); color: var(--win-green); border-color: var(--win-green);">5/5 Locked</span>
       </div>
       <div class="recommendations-locked-msg" style="padding: 12px 16px; background: var(--bg-surface-elevated); border-radius: var(--radius-md); font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 8px;">
         <span>✅</span> All 5 Blue team picks are assigned. Review the statistical verdict and tactical matchup analysis below.

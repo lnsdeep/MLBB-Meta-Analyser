@@ -9,6 +9,7 @@
   align-items: center;
   gap: 8px;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -19,6 +20,7 @@
 }
 
 .tool-tab-btn {
+  scroll-snap-align: start;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -45,7 +47,7 @@
   color: var(--text-inverse);
   background: var(--brand-primary);
   border-color: var(--brand-primary);
-  box-shadow: 0 0 16px rgba(56, 189, 248, 0.2);
+  box-shadow: var(--tab-active-glow);
 }
 
 .tool-tab-btn .tab-icon {
@@ -689,9 +691,9 @@
   padding: 6px 10px;
   border-radius: var(--radius-sm);
   /* Always dark bg + white text for readability in BOTH themes */
-  background: #1e293b;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #f1f5f9;
+  background: var(--tooltip-bg);
+  border: 1px solid var(--tooltip-border);
+  color: var(--tooltip-text);
   font-size: 0.75rem;
   font-weight: 400;
   white-space: normal;

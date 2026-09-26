@@ -749,7 +749,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Touch-Friendly Hit Targets (>= 44px for primary interactive elements)
+   Touch-Friendly Hit Targets (>= 48px thumb-zone targets on coarse pointers)
    -------------------------------------------------------------------------- */
 @media (pointer: coarse) {
   .tool-tab-btn,
@@ -760,13 +760,21 @@
   .view-mode-btn,
   .modal-close-btn,
   .ban-tab-btn {
-    min-height: 44px;
+    min-height: 48px;
     display: inline-flex;
     align-items: center;
   }
 
   .search-input,
   .ban-search-input {
-    min-height: 44px;
+    min-height: 48px;
+  }
+
+  /* Bottom-sheet drawer: widen the drag handle swipe hit zone */
+  .drawer-drag-handle {
+    width: 56px;
+    height: 6px;
+    padding: 12px 0;
+    background-clip: content-box;
   }
 }

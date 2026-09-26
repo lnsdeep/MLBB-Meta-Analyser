@@ -3,6 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+
+  <!-- Theme Pre-Initialization (Prevents FOUC) -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('mlbb_theme');
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme ? savedTheme : (systemDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/components.css" />
   <link rel="stylesheet" href="../css/tools.css" />
@@ -10,27 +25,27 @@
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0b0f19;
-      color: #f8fafc;
+      background: var(--bg-primary);
+      color: var(--text-primary);
       padding: 24px;
       margin: 0;
     }
     .test-header {
-      border-bottom: 1px solid #232d42;
+      border-bottom: 1px solid var(--border-subtle);
       padding-bottom: 16px;
       margin-bottom: 20px;
     }
     .test-suite {
       margin-bottom: 24px;
-      background: #131b2e;
-      border: 1px solid #232d42;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
       border-radius: 8px;
       padding: 16px;
     }
     .suite-title {
       font-size: 1.1rem;
       font-weight: 700;
-      color: #38bdf8;
+      color: var(--brand-primary);
       margin-bottom: 12px;
     }
     .test-item {
@@ -40,22 +55,22 @@
       padding: 8px 12px;
       border-radius: 4px;
       margin-bottom: 6px;
-      background: #1a243b;
+      background: var(--bg-surface-elevated);
       font-size: 0.9rem;
     }
     .test-item.pass {
-      border-left: 4px solid #34d399;
+      border-left: 4px solid var(--win-green);
     }
     .test-item.fail {
-      border-left: 4px solid #f87171;
-      background: rgba(248, 113, 113, 0.1);
+      border-left: 4px solid var(--ban-rose);
+      background: var(--ban-rose-bg);
     }
     .badge-pass {
-      color: #34d399;
+      color: var(--win-green);
       font-weight: 700;
     }
     .badge-fail {
-      color: #f87171;
+      color: var(--ban-rose);
       font-weight: 700;
     }
     #testSummary {
@@ -63,16 +78,16 @@
       font-weight: 800;
       padding: 16px;
       border-radius: 8px;
-      background: #131b2e;
+      background: var(--bg-surface);
       margin-top: 24px;
     }
     .summary-success {
-      border: 1px solid #34d399;
-      color: #34d399;
+      border: 1px solid var(--win-green);
+      color: var(--win-green);
     }
     .summary-failure {
-      border: 1px solid #f87171;
-      color: #f87171;
+      border: 1px solid var(--ban-rose);
+      color: var(--ban-rose);
     }
   </style>
 </head>
@@ -312,6 +327,7 @@
 
       // Test Story 1.2: Theme Toggle Switch & Persistence
       console.log('--- Testing Theme Toggle Switch (Story 1.2) ---');
+      const prevSavedTheme = localStorage.getItem('mlbb_theme');
       const toggleBtn = document.createElement('button');
       toggleBtn.id = 'themeToggleBtn';
       toggleBtn.className = 'theme-toggle-btn';
@@ -334,8 +350,13 @@
       assert(localStorage.getItem('mlbb_theme') === 'dark', 'Theme Toggle: Second click saves dark theme to localStorage');
       toggleBtn.remove();
 
-      // Restore previous theme
+      // Restore previous theme (and saved preference so headless runs don't pollute state)
       document.documentElement.setAttribute('data-theme', prevTheme);
+      if (prevSavedTheme === null) {
+        localStorage.removeItem('mlbb_theme');
+      } else {
+        localStorage.setItem('mlbb_theme', prevSavedTheme);
+      }
 
       // Suite 9: Persistent Universal Context Bar (Story 2.1)
       console.log('--- Testing Universal Context Bar (Story 2.1) ---');
@@ -819,7 +840,7 @@
 
         html += `
           <div class="test-item ${res.passed ? 'pass' : 'fail'}">
-            <span><strong>${res.name}</strong> ${res.passed ? '' : `<br/><small style="color: #f87171">${res.details}</small>`}</span>
+            <span><strong>${res.name}</strong> ${res.passed ? '' : `<br/><small style="color: var(--ban-rose)">${res.details}</small>`}</span>
             <span class="${res.passed ? 'badge-pass' : 'badge-fail'}">${res.passed ? 'PASS ✓' : 'FAIL ✗'}</span>
           </div>
         `;
