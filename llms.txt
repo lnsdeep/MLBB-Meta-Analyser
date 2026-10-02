@@ -2,7 +2,7 @@
 
 > Official, daily-updated hero rankings, win rates, ban rates, pick rates, counter matchups, and synergies extracted directly from Moonton's Game Management System (GMS).
 
-**Last Refreshed:** 2026-10-01 08:39:05 UTC
+**Last Refreshed:** 2026-10-02 08:16:14 UTC
 - **Website:** https://lnsdeep.github.io/MLBB-Meta-Analyser/
 - **Data Source:** Official Moonton GMS API (`api.gms.moontontech.com`) & Youngjoy CDN
 - **Total Heroes Tracked:** 134 heroes
@@ -10,16 +10,16 @@
 - **Timeframes:** Past 1 day, 3 days, 7 days, 15 days, 30 days
 
 ## Current Meta Highlights (Mythical Glory+, 1-Day Sample)
-- **Aulus** (Fighter | Jungle): Win Rate: 62.08%, Pick Rate: 1.87%, Ban Rate: 58.73%, Tier: S+
-- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 59.87%, Pick Rate: 1.23%, Ban Rate: 65.37%, Tier: S+
-- **Rafaela** (Support | Roam): Win Rate: 57.90%, Pick Rate: 2.01%, Ban Rate: 34.00%, Tier: S
-- **Diggie** (Support | Roam): Win Rate: 56.39%, Pick Rate: 0.52%, Ban Rate: 16.01%, Tier: A
-- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 55.94%, Pick Rate: 0.46%, Ban Rate: 81.67%, Tier: S
-- **Chip** (Support/Tank | Roam): Win Rate: 55.65%, Pick Rate: 0.10%, Ban Rate: 0.48%, Tier: B
-- **Baxia** (Tank | Jungle): Win Rate: 55.28%, Pick Rate: 0.14%, Ban Rate: 0.13%, Tier: B
-- **Freya** (Fighter | Exp Lane/Jungle): Win Rate: 54.86%, Pick Rate: 0.74%, Ban Rate: 1.57%, Tier: B
-- **Odette** (Mage | Mid Lane): Win Rate: 54.74%, Pick Rate: 0.64%, Ban Rate: 0.27%, Tier: B
-- **Minotaur** (Tank/Support | Roam): Win Rate: 54.35%, Pick Rate: 2.28%, Ban Rate: 24.60%, Tier: A
+- **Aulus** (Fighter | Jungle): Win Rate: 61.54%, Pick Rate: 1.82%, Ban Rate: 62.73%, Tier: S+
+- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 59.97%, Pick Rate: 1.19%, Ban Rate: 67.68%, Tier: S+
+- **Rafaela** (Support | Roam): Win Rate: 57.87%, Pick Rate: 2.00%, Ban Rate: 33.25%, Tier: S
+- **Baxia** (Tank | Jungle): Win Rate: 57.26%, Pick Rate: 0.13%, Ban Rate: 0.11%, Tier: B
+- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 56.32%, Pick Rate: 0.47%, Ban Rate: 81.42%, Tier: S
+- **Diggie** (Support | Roam): Win Rate: 56.16%, Pick Rate: 0.50%, Ban Rate: 14.65%, Tier: A
+- **Odette** (Mage | Mid Lane): Win Rate: 54.69%, Pick Rate: 0.61%, Ban Rate: 0.21%, Tier: B
+- **Chip** (Support/Tank | Roam): Win Rate: 54.52%, Pick Rate: 0.09%, Ban Rate: 0.45%, Tier: B
+- **Minotaur** (Tank/Support | Roam): Win Rate: 54.30%, Pick Rate: 2.26%, Ban Rate: 23.54%, Tier: A
+- **Freya** (Fighter | Exp Lane/Jungle): Win Rate: 54.10%, Pick Rate: 0.73%, Ban Rate: 1.52%, Tier: B
 
 ## Available Gamer Tools
 1. **Tier List Hub**: Visual role and lane tier list (S+, S, A, B, C, D) filterable by EXP, Mid, Gold, Roam, Jungle.
