@@ -50,6 +50,11 @@
   box-shadow: var(--tab-active-glow);
 }
 
+[data-theme="light"] .tool-tab-btn.active {
+  background: #0369a1;
+  border-color: #0369a1;
+}
+
 .tool-tab-btn .tab-icon {
   font-size: 1.1rem;
 }

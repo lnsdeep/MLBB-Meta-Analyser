@@ -39,7 +39,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.029495,
         "increase_win_rate_pct": 2.95
       },
@@ -100,7 +100,7 @@
   {
     "heroid": 132,
     "name": "Marcel",
-    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+    "head": "./assets/heroes/132.png",
     "roles": [
       "Tank",
       "Support"
@@ -526,7 +526,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.036714,
         "increase_win_rate_pct": 3.67
       },
@@ -1926,7 +1926,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.028924,
         "increase_win_rate_pct": 2.89
       }
@@ -2143,7 +2143,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.026927,
         "increase_win_rate_pct": 2.69
       },
@@ -2255,7 +2255,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.007541,
         "increase_win_rate_pct": 0.75
       }
@@ -3883,7 +3883,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.028259,
         "increase_win_rate_pct": 2.83
       },
@@ -4421,7 +4421,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.009455,
         "increase_win_rate_pct": 0.95
       }
@@ -4589,7 +4589,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.017964,
         "increase_win_rate_pct": 1.8
       },
@@ -4854,7 +4854,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.04389,
         "increase_win_rate_pct": 4.39
       },
@@ -6292,7 +6292,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.011821,
         "increase_win_rate_pct": 1.18
       }
@@ -7117,7 +7117,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.026153,
         "increase_win_rate_pct": 2.62
       },
@@ -7154,7 +7154,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.008646,
         "increase_win_rate_pct": 0.86
       },
@@ -7699,7 +7699,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.020718,
         "increase_win_rate_pct": 2.07
       },
@@ -7743,7 +7743,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.015212,
         "increase_win_rate_pct": 1.52
       },
@@ -8785,7 +8785,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.023566,
         "increase_win_rate_pct": 2.36
       },
@@ -10165,7 +10165,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.031648,
         "increase_win_rate_pct": 3.16
       },
@@ -10588,7 +10588,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.029094,
         "increase_win_rate_pct": 2.91
       },
@@ -11277,7 +11277,7 @@
       {
         "heroid": 132,
         "name": "Marcel",
-        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "head": "./assets/heroes/132.png",
         "increase_win_rate": 0.013546,
         "increase_win_rate_pct": 1.35
       },

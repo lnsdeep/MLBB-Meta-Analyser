@@ -248,6 +248,117 @@
   color: var(--text-secondary);
 }
 
+.skill-desc.empty-note {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.skill-badges-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 2px 0 4px 0;
+}
+
+.skill-badge-pill {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+}
+
+.skill-badge-pill.cd {
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--brand-primary);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.skill-badge-pill.cost {
+  background: rgba(6, 182, 212, 0.12);
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.skill-badge-pill.damage {
+  background: rgba(244, 63, 94, 0.12);
+  color: var(--ban-rose);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+.skill-badge-pill.type {
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+.mechanic-term {
+  border-bottom: 1px dotted var(--brand-primary);
+  color: var(--brand-primary);
+  font-weight: 600;
+  cursor: help;
+  position: relative;
+}
+
+.mechanic-term:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Tool Idea 3: Emblem Recommender Box */
+.emblem-recommender-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.emblem-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emblem-name-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(234, 179, 8, 0.15);
+  color: #facc15;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+}
+
+.emblem-talents-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.emblem-talent-chip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.emblem-reason-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
 /* Counters & Synergies Columns in Modal */
 .modal-matchups-columns {
   display: grid;

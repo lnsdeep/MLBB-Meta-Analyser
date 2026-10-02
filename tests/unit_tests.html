@@ -100,6 +100,17 @@
   <div id="testContainer">Running tests...</div>
   <div id="testSummary"></div>
 
+  <script>
+    window.addEventListener('error', function(e) {
+      var tc = document.getElementById('testContainer');
+      if (tc) tc.innerHTML += '<div style="color:red">JS ERROR: ' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
+    });
+    window.addEventListener('unhandledrejection', function(e) {
+      var tc = document.getElementById('testContainer');
+      if (tc) tc.innerHTML += '<div style="color:red">UNHANDLED REJECTION: ' + (e.reason && (e.reason.stack || e.reason.message || e.reason)) + '</div>';
+    });
+  </script>
+
   <script type="module">
     import { state } from '../js/state.js';
     import { dataService } from '../js/dataService.js';
@@ -110,6 +121,9 @@
     import { classifyBanCategories } from '../js/banRadar.js?v=2';
     import { calculateMetaMovers, roundFloat } from '../js/metaMovers.js?v=2';
     import { PLAYSTYLES, getRecommendedBattleSpell, getRecommendedCoreItem, getBeginnerMatchedHeroes } from '../js/beginnerGuide.js?v=2';
+    import { parseSkillBadges, decorateMechanicsKeywords, getRecommendedEmblem } from '../js/heroModal.js?v=4';
+    import { calculateEffectiveDuration, CC_HEROES_DATABASE } from '../js/ccCalculator.js?v=1';
+    import { calculatePenetrationOrder } from '../js/ogTipsGuide.js?v=1';
 
     const results = [];
 
@@ -277,6 +291,7 @@
 
       // Suite 7: Accessibility, Color Contrast & Accessible Naming
       console.log('--- Testing Accessibility & Contrast ---');
+      document.documentElement.setAttribute('data-theme', 'dark');
       const rootStyle = window.getComputedStyle(document.documentElement);
       const textMuted = rootStyle.getPropertyValue('--text-muted').trim();
       const textSec = rootStyle.getPropertyValue('--text-secondary').trim();
@@ -797,7 +812,7 @@
         ])
       };
 
-      const testHeroes = [
+      const beginnerTestHeroes = [
         { heroid: 1, name: 'Balmond', roles: ['Fighter'], lanes: ['Jungle'], win_rate_pct: 53.5 },
         { heroid: 2, name: 'Saber', roles: ['Assassin'], lanes: ['Jungle'], win_rate_pct: 52.0 },
         { heroid: 3, name: 'Fanny', roles: ['Assassin'], lanes: ['Jungle'], win_rate_pct: 55.0 }, // Hard difficulty
@@ -805,7 +820,7 @@
         { heroid: 5, name: 'Layla', roles: ['Marksman'], lanes: ['Gold Lane'], win_rate_pct: 47.0 } // Sub-50% win rate
       ];
 
-      const matchedJungle = getBeginnerMatchedHeroes('jungle', PLAYSTYLES, testHeroes, testCatalog);
+      const matchedJungle = getBeginnerMatchedHeroes('jungle', PLAYSTYLES, beginnerTestHeroes, testCatalog);
       assert(matchedJungle.length === 2, 'Beginner Matcher: Correctly matches 2 easy junglers (Balmond, Saber)');
       assert(matchedJungle[0].name === 'Balmond', 'Beginner Matcher: Sorts matched heroes by win rate descending');
 
@@ -814,13 +829,131 @@
       assert(!hasFanny, 'Beginner Matcher: Strict difficulty filter (<= 35) excludes hard mechanical heroes (Fanny diff: 100)');
 
       // Verify exclusion of sub-50% win rate hero
-      const matchedRange = getBeginnerMatchedHeroes('range', PLAYSTYLES, testHeroes, testCatalog);
+      const matchedRange = getBeginnerMatchedHeroes('range', PLAYSTYLES, beginnerTestHeroes, testCatalog);
       const hasLayla = matchedRange.some(h => h.name === 'Layla');
       assert(!hasLayla, 'Beginner Matcher: Excludes heroes with sub-50% win rates');
 
       // 4. Robustness against null/undefined
       const nullMatched = getBeginnerMatchedHeroes('range', PLAYSTYLES, null, null);
       assert(Array.isArray(nullMatched) && nullMatched.length === 0, 'Beginner Matcher: Robust against null inputs');
+
+      // Suite 7: Hero Asset & Catalog Integrity Unit Tests (Task 2 & 3)
+      console.log('--- Testing Hero Asset & Catalog Integrity ---');
+      try {
+        const fullCatalog = await dataService.fetchCatalog();
+        const heroMap = fullCatalog.map;
+        const heroList = fullCatalog.list;
+
+        // Check Marcel #132
+        const marcel = heroMap.get(132);
+        assert(marcel !== undefined, 'Asset Integrity: Hero #132 (Marcel) exists in catalog');
+        assert(marcel && marcel.name === 'Marcel', 'Asset Integrity: Hero #132 is correctly named Marcel');
+        assert(marcel && marcel.head.includes('132.png'), 'Asset Integrity: Marcel has distinct portrait asset (not duplicate)');
+        assert(marcel && Array.isArray(marcel.skills) && marcel.skills.length === 4, 'Asset Integrity: Marcel has complete 4-skill kit');
+        const marcelEmptySkills = (marcel?.skills || []).filter(s => !s.desc || s.desc.trim().length === 0);
+        assert(marcelEmptySkills.length === 0, 'Asset Integrity: Marcel has zero empty skill descriptions');
+
+        // Check Freya #22
+        const freya = heroMap.get(22);
+        assert(freya !== undefined, 'Asset Integrity: Hero #22 (Freya) exists in catalog');
+        const freyaEmptySkills = (freya?.skills || []).filter(s => !s.desc || s.desc.trim().length === 0);
+        assert(freyaEmptySkills.length === 0, 'Asset Integrity: Freya has zero empty skill descriptions');
+
+        // Check Aamon #109 vs Marcel #132 distinct heads
+        const aamon = heroMap.get(109);
+        assert(aamon && aamon.head !== marcel.head, 'Asset Integrity: Aamon and Marcel have completely distinct portrait URLs');
+
+        // Assert no duplicate headshots across the catalog
+        const headMap = new Map();
+        let dupCount = 0;
+        for (const h of heroList) {
+          if (!h.head) continue;
+          if (headMap.has(h.head)) {
+            dupCount++;
+          } else {
+            headMap.set(h.head, h.heroid);
+          }
+        }
+        assert(dupCount === 0, `Asset Integrity: Zero duplicate portrait heads in catalog (found ${dupCount} duplicates)`);
+      } catch (err) {
+        assert(false, 'Asset Integrity: Catalog tests completed without error', err.message);
+      }
+
+      // Suite 8: 5v5 Draft Simulator Interaction & Dynamic 5v5 Evaluation (Task 1 & Tool Idea 4)
+      console.log('--- Testing Draft Simulator & 5v5 Dynamic Evaluation ---');
+      const testAllies = [
+        { heroid: 20, name: 'Franco', roles: ['Tank', 'Support'] },
+        { heroid: 104, name: 'Khufra', roles: ['Tank'] },
+        { heroid: 18, name: 'Layla', roles: ['Marksman'] }
+      ];
+      const testEnemies = [
+        { heroid: 61, name: 'Fanny', roles: ['Assassin'] },
+        { heroid: 6, name: 'Tigreal', roles: ['Tank'] }
+      ];
+
+      const pickedHeroIds = getPickedHeroIds(testAllies, testEnemies);
+      assert(pickedHeroIds.has(20) && pickedHeroIds.has(61), 'Draft State: getPickedHeroIds tracks all active picks');
+      assert(!pickedHeroIds.has(999), 'Draft State: getPickedHeroIds excludes unpicked heroes');
+
+      // Test Dynamic 5v5 advantage output
+      const advantageHtml = calculateAndRenderAdvantage(testAllies, testEnemies, null, null, null);
+      assert(advantageHtml.includes('Damage Balance'), 'Draft 5v5 Engine: Computes Damage Balance metric');
+      assert(advantageHtml.includes('CC & Initiation Index'), 'Draft 5v5 Engine: Computes CC & Initiation Index');
+      assert(advantageHtml.includes('Khufra'), 'Draft 5v5 Engine: Identifies Khufra anti-dash tactical advantage vs Fanny');
+
+      // Suite 9: Skill Schema, Resource & Scaling Parser (Task 3)
+      console.log('--- Testing Skill Schema & Resource Parsing ---');
+      const sampleManaSkill = {
+        name: 'Moon Arrow',
+        cost: 'CD: 11.0s   Mana Cost: 50',
+        desc: 'Miya shoots two extra arrows, dealing 10 (+100% Total Physical Attack) Physical Damage.',
+        tags: ['Buff']
+      };
+      const badgesMana = parseSkillBadges(sampleManaSkill, 1);
+      assert(badgesMana.cdBadge.includes('11.0s'), 'Skill Parser: Correctly extracts cooldown (11.0s)');
+      assert(badgesMana.costBadge.includes('50 Mana'), 'Skill Parser: Correctly extracts resource cost (50 Mana)');
+      assert(badgesMana.dmgBadge.includes('Physical'), 'Skill Parser: Accurately detects Physical Damage typing');
+      assert(badgesMana.scalingText.includes('100% Total Physical Attack'), 'Skill Parser: Formats damage scaling breakdown');
+
+      const samplePassiveSkill = {
+        name: 'Platinum Snap',
+        cost: 'Passive   No Cost',
+        desc: 'Clemar snaps photos causing a Frozen Moment and dealing True Damage.',
+        tags: ['CC', 'Buff']
+      };
+      const badgesPassive = parseSkillBadges(samplePassiveSkill, 0);
+      assert(badgesPassive.typeLabel === 'Passive', 'Skill Parser: Accurately categorizes passive skill');
+      assert(badgesPassive.costBadge.includes('No Cost'), 'Skill Parser: Handles zero-cost passive correctly');
+      assert(badgesPassive.dmgBadge.includes('True Damage'), 'Skill Parser: Identifies True Damage typing');
+
+      // Test status keyword tooltip decorator
+      const rawMechanicsText = 'Inflicts Suppress and causes Airborne on enemies with True Damage.';
+      const decoratedHtml = decorateMechanicsKeywords(rawMechanicsText);
+      assert(decoratedHtml.includes('data-tooltip="Suppress:'), 'Tooltip Decorator: Attaches Suppress explainer');
+      assert(decoratedHtml.includes('data-tooltip="Airborne:'), 'Tooltip Decorator: Attaches Airborne explainer');
+      assert(decoratedHtml.includes('data-tooltip="True Damage:'), 'Tooltip Decorator: Attaches True Damage explainer');
+
+      // Suite 10: CC Hierarchy & Game Engine Math (Tool Ideas 1 & 2)
+      console.log('--- Testing CC Hierarchy & Stat Cap Math ---');
+      // Standard Stun: 2.0s with 30% Tough Boots -> 1.4s
+      const effectiveStun = calculateEffectiveDuration(2.0, false, 30);
+      assert(effectiveStun === 1.4, `CC Math: 2.0s stun under 30% Resilience reduces to 1.4s (calculated ${effectiveStun}s)`);
+
+      // Suppress: 3.0s with 30% Tough Boots -> 3.0s (IMMUNE to resilience)
+      const effectiveSuppress = calculateEffectiveDuration(3.0, true, 30);
+      assert(effectiveSuppress === 3.0, `CC Math: 3.0s Suppress completely ignores Resilience (calculated ${effectiveSuppress}s)`);
+
+      // Test Penetration Sequence Calculation (Flat Red -> % Red -> % Pen -> Flat Pen)
+      // Enemy 100 def, 20 flat red (80), 0% red (80), 35% pen (52), 15 flat pen (37)
+      const penResult = calculatePenetrationOrder(100, 20, 0, 35, 15);
+      assert(penResult.finalDefense === 37, `Penetration Math: Final residual defense is 37 (calculated ${penResult.finalDefense})`);
+      assert(penResult.damageMultiplierPct > 0, 'Penetration Math: Computes positive damage multiplier');
+
+      // Test Negative Armor Amplification
+      // Enemy 20 def, 40 flat red -> drops below 0 -> -20 defense
+      const negArmorResult = calculatePenetrationOrder(20, 40, 0, 0, 0);
+      assert(negArmorResult.finalDefense < 0, 'Penetration Math: Accurately allows defense to drop below zero');
+      assert(negArmorResult.damageMultiplierPct > 100, 'Penetration Math: Negative armor amplifies damage beyond 100%');
 
       // Render Results to DOM
       renderResults();

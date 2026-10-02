@@ -14,6 +14,8 @@ import { renderDraftSimulator } from './draftSimulator.js?v=3';
 import { renderBanRadar } from './banRadar.js?v=3';
 import { renderMetaMovers } from './metaMovers.js?v=3';
 import { renderBeginnerGuide } from './beginnerGuide.js?v=3';
+import { renderCcCalculator } from './ccCalculator.js?v=1';
+import { renderOgTipsGuide } from './ogTipsGuide.js?v=1';
 import { initHeroModal } from './heroModal.js?v=3';
 
 let currentHeroesList = [];
@@ -127,6 +129,14 @@ function renderCurrentTool() {
 
     case 'guide':
       renderBeginnerGuide(mainContainer, currentHeroesList);
+      break;
+
+    case 'cc':
+      renderCcCalculator(mainContainer);
+      break;
+
+    case 'tips':
+      renderOgTipsGuide(mainContainer);
       break;
 
     default:

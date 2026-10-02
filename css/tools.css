@@ -627,6 +627,122 @@
   text-align: left;
 }
 
+/* Dynamic 5v5 Team Evaluation Grid & Meters */
+.draft-indices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 860px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.draft-index-card {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.index-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.index-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: var(--radius-full);
+}
+
+.index-badge.balanced {
+  background: var(--win-green-bg);
+  color: var(--win-green);
+  border: 1px solid var(--win-green);
+}
+
+.index-badge.warning {
+  background: var(--ban-rose-bg);
+  color: var(--ban-rose);
+  border: 1px solid var(--ban-rose);
+}
+
+.index-badge.info {
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--brand-primary);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.dmg-ratio-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--bg-primary);
+  width: 100%;
+}
+
+.dmg-segment-phys {
+  background: #f97316;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.dmg-segment-mag {
+  background: #a855f7;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.dmg-segment-true {
+  background: #06b6d4;
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.index-card-desc {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.direct-counter-alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.direct-counter-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+}
+
+.direct-counter-item.advantage {
+  background: var(--win-green-bg);
+  color: var(--win-green);
+  border-left: 3px solid var(--win-green);
+}
+
+.direct-counter-item.threat {
+  background: var(--ban-rose-bg);
+  color: var(--ban-rose);
+  border-left: 3px solid var(--ban-rose);
+}
+
 /* ==========================================================================
    Story 4.2: Proactive Recommendations Engine & Cards
    ========================================================================== */
@@ -856,19 +972,21 @@
   position: fixed;
   inset: 0;
   background: var(--drawer-overlay-bg);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 1000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1050;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .draft-drawer-overlay.open {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 

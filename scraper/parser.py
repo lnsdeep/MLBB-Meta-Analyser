@@ -6,6 +6,11 @@ Merges official hero catalog with live GMS rank metrics.
 import re
 from typing import Any, Dict, List, Optional, Tuple
 
+# Overrides for known Moonton CDN discrepancies (e.g. Hero 132 Marcel mapped to Aamon's icon)
+HERO_ASSET_OVERRIDES = {
+    132: "./assets/heroes/132.png",
+}
+
 
 def strip_html(html_str: str) -> str:
     """Remove HTML tags (like <font ...>) from skill descriptions."""
@@ -81,6 +86,7 @@ class DataParser:
                         "tags": [t.get("tagname") for t in sk.get("skilltag", []) if t.get("tagname")],
                     })
 
+            head = HERO_ASSET_OVERRIDES.get(hid, hero.get("head"))
             normalized_hero = {
                 "heroid": hid,
                 "name": hero.get("name"),
@@ -88,7 +94,7 @@ class DataParser:
                 "lanes": lanes,
                 "speciality": speciality,
                 "difficulty": hero.get("difficulty"),
-                "head": hero.get("head"),
+                "head": head,
                 "smallmap": hero.get("smallmap"),
                 "painting": hero.get("painting"),
                 "skills": cleaned_skills,

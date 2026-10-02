@@ -49,13 +49,13 @@ def main():
         browser,
         "--headless=new",
         "--dump-dom",
-        "--virtual-time-budget=6000",
+        "--virtual-time-budget=25000",
         "--run-all-compositor-stages-before-draw",
         url
     ]
 
     try:
-        proc = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", timeout=25)
+        proc = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", timeout=35)
         dom = proc.stdout
     except Exception as e:
         print(f"[ERROR] Failed running headless browser: {e}")
