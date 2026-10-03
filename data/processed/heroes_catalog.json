@@ -1345,59 +1345,45 @@
       {
         "id": 2260,
         "name": "Power of Einherjar",
-        "desc": "Freya gains 1 stack of Sacred Orb after each skill cast. After casting a skill, Freya gains 50% Attack Speed for her next 2 Basic Attacks. Stacks can be consumed to enhance skills.",
-        "cost": "Passive   No Cost",
-        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_b95ffc5769380f10a409d864d4162433.png",
+        "desc": "",
+        "cost": "",
+        "icon": "",
         "tags": [
           "Buff"
-        ],
-        "skill_type": "Passive",
-        "damage_type": "Buff",
-        "scaling": "+50% Attack Speed"
+        ]
       },
       {
         "id": 2299,
         "name": "Leap of Faith",
-        "desc": "Freya leaps to the target area, dealing 200 (+75% Extra Physical Attack) Physical Damage to enemies within and pulling them toward the center while generating a 160 (+70% Total Physical Attack) shield for herself.",
-        "cost": "CD: 8.0s - 6.0s   Mana Cost: 55 - 80",
-        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_70b2990486b562415dac32dac01bdb16.png",
+        "desc": "",
+        "cost": "CD: 8",
+        "icon": "",
         "tags": [
           "CC",
-          "Shield",
-          "AOE"
-        ],
-        "skill_type": "Skill 1",
-        "damage_type": "Physical Damage",
-        "scaling": "+75% Extra Physical Attack"
+          "Shield"
+        ]
       },
       {
         "id": 2298,
         "name": "Valkyrie Slash",
-        "desc": "Freya swings her sacred blade in a fan-shaped area, dealing 130 (+90% Total Physical Attack) Physical Damage and slowing enemies by 30% for 0.5s. Can be cast up to 4 times consecutively by consuming Sacred Orbs, with the 4th hit knocking enemies airborne.",
-        "cost": "CD: 10.0s - 8.0s   Mana Cost: 40 - 65",
-        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_fc47930fd50e062bf6e8c8c0398e237c.png",
+        "desc": "",
+        "cost": "CD: 0.396",
+        "icon": "",
         "tags": [
           "Mobility",
-          "Damage",
-          "CC"
-        ],
-        "skill_type": "Skill 2",
-        "damage_type": "Physical Damage",
-        "scaling": "+90% Total Physical Attack"
+          "Damage"
+        ]
       },
       {
         "id": 2250,
         "name": "Valkyrie Descent",
-        "desc": "Freya gains 300 (+75% Total Physical Attack) shield, accumulates 3 Sacred Orbs, and enters the Valkyrie state, gaining 30-70 Physical & Magic Defense and 30 Physical Attack. Her Basic Attacks become ranged and deal splash damage for 12s.",
-        "cost": "CD: 34.0s - 26.0s   Mana Cost: 100",
+        "desc": "Freya gains 300 (+75% Total Physical Attack) stacks of Sacred Orb and enters the Valkyrie state, gaining a 40% shield and 2 Physical Attack. Meanwhile, her Basic Attacks become ranged and deal splash damage. The Valkyrie state lasts for 12s.",
+        "cost": "CD: 34",
         "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_2_1_18_2/100_49a8b4de271d0162ab9e26e06819840e.png",
         "tags": [
           "Morph",
           "Buff"
-        ],
-        "skill_type": "Ultimate",
-        "damage_type": "Physical Damage",
-        "scaling": "+75% Total Physical Attack Shield, +30 Physical Attack"
+        ]
       }
     ]
   },
@@ -8424,60 +8410,158 @@
       {
         "id": 13240,
         "name": "Platinum Snap",
-        "desc": "Marcel's split soul, Clemar, enters the camera to freeze the moment. Marcel's Basic Attacks deal 50 (+40% Total Physical Attack) (+40% Total Physical Defense) (+40% Total Magic Defense) Physical Damage, and his Extra HP is converted into 1.5% Hybrid Defense. Clemar automatically snaps photos of nearby enemy heroes, causing a brief Frozen Moment and dealing 20 (+5% Target Max HP) True Damage. It also grants a shield of the same value to Marcel and a nearby allied hero. Cooldown: 12.0s per target.",
-        "cost": "CD: 12.0s   No Cost",
-        "icon": "https://static.wikia.nocookie.net/mobile-legends/images/f/f8/Platinum_Snap.png/revision/latest?cb=20260311075433",
-        "tags": [
-          "CC",
-          "Buff",
-          "Shield"
-        ],
-        "skill_type": "Passive",
-        "damage_type": "True Damage",
-        "scaling": "+40% Total Physical Attack, +40% Total Hybrid Defense, +5% Target Max HP"
+        "desc": "",
+        "cost": "",
+        "icon": "",
+        "tags": []
       },
       {
         "id": 13210,
         "name": "Framed Moment",
-        "desc": "Clemar focuses on an area around Marcel, slowing enemy heroes within by 60%. After 2.5s, he completes the shot, dealing 350-520 (+50% Total Physical Attack) (+120% Total Physical Defense) (+120% Total Magic Defense) Physical Damage to enemies within.",
-        "cost": "CD: 12.5s - 10.0s   Mana Cost: 40 - 65",
-        "icon": "https://static.wikia.nocookie.net/mobile-legends/images/a/a2/Framed_Moment.png/revision/latest?cb=20260311075430",
+        "desc": "",
+        "cost": "CD: 15",
+        "icon": "",
         "tags": [
-          "AOE",
-          "Slow"
-        ],
-        "skill_type": "Skill 1",
-        "damage_type": "Physical Damage",
-        "scaling": "+50% Total Physical Attack, +120% Total Hybrid Defense"
+          "AOE"
+        ]
       },
       {
         "id": 13220,
         "name": "Tracking Shot",
-        "desc": "Artist inspiration time! Marcel enters Tracking Haste state for 3s, gaining 15%-27.5% Movement Speed (boosted up to 75%-112.5% when moving toward enemy heroes). Use Again: Marcel dashes in the target direction, leaving a framing phantom behind while the Framed Moment area remains at the original location.",
-        "cost": "CD: 12.5s - 10.0s   Mana Cost: 70 - 95",
-        "icon": "https://static.wikia.nocookie.net/mobile-legends/images/6/66/Tracking_Shot.png/revision/latest?cb=20260311075427",
+        "desc": "",
+        "cost": "CD: 15",
+        "icon": "",
         "tags": [
-          "Speed Up",
-          "Mobility"
-        ],
-        "skill_type": "Skill 2",
-        "damage_type": "Buff",
-        "scaling": "+15%-27.5% Movement Speed"
+          "Speed Up"
+        ]
       },
       {
         "id": 13230,
         "name": "Golden Hour",
-        "desc": "Marcel and Clemar perform a joint shoot. After a short delay, Clemar takes a wide-angle shot of the target area for 2s. Marcel enters Tracking Haste state, while all other units (enemies, allies, minions, Lord/Turtle) are put into a Frozen Moment and are immune to all effects except from Marcel. All projectiles are frozen in place and resume after delay (targeted projectiles deal 50% damage). Golden Hour resets the cooldown of Platinum Snap for each enemy hero. Allied heroes with the Platinum Snap shield can move freely inside.",
-        "cost": "CD: 74.0s - 62.0s   Mana Cost: 150",
-        "icon": "https://static.wikia.nocookie.net/mobile-legends/images/9/9c/Golden_Hour.png/revision/latest?cb=20260311075423",
+        "desc": "",
+        "cost": "CD: 60",
+        "icon": "",
         "tags": [
-          "CC",
+          "CC"
+        ]
+      }
+    ]
+  },
+  {
+    "heroid": 134,
+    "name": "Reserved String",
+    "roles": [
+      "Mage"
+    ],
+    "lanes": [
+      "Mid Lane"
+    ],
+    "speciality": [
+      "Poke",
+      "Control"
+    ],
+    "difficulty": "10",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_743edd1702084c4ed247908d698bca77.png",
+    "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_39c9058219c59535e9ed07645c8d9dd3.png",
+    "painting": "",
+    "skills": [
+      {
+        "id": 13440,
+        "name": "",
+        "desc": "",
+        "cost": "",
+        "icon": "",
+        "tags": []
+      },
+      {
+        "id": 13410,
+        "name": "Dragon Tail",
+        "desc": "",
+        "cost": "CD: 4   Mana Cost: 50",
+        "icon": "",
+        "tags": [
+          "AOE"
+        ]
+      },
+      {
+        "id": 13420,
+        "name": "Dragon Tail",
+        "desc": "",
+        "cost": "CD: 4   Mana Cost: 50",
+        "icon": "",
+        "tags": [
+          "AOE"
+        ]
+      },
+      {
+        "id": 13430,
+        "name": "Dragon Tail",
+        "desc": "",
+        "cost": "CD: 20   Mana Cost: 100",
+        "icon": "",
+        "tags": [
+          "AOE"
+        ]
+      }
+    ]
+  },
+  {
+    "heroid": 188,
+    "name": "Test Swordsman",
+    "roles": [
+      "Assassin"
+    ],
+    "lanes": [
+      "Jungle"
+    ],
+    "speciality": [
+      "Chase",
+      "Burst"
+    ],
+    "difficulty": "70",
+    "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_017bade52b9fc94bbc12615de6d75c08.png",
+    "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_4405561c38db556d9cdc6a57b8642e66.png",
+    "painting": "",
+    "skills": [
+      {
+        "id": 18840,
+        "name": "Onward",
+        "desc": "Lightning Bolt",
+        "cost": "",
+        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7c4332cf35097a899d0081622974fc30.png",
+        "tags": [
+          "Buff"
+        ]
+      },
+      {
+        "id": 18890,
+        "name": "Charge",
+        "desc": "Saber dashes in the target direction, dealing 75 (+50% Extra Physical Attack) Physical Damage to enemies along the way while enhancing his next Basic Attack. Saber can dash to the target, and his enhanced Basic Attack deals 75 (+120% Total Physical Attack) Physical Damage and slows the target by 60% for 1s.",
+        "cost": "CD: 0.3",
+        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fc47930fd50e062bf6e8c8c0398e237c.png",
+        "tags": [
+          "Mobility",
+          "AOE"
+        ]
+      },
+      {
+        "id": 18820,
+        "name": "Jeet Kune Do",
+        "desc": "Chou strikes in the target direction, dealing 180 (+70% Total Physical Attack) Physical Damage to enemies hit. This skill can be cast 3 times before it goes on cooldown. On the 3rd cast, Chou also knocks enemies hit airborne.\n\nHitting an enemy hero with the 3rd cast resets the cooldown of Shunpo.",
+        "cost": "CD: 12",
+        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_70b2990486b562415dac32dac01bdb16.png",
+        "tags": [
           "AOE",
-          "Stasis"
-        ],
-        "skill_type": "Ultimate",
-        "damage_type": "Crowd Control",
-        "scaling": "2.0s Stasis Duration"
+          "CC"
+        ]
+      },
+      {
+        "id": 18830,
+        "name": "Earth Shatter",
+        "desc": "Rondo: The next two Basic Attacks deal extra damage.",
+        "cost": "",
+        "icon": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d562eb155a1d9a3e6dd94f4a9cbbc451.png",
+        "tags": []
       }
     ]
   }
