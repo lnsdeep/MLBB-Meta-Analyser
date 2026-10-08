@@ -2,7 +2,7 @@
 
 > Official, daily-updated hero rankings, win rates, ban rates, pick rates, counter matchups, and synergies extracted directly from Moonton's Game Management System (GMS).
 
-**Last Refreshed:** 2026-10-07 08:25:50 UTC
+**Last Refreshed:** 2026-10-08 08:41:49 UTC
 - **Website:** https://lnsdeep.github.io/MLBB-Meta-Analyser/
 - **Data Source:** Official Moonton GMS API (`api.gms.moontontech.com`) & Youngjoy CDN
 - **Total Heroes Tracked:** 134 heroes
@@ -10,16 +10,16 @@
 - **Timeframes:** Past 1 day, 3 days, 7 days, 15 days, 30 days
 
 ## Current Meta Highlights (Mythical Glory+, 1-Day Sample)
-- **Aulus** (Fighter | Jungle): Win Rate: 61.78%, Pick Rate: 1.51%, Ban Rate: 75.73%, Tier: S+
-- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 60.51%, Pick Rate: 1.06%, Ban Rate: 73.95%, Tier: S+
-- **Rafaela** (Support | Roam): Win Rate: 58.08%, Pick Rate: 2.04%, Ban Rate: 31.34%, Tier: S
-- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 57.01%, Pick Rate: 0.48%, Ban Rate: 79.19%, Tier: S
-- **Diggie** (Support | Roam): Win Rate: 55.36%, Pick Rate: 0.41%, Ban Rate: 9.85%, Tier: A
-- **Minotaur** (Tank/Support | Roam): Win Rate: 54.11%, Pick Rate: 2.13%, Ban Rate: 20.27%, Tier: A
-- **Hirara** ( | ): Win Rate: 53.87%, Pick Rate: 0.74%, Ban Rate: 91.20%, Tier: S
-- **Khufra** (Tank | Roam): Win Rate: 53.74%, Pick Rate: 0.81%, Ban Rate: 7.61%, Tier: B
-- **Baxia** (Tank | Jungle): Win Rate: 53.72%, Pick Rate: 0.10%, Ban Rate: 0.09%, Tier: B
-- **Argus** (Fighter | Exp Lane): Win Rate: 53.66%, Pick Rate: 0.54%, Ban Rate: 0.43%, Tier: B
+- **Aulus** (Fighter | Jungle): Win Rate: 61.50%, Pick Rate: 1.47%, Ban Rate: 77.44%, Tier: S+
+- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 60.93%, Pick Rate: 1.02%, Ban Rate: 74.90%, Tier: S+
+- **Rafaela** (Support | Roam): Win Rate: 58.08%, Pick Rate: 2.04%, Ban Rate: 31.16%, Tier: S
+- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 56.71%, Pick Rate: 0.48%, Ban Rate: 79.21%, Tier: S
+- **Diggie** (Support | Roam): Win Rate: 55.71%, Pick Rate: 0.40%, Ban Rate: 9.06%, Tier: A
+- **Argus** (Fighter | Exp Lane): Win Rate: 54.32%, Pick Rate: 0.52%, Ban Rate: 0.42%, Tier: B
+- **Khufra** (Tank | Roam): Win Rate: 53.96%, Pick Rate: 0.80%, Ban Rate: 7.20%, Tier: B
+- **Minotaur** (Tank/Support | Roam): Win Rate: 53.94%, Pick Rate: 2.14%, Ban Rate: 19.03%, Tier: A
+- **Hirara** ( | ): Win Rate: 53.90%, Pick Rate: 0.73%, Ban Rate: 91.35%, Tier: S
+- **Carmilla** (Support/Tank | Roam): Win Rate: 53.60%, Pick Rate: 1.93%, Ban Rate: 43.68%, Tier: S
 
 ## Available Gamer Tools
 1. **Tier List Hub**: Visual role and lane tier list (S+, S, A, B, C, D) filterable by EXP, Mid, Gold, Roam, Jungle.
