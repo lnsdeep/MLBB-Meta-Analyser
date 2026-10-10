@@ -1,6 +1,6 @@
 # Mobile Legends: Bang Bang — Official Meta & Rank Analytics Report
 
-**Generated At:** `2026-10-09 08:47:01 UTC`  
+**Generated At:** `2026-10-10 08:18:42 UTC`  
 **Data Source:** Official Moonton MLBB GMS API & Youngjoy CDN  
 **Scope:** 134 Heroes | 5 Timeframes (1, 3, 7, 15, 30 days) | 6 Rank Brackets (All, Epic, Legend, Mythic, Honor, Glory+)  
 
@@ -9,53 +9,53 @@
 ## 1. Executive Summary: Mythical Glory+ Meta (Past 1 Day)
 Top performing heroes in the highest competitive rank bracket:
 
-|   # | Hero     | Roles        | Lanes         | Win Rate   | Pick Rate   | Ban Rate   | Tier   | Top Counters               | Top Synergies             |
-|-----|----------|--------------|---------------|------------|-------------|------------|--------|----------------------------|---------------------------|
-|   1 | Aulus    | Fighter      | Jungle        | 61.46%     | 1.41%       | 78.80%     | S+     | Vale, Johnson, Gloo        | Vale, Dyrroth, Silvanna   |
-|   2 | Masha    | Fighter/Tank | Exp Lane      | 61.08%     | 1.01%       | 75.27%     | S+     | Jawhead, Chip, Dyrroth     | Chip, X.Borg, Silvanna    |
-|   3 | Rafaela  | Support      | Roam          | 58.25%     | 2.03%       | 30.93%     | S      | Natalia, Terizla, Cici     | Lolita, Tigreal, Kalea    |
-|   4 | Marcel   | Tank/Support | Exp Lane/Roam | 57.19%     | 0.48%       | 78.57%     | S      | Atlas, Zilong, Aurora      | Franco, Kalea, Zilong     |
-|   5 | Diggie   | Support      | Roam          | 55.45%     | 0.38%       | 8.63%      | A      | Kalea, Zilong, Alice       | Kalea, Johnson, Cici      |
-|   6 | Hirara   | -            | -             | 54.17%     | 0.73%       | 91.36%     | S      | Lolita, Aldous, Wanwan     | Aamon, Melissa, Martis    |
-|   7 | Argus    | Fighter      | Exp Lane      | 54.14%     | 0.52%       | 0.40%      | B      | Zilong, Chang'e, Karrie    | Cici, Aldous, Jawhead     |
-|   8 | Minotaur | Tank/Support | Roam          | 53.84%     | 2.12%       | 18.67%     | A      | Jawhead, Roger, Lolita     | Franco, Kaja, Chip        |
-|   9 | Khufra   | Tank         | Roam          | 53.51%     | 0.78%       | 6.84%      | B      | Baxia, Sora, Akai          | Johnson, Angela, Natalia  |
-|  10 | Odette   | Mage         | Mid Lane      | 53.42%     | 0.55%       | 0.12%      | B      | Hylos, Kalea, Kaja         | Lylia, Chip, Arlott       |
-|  11 | Bruno    | Marksman     | Gold Lane     | 53.41%     | 0.75%       | 0.17%      | B      | Lancelot, Roger, Irithel   | Ixia, Irithel, Moskov     |
-|  12 | Carmilla | Support/Tank | Roam          | 53.33%     | 1.92%       | 43.50%     | S      | Chip, Estes, Lolita        | Lolita, Kalea, Franco     |
-|  13 | Baxia    | Tank         | Jungle        | 53.29%     | 0.09%       | 0.08%      | B      | Wanwan, Zhask, Lancelot    | Fanny, Granger, Valentina |
-|  14 | Floryn   | Support      | Roam          | 53.03%     | 1.75%       | 13.72%     | A      | Marcel, Faramis, Valentina | Tigreal, Kalea, Johnson   |
-|  15 | Saber    | Assassin     | Jungle/Roam   | 52.83%     | 0.49%       | 2.98%      | B      | Nolan, Helcurt, Lunox      | Estes, Ixia, Chip         |
+|   # | Hero     | Roles         | Lanes         | Win Rate   | Pick Rate   | Ban Rate   | Tier   | Top Counters                    | Top Synergies               |
+|-----|----------|---------------|---------------|------------|-------------|------------|--------|---------------------------------|-----------------------------|
+|   1 | Aulus    | Fighter       | Jungle        | 61.53%     | 1.36%       | 80.38%     | S+     | Wanwan, Zhask, Helcurt          | Silvanna, Zilong, Arlott    |
+|   2 | Masha    | Fighter/Tank  | Exp Lane      | 60.57%     | 1.01%       | 75.38%     | S+     | Chip, Guinevere, Aurora         | Chip, X.Borg, Helcurt       |
+|   3 | Rafaela  | Support       | Roam          | 58.32%     | 2.00%       | 30.80%     | S      | Natalia, Cici, Hylos            | Tigreal, Atlas, Kaja        |
+|   4 | Marcel   | Tank/Support  | Exp Lane/Roam | 57.21%     | 0.49%       | 77.94%     | S+     | Johnson, Khufra, Atlas          | Chip, Khufra, Helcurt       |
+|   5 | Diggie   | Support       | Roam          | 55.13%     | 0.37%       | 8.00%      | B      | Faramis, Yu Zhong, Fredrinn     | Khaleed, Johnson, Baxia     |
+|   6 | Argus    | Fighter       | Exp Lane      | 54.55%     | 0.50%       | 0.38%      | B      | Lapu-Lapu, Franco, X.Borg       | Aldous, Terizla, Arlott     |
+|   7 | Khufra   | Tank          | Roam          | 54.06%     | 0.77%       | 6.62%      | B      | Wanwan, Harith, Natalia         | Marcel, Natalia, Kalea      |
+|   8 | Minotaur | Tank/Support  | Roam          | 53.80%     | 2.11%       | 18.16%     | A      | Lolita, Wanwan, Cyclops         | Franco, Kalea, Kaja         |
+|   9 | Hirara   | -             | -             | 53.56%     | 0.73%       | 91.38%     | S      | Lolita, Yin, Popol and Kupa     | Lancelot, Angela, Gatotkaca |
+|  10 | Odette   | Mage          | Mid Lane      | 53.32%     | 0.54%       | 0.11%      | B      | Chip, Kaja, Popol and Kupa      | Pharsa, Zhuxin, Harley      |
+|  11 | Carmilla | Support/Tank  | Roam          | 53.25%     | 1.91%       | 43.07%     | S      | Chip, Popol and Kupa, Estes     | Lolita, Floryn, Rafaela     |
+|  12 | Bruno    | Marksman      | Gold Lane     | 53.20%     | 0.72%       | 0.15%      | B      | Khaleed, Wanwan, Benedetta      | Ixia, Claude, Beatrix       |
+|  13 | Obsidia  | Marksman      | Gold Lane     | 52.96%     | 3.74%       | 28.31%     | S      | Benedetta, Minsitthar, Helcurt  | Ixia, Clint, Irithel        |
+|  14 | Floryn   | Support       | Roam          | 52.83%     | 1.74%       | 13.33%     | A      | Marcel, Alice, Valentina        | Tigreal, Atlas, Helcurt     |
+|  15 | Kadita   | Mage/Assassin | Mid Lane      | 52.82%     | 1.17%       | 2.24%      | B      | Johnson, Lolita, Popol and Kupa | Mathilda, Chip, Zilong      |
 
 ## 2. Most Banned Heroes (Priority Bans in Mythic)
 Heroes with the highest ban rates in Mythic matches:
 
 |   # | Hero     | Role             | Ban Rate   | Win Rate   | Pick Rate   | Tier   |
 |-----|----------|------------------|------------|------------|-------------|--------|
-|   1 | Hirara   |                  | 86.23%     | 53.23%     | 0.67%       | S      |
-|   2 | Belerick | Tank             | 66.24%     | 50.87%     | 1.65%       | S      |
-|   3 | Eudora   | Mage             | 65.08%     | 51.32%     | 1.93%       | S      |
-|   4 | Lukas    | Fighter          | 51.36%     | 52.77%     | 1.21%       | S      |
-|   5 | Gloo     | Tank             | 49.38%     | 54.40%     | 0.81%       | S      |
-|   6 | Aulus    | Fighter          | 49.34%     | 59.80%     | 1.46%       | S+     |
-|   7 | Paquito  | Fighter/Assassin | 48.85%     | 50.61%     | 1.76%       | S      |
-|   8 | Marcel   | Tank/Support     | 46.02%     | 58.11%     | 0.34%       | S      |
-|   9 | Masha    | Fighter/Tank     | 44.60%     | 59.94%     | 0.73%       | S+     |
-|  10 | Estes    | Support          | 35.75%     | 52.01%     | 0.75%       | A      |
+|   1 | Hirara   |                  | 85.80%     | 52.97%     | 0.67%       | S      |
+|   2 | Belerick | Tank             | 66.08%     | 50.92%     | 1.63%       | S      |
+|   3 | Eudora   | Mage             | 64.95%     | 51.35%     | 1.92%       | S      |
+|   4 | Aulus    | Fighter          | 53.15%     | 59.62%     | 1.50%       | S+     |
+|   5 | Lukas    | Fighter          | 51.54%     | 52.63%     | 1.21%       | S      |
+|   6 | Gloo     | Tank             | 49.00%     | 54.74%     | 0.81%       | S      |
+|   7 | Paquito  | Fighter/Assassin | 48.11%     | 50.73%     | 1.76%       | S      |
+|   8 | Masha    | Fighter/Tank     | 43.99%     | 60.05%     | 0.71%       | S+     |
+|   9 | Marcel   | Tank/Support     | 43.95%     | 58.11%     | 0.33%       | S      |
+|  10 | Estes    | Support          | 37.72%     | 52.24%     | 0.78%       | A      |
 
 ## 3. Most Popular Heroes (Highest Pick Rates Across All Ranks, 7 Days)
 |   # | Hero     | Role              | Pick Rate   | Win Rate   | Ban Rate   | Tier   |
 |-----|----------|-------------------|-------------|------------|------------|--------|
-|   1 | Miya     | Marksman          | 2.81%       | 49.56%     | 7.57%      | B      |
-|   2 | Hanabi   | Marksman          | 2.74%       | 52.02%     | 5.58%      | B      |
-|   3 | Obsidia  | Marksman          | 2.12%       | 53.57%     | 12.91%     | A      |
-|   4 | Nana     | Mage              | 2.12%       | 47.20%     | 3.97%      | C      |
-|   5 | Eudora   | Mage              | 1.97%       | 51.30%     | 58.90%     | S      |
-|   6 | Lesley   | Marksman/Assassin | 1.86%       | 48.20%     | 7.44%      | B      |
-|   7 | Tigreal  | Tank              | 1.86%       | 44.36%     | 5.59%      | C      |
-|   8 | Angela   | Support           | 1.79%       | 49.39%     | 9.48%      | B      |
-|   9 | Sun      | Fighter           | 1.76%       | 52.28%     | 20.74%     | A      |
-|  10 | Belerick | Tank              | 1.74%       | 52.21%     | 56.38%     | S      |
+|   1 | Miya     | Marksman          | 2.78%       | 49.58%     | 7.39%      | B      |
+|   2 | Hanabi   | Marksman          | 2.73%       | 52.04%     | 5.52%      | B      |
+|   3 | Obsidia  | Marksman          | 2.16%       | 53.59%     | 13.81%     | A      |
+|   4 | Nana     | Mage              | 2.11%       | 47.22%     | 3.98%      | C      |
+|   5 | Eudora   | Mage              | 1.98%       | 51.31%     | 58.84%     | S      |
+|   6 | Lesley   | Marksman/Assassin | 1.87%       | 48.20%     | 7.50%      | B      |
+|   7 | Tigreal  | Tank              | 1.86%       | 44.42%     | 5.60%      | C      |
+|   8 | Angela   | Support           | 1.78%       | 49.39%     | 9.54%      | B      |
+|   9 | Sun      | Fighter           | 1.76%       | 52.25%     | 21.09%     | A      |
+|  10 | Belerick | Tank              | 1.74%       | 52.15%     | 56.38%     | S      |
 
 ---
 
