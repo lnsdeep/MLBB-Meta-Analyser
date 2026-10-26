@@ -2,7 +2,7 @@
 
 > Official, daily-updated hero rankings, win rates, ban rates, pick rates, counter matchups, and synergies extracted directly from Moonton's Game Management System (GMS).
 
-**Last Refreshed:** 2026-10-25 07:29:13 UTC
+**Last Refreshed:** 2026-10-26 07:39:19 UTC
 - **Website:** https://lnsdeep.github.io/MLBB-Meta-Analyser/
 - **Data Source:** Official Moonton GMS API (`api.gms.moontontech.com`) & Youngjoy CDN
 - **Total Heroes Tracked:** 134 heroes
@@ -10,16 +10,16 @@
 - **Timeframes:** Past 1 day, 3 days, 7 days, 15 days, 30 days
 
 ## Current Meta Highlights (Mythical Glory+, 1-Day Sample)
-- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 61.75%, Pick Rate: 0.83%, Ban Rate: 75.33%, Tier: S+
-- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 57.86%, Pick Rate: 0.46%, Ban Rate: 73.33%, Tier: S+
-- **Argus** (Fighter | Exp Lane): Win Rate: 56.40%, Pick Rate: 0.49%, Ban Rate: 0.36%, Tier: B
-- **Diggie** (Support | Roam): Win Rate: 55.11%, Pick Rate: 0.28%, Ban Rate: 5.54%, Tier: B
-- **Rafaela** (Support | Roam): Win Rate: 54.89%, Pick Rate: 1.30%, Ban Rate: 22.03%, Tier: A
-- **Khufra** (Tank | Roam): Win Rate: 54.48%, Pick Rate: 0.62%, Ban Rate: 4.21%, Tier: B
-- **Bruno** (Marksman | Gold Lane): Win Rate: 54.24%, Pick Rate: 0.55%, Ban Rate: 0.11%, Tier: B
-- **Floryn** (Support | Roam): Win Rate: 53.96%, Pick Rate: 1.39%, Ban Rate: 12.40%, Tier: A
-- **Valir** (Mage | Mid Lane): Win Rate: 53.81%, Pick Rate: 1.07%, Ban Rate: 1.71%, Tier: B
-- **Saber** (Assassin | Jungle/Roam): Win Rate: 53.50%, Pick Rate: 0.64%, Ban Rate: 6.89%, Tier: B
+- **Masha** (Fighter/Tank | Exp Lane): Win Rate: 61.70%, Pick Rate: 0.83%, Ban Rate: 75.22%, Tier: S+
+- **Marcel** (Tank/Support | Exp Lane/Roam): Win Rate: 57.90%, Pick Rate: 0.46%, Ban Rate: 73.23%, Tier: S+
+- **Argus** (Fighter | Exp Lane): Win Rate: 56.50%, Pick Rate: 0.50%, Ban Rate: 0.39%, Tier: B
+- **Diggie** (Support | Roam): Win Rate: 55.43%, Pick Rate: 0.29%, Ban Rate: 5.37%, Tier: B
+- **Rafaela** (Support | Roam): Win Rate: 54.78%, Pick Rate: 1.28%, Ban Rate: 21.09%, Tier: A
+- **Khufra** (Tank | Roam): Win Rate: 54.52%, Pick Rate: 0.61%, Ban Rate: 4.23%, Tier: B
+- **Bruno** (Marksman | Gold Lane): Win Rate: 54.12%, Pick Rate: 0.56%, Ban Rate: 0.11%, Tier: B
+- **Valir** (Mage | Mid Lane): Win Rate: 53.93%, Pick Rate: 1.08%, Ban Rate: 1.78%, Tier: B
+- **Floryn** (Support | Roam): Win Rate: 53.82%, Pick Rate: 1.40%, Ban Rate: 12.39%, Tier: A
+- **Saber** (Assassin | Jungle/Roam): Win Rate: 53.78%, Pick Rate: 0.64%, Ban Rate: 7.17%, Tier: B
 
 ## Available Gamer Tools
 1. **Tier List Hub**: Visual role and lane tier list (S+, S, A, B, C, D) filterable by EXP, Mid, Gold, Roam, Jungle.
